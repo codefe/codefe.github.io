@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"关闭Worker","content":"<p>使用完毕，为了节省系统资源，必须关闭 Worker。<br></p><pre><code>// 主线程\nworker.terminate();\n\n// Worker 线程\nself.close();</code></pre><p><br></p>"}}

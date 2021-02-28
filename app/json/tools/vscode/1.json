@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"vscode自动编译ts","content":"<p>1). 生成配置文件tsconfig.json<br></p><p>    tsc --init</p><p>&nbsp;\n<br>2). 修改tsconfig.json配置\n<br>    \"outDir\": \"./js\",\n<br>    \"strict\": false,</p><p>&nbsp;    \n<br>3). 启动监视任务: \n<br>    终端 -&gt; 运行任务 -&gt; 监视tsconfig.json</p>"}}

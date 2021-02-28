@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"两栏式布局","content":"<p>两栏式布局就是一个边栏，一个主栏。<br></p><pre><code>.container {\n    display: grid;\n    grid-template-columns: minmax(150px, 25%) 1fr;\n}</code></pre><p>上面代码中，grid-template-columns指定页面分成两列。第一列的宽度是minmax(150px, 25%)，即最小宽度为150px，最大宽度为总宽度的25%；第二列为1fr，即所有剩余宽度。</p>"}}

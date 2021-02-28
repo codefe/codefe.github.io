@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"配置","content":"<p>Git的设置文件为<code>.gitconfig</code>，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。<br></p><pre><code># 显示当前的Git配置\n$ git config --list\n\n# 编辑Git配置文件\n$ git config -e [--global]\n\n# 设置提交代码时的用户信息\n$ git config [--global] user.name \"[name]\"\n$ git config [--global] user.email \"[email address]\"</code></pre><p><br></p>"}}

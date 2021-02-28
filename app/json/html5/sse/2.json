@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"检测Server-Sent事件支持","content":"<p>以下实例，我们编写了一段额外的代码来检测服务器发送事件的浏览器支持情况：<br></p><pre><code>if(typeof(EventSource)!==\"undefined\")\n   {\n   // 浏览器支持 Server-Sent\n   // 一些代码.....\n   }\n else\n   {\n   // 浏览器不支持 Server-Sent..\n   }</code></pre><p><br></p>"}}

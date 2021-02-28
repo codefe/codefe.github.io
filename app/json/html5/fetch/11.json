@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"cache","content":"<p><code>cache</code>属性指定如何处理缓存。可能的取值如下：<br></p><pre><code>default：默认值，先在缓存里面寻找匹配的请求。\nno-store：直接请求远程服务器，并且不更新缓存。\nreload：直接请求远程服务器，并且更新缓存。\nno-cache：将服务器资源跟本地缓存进行比较，有新的版本才使用服务器资源，否则使用缓存。\nforce-cache：缓存优先，只有不存在缓存的情况下，才请求远程服务器。\nonly-if-cached：只检查缓存，如果缓存里面不存在，将返回504错误。</code></pre><p><br></p>"}}

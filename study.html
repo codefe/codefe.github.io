@@ -7,7 +7,6 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<link rel="stylesheet" href="./app/css/app.css">
 	<title>初学|前端进阶</title>
-	<meta name="description" content="H5,HTML5,CSS3,ES6,Vue,React" />
 </head>
 <body>
 <!-- header -->
@@ -38,13 +37,15 @@
 		</section>
 	</section>
 </header>
+
 <!-- main -->
 <section class="flex-wrap flex-bor">
 	<!-- 左侧菜单 -->
 	<section class="flex-sideLeft" id="asideMenu"></section>
 	<!-- 中间 -->
 	<section class="flex-item fadeInUp">
-		<ul class="flex-wrap flex-break flex-col item-list" id="pageList"></ul>
+		<h3 class="navigation" id="navigation">学习平台</h3>
+		<section class="flex-wrap flex-break study-list" id="pageList"></section>
 	</section>
 	<!-- 右侧 -->
 	<section class="flex-sideRight">
@@ -101,6 +102,6 @@
 <script src="./app/js/api.js"></script>
 <script src="./app/js/mouse.js"></script>
 <script>
-	Gs.obj.initIndex();
+	Gs.obj.initStudy();
 </script>
 </html>

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"credentials是否发送Cookie","content":"<p><code>credentials</code>属性指定是否发送 Cookie。可能的取值如下：<br></p><pre><code>same-origin：默认值，同源请求时发送 Cookie，跨域请求时不发送。\ninclude：不管同源请求，还是跨域请求，一律发送 Cookie。\nomit：一律不发送。</code></pre><p><br></p>"}}

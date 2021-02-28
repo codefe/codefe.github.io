@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Worker加载脚本","content":"<p>Worker 内部如果要加载其他脚本，有一个专门的方法importScripts()。</p><p><blockquote>importScripts('script1.js');\n</blockquote>该方法可以同时加载多个脚本。<br><blockquote>importScripts('script1.js', 'script2.js');</blockquote></p>"}}

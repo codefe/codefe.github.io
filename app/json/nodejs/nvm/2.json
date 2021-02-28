@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"nvm安装nodejs","content":"<h3>1. 安装node</h3><p>nvm  install version\n<br>\n<br>比如：\n<br>nvm install v11.6.0\n<br>nvm install 11.6.0\n<br>Installation complete 代表nodejs安装完成\n<br>\n<br><h3>2. 查询所有的nodejs版本\n</h3>nvm list \n<br>\n<br><h3>3. 切换nodojs命令\n</h3>nvm  use  version\n<br>比如：\n<br>nvm use 11.6.0\n<br>\n<br>这样就切换到了11.6.0版本的nodejs了</p>"}}

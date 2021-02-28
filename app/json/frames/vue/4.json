@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"setup中不能使用router.push问题","content":"<p>import { useRouter } from 'vue-router'</p><pre><code>setup(){\n    const router = useRouter()\n    router.push('/跳转')\n}</code></pre><p><br></p>"}}

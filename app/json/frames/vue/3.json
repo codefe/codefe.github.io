@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"setup中不能使用this问题","content":"<p>import { getCurrentInstance } from 'vue'</p><pre><code>setup(){\n    const { ctx } = getCurrentInstance()\n    // ctx 就是 this\n}</code></pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"提交表单","content":"<pre><code>const form = document.querySelector('form');\n\nconst response = await fetch('/users', {\n  method: 'POST',\n  body: new FormData(form)\n})</code></pre><p><br></p>"}}

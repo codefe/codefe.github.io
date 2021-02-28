@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"EventSource对象","content":"<p>在上面的例子中，我们使用 onmessage 事件来获取消息。不过还可以使用其他事件：</p><p></p><table><tbody><tr><th>事件</th><th>描述</th></tr><tr><td>onopen</td><td>当通往服务器的连接被打开</td></tr><tr><td>onmessage</td><td>当接收到消息</td></tr><tr><td>onerror</td><td>当错误发生</td></tr></tbody></table>"}}

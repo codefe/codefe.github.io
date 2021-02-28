@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"新建代码库","content":"<p></p><pre><code><span spellcheck=\"true\"># 在当前目录新建一个Git代码库\n</span>$ git init\n\n<span spellcheck=\"true\"># 新建一个目录，将其初始化为Git代码库\n</span>$ git init <span>[</span>project<span>-</span>name<span>]</span>\n\n<span spellcheck=\"true\"># 下载一个项目和它的整个代码历史\n</span>$ git clone <span>[</span>url<span>]</span></code></pre>"}}

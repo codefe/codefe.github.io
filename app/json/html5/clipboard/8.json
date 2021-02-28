@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"paste事件","content":"<p>用户使用剪贴板数据，进行粘贴操作时，会触发<code>paste</code>事件。</p><p></p><p>下面的示例是拦截粘贴操作，由脚本将剪贴板里面的数据取出来。</p><pre><code>document.addEventListener('paste', async (e) =&gt; {\n  e.preventDefault();\n  const text = await navigator.clipboard.readText();\n  console.log('Pasted text: ', text);\n});</code></pre><p><br></p>"}}

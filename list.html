@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<link rel="stylesheet" href="./app/css/app.css">
 	<title>初学|前端进阶</title>
-	<meta name="description" content="H5,HTML5,CSS3,ES6,Vue,React" />
+	<meta name="description" content="" />
 </head>
 <body>
 <!-- header -->
@@ -25,7 +25,7 @@
 			</div>
 		</section>
 		
-		<section class="head-right head-login">
+		  <section class="head-right head-login">
 			<em>8</em>
 			<span class="head-img"><i class="ic-ren"></i></span>
 			<ul class="popmenu">
@@ -35,16 +35,22 @@
 				<li><a href="#">修改资料</a></li>
 				<li class="exit"><a href="./index.html">退出登录</a></li>
 			</ul>
-		</section>
+		  </section>
 	</section>
 </header>
+
 <!-- main -->
 <section class="flex-wrap flex-bor">
 	<!-- 左侧菜单 -->
 	<section class="flex-sideLeft" id="asideMenu"></section>
 	<!-- 中间 -->
-	<section class="flex-item fadeInUp">
-		<ul class="flex-wrap flex-break flex-col item-list" id="pageList"></ul>
+	<section class="flex-item fadeInUp" id="pageList">
+		<!-- <h3 class="navigation" id="navigation"></h3>
+		<section class="list-title">
+			<h1></h2>
+			<p></p>
+		</section>
+		<section class="list-content">dfsdfd</section> -->
 	</section>
 	<!-- 右侧 -->
 	<section class="flex-sideRight">
@@ -101,6 +107,11 @@
 <script src="./app/js/api.js"></script>
 <script src="./app/js/mouse.js"></script>
 <script>
-	Gs.obj.initIndex();
+	//Gs.getData(Gs.getPara('id')+'/index').then((json)=>{
+		//Gs.obj.initList(json.data,'#pageList');
+		//document.title = json.data.title + ' - '+json.data.type + ' | 前端';
+		//document.title = json.data.title + ' | 前端';
+	//});
+	Gs.obj.initList();
 </script>
 </html>

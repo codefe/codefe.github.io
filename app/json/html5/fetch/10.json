@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"直接上传二进制数据","content":"<p><code>fetch()</code>也可以直接上传二进制数据，将 Blob 或 arrayBuffer 数据放在<code>body</code>属性里面。<br></p><pre><code>let blob = await new Promise(resolve =&gt;   \n  canvasElem.toBlob(resolve,  'image/png')\n);\n\nlet response = await fetch('/article/fetch/post/image', {\n  method:  'POST',\n  body: blob\n});</code></pre><p><br></p>"}}
