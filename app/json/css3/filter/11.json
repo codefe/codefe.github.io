@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"复合滤镜","content":"<p>使用多个滤镜，每个滤镜使用空格分隔。</p><p></p><p><strong>注意:</strong><span>&nbsp;</span>顺序是非常重要的 (例如使用 grayscale() 后再使用 sepia()将产生一个完整的灰度图片)。</p><pre><code>img {\n    -webkit-filter: contrast(200%) brightness(150%);  /* Chrome, Safari, Opera */\n    filter: contrast(200%) brightness(150%);\n}</code></pre><p><br></p>"}}

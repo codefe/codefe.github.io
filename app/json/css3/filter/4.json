@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"阴影效果drop-shadow","content":"<p>给图像设置一个阴影效果:<br></p><pre><code>img {\n    -webkit-filter: drop-shadow(8px 8px 10px red); /* Chrome, Safari, Opera */\n    filter: drop-shadow(8px 8px 10px red);\n}</code></pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"blob流转换为base64","content":"<pre><code>/**\n * blob流转换为base64\n * @param {*} blob blob对象\n * @param {*} callback \n */\nexport const blobToDataURL = (blob, callback) =&gt; {\n let freader = new FileReader();\n freader.readAsDataURL(blob);\n freader.onload = function (e) { callback(e.target.result); }\n}</code></pre><p><br></p>"}}

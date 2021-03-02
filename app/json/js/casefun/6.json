@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"判断是否为数字类型","content":"<pre><code>/**\n * 判断是否为数字类型\n */\nfunction isDigit(value) {\n    var patrn = /^[0-9]*$/;\n    if (patrn.exec(value) == null || value == \"\") {\n        return false;\n    } else {\n        return true;\n    }\n}</code></pre><p><br></p>"}}

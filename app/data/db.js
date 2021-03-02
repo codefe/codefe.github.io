@@ -496,6 +496,11 @@ let db = [
                                 id: 1,
                                 title: 'Navigation Timing API',
                                 url: 'html5-NavigationTiming-1'
+                            },
+                            {
+                                id: 2,
+                                title: '利用performance.timing进行性能分析',
+                                url: 'html5-NavigationTiming-2'
                             }
                         ]
                     },
@@ -782,7 +787,69 @@ let db = [
                         title: '滤镜',
                         flag: 'recommend',
                         icon: './app/img/edu/filter.jpg',
-                        desc: 'css3 的滤镜 filter 属性,可以对网页中的图片进行类似 Photoshop 图片处理的效果, h5 时代的来临,我们可以通过 css 对图像进行处理。'
+                        desc: 'css3 的滤镜 filter 属性,可以对网页中的图片进行类似 Photoshop 图片处理的效果, h5 时代的来临,我们可以通过 css 对图像进行处理。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '高斯模糊blur',
+                                url: 'css3-filter-1'
+                            },
+                            {
+                                id: 2,
+                                title: '图片变亮brightness',
+                                url: 'css3-filter-2'
+                            },
+                            {
+                                id: 3,
+                                title: '调整图像的对比度contrast',
+                                url: 'css3-filter-3'
+                            },
+                            {
+                                id: 4,
+                                title: '阴影效果drop-shadow',
+                                url: 'css3-filter-4'
+                            },
+                            {
+                                id: 5,
+                                title: '灰度图像grayscale',
+                                url: 'css3-filter-5'
+                            },
+                            {
+                                id: 6,
+                                title: '色相旋转hue-rotate',
+                                url: 'css3-filter-6'
+                            },
+                            {
+                                id: 7,
+                                title: '反转输入图像invert',
+                                url: 'css3-filter-7'
+                            },
+                            {
+                                id: 8,
+                                title: '图像透明度opacity',
+                                url: 'css3-filter-8'
+                            },
+                            {
+                                id: 9,
+                                title: '图像饱和度saturate',
+                                url: 'css3-filter-9'
+                            },
+                            {
+                                id: 10,
+                                title: '图像转换为深褐色sepia',
+                                url: 'css3-filter-10'
+                            },
+                            {
+                                id: 11,
+                                title: '复合滤镜',
+                                url: 'css3-filter-11'
+                            },
+                            {
+                                id: 12,
+                                title: '所有滤镜实例',
+                                url: 'css3-filter-12'
+                            }
+                        ]
                     }
                 ]
             },
@@ -1548,6 +1615,96 @@ let db = [
                                 id: 4,
                                 title: '防抖&节流',
                                 url: 'js-casefun-4'
+                            },
+                            {
+                                id: 5,
+                                title: '转义还原html标签',
+                                url: 'js-casefun-5'
+                            },
+                            {
+                                id: 6,
+                                title: '判断是否为数字类型',
+                                url: 'js-casefun-6'
+                            },
+                            {
+                                id: 7,
+                                title: '设置获取cookie',
+                                url: 'js-casefun-7'
+                            },
+                            {
+                                id: 8,
+                                title: '加入收藏夹',
+                                url: 'js-casefun-8'
+                            },
+                            {
+                                id: 9,
+                                title: '设为首页',
+                                url: 'js-casefun-9'
+                            },
+                            {
+                                id: 10,
+                                title: '返回浏览器版本',
+                                url: 'js-casefun-10'
+                            },
+                            {
+                                id: 11,
+                                title: '兼容浏览器绑定元素事件',
+                                url: 'js-casefun-11'
+                            },
+                            {
+                                id: 12,
+                                title: '格式化压缩CSS样式',
+                                url: 'js-casefun-12'
+                            },
+                            {
+                                id: 13,
+                                title: 'base64数据导出下载文件',
+                                url: 'js-casefun-13'
+                            },
+                            {
+                                id: 14,
+                                title: '全屏退出全屏',
+                                url: 'js-casefun-14'
+                            },
+                            {
+                                id: 15,
+                                title: '时间个性化输出功能',
+                                url: 'js-casefun-15'
+                            },
+                            {
+                                id: 16,
+                                title: 'file转为base64',
+                                url: 'js-casefun-16'
+                            },
+                            {
+                                id: 17,
+                                title: 'blob流转换为base64',
+                                url: 'js-casefun-17'
+                            },
+                            {
+                                id: 18,
+                                title: 'base64转换为blob',
+                                url: 'js-casefun-18'
+                            },
+                            {
+                                id: 19,
+                                title: 'base64转换为file,IE低版本不兼容',
+                                url: 'js-casefun-19'
+                            },
+                            {
+                                id: 20,
+                                title: '图片url转化成base64',
+                                url: 'js-casefun-20'
+                            },
+                            {
+                                id: 21,
+                                title: '浏览器环境检测',
+                                url: 'js-casefun-21'
+                            },
+                            {
+                                id: 22,
+                                title: '实现锚点滚动',
+                                url: 'js-casefun-22'
                             }
                         ]
                     },

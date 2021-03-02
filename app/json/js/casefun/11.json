@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"兼容浏览器绑定元素事件","content":"<pre><code>/**\n * 兼容浏览器绑定元素事件\n * \n * obj：元素\n * \n * evt:时间名称\n * \n * fn:触发函数\n * \n */\n \nfunction addEventSamp(obj, evt, fn) {\n    if (obj.addEventListener) {\n        obj.addEventListener(evt, fn, false);\n    } else if (obj.attachEvent) {\n        obj.attachEvent('on' + evt, fn);\n    }\n}</code></pre><p><br></p>"}}

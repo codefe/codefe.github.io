@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"图像透明度opacity","content":"<p>转化图像的透明程度:<br></p><pre><code>img {\n    -webkit-filter: opacity(30%); /* Chrome, Safari, Opera */\n    filter: opacity(30%);\n}</code></pre><p><br></p>"}}

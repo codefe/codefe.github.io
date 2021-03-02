@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"灰度图像grayscale","content":"<p>将图像转换为灰度图像:<br></p><pre><code>img {\n    -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */\n    filter: grayscale(50%);\n}</code></pre><p><br></p>"}}

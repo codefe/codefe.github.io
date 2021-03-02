@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"图像转换为深褐色sepia","content":"<p>将图像转换为深褐色:<br></p><pre><code>img {\n    -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */\n    filter: sepia(100%);\n}</code></pre><p><br></p>"}}
