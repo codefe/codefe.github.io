@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"VSCODE解决禁止运行脚本","content":"<p>找了下原因，是因为PowerShell执行策略的问题。</p><p>解决方法：</p><p><blockquote>1. 以管理员身份运行vscode;<br>2. 执行：get-ExecutionPolicy，显示Restricted，表示状态是禁止的;<br>3. 执行：set-ExecutionPolicy RemoteSigned;<br>4. 这时再执行get-ExecutionPolicy，就显示RemoteSigned;\n</blockquote></p><p>之后就不再有问题。</p>"}}

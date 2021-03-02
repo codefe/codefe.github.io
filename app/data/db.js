@@ -2152,6 +2152,11 @@ let db = [
                                 id: 1,
                                 title: 'vscode自动编译ts',
                                 url: 'tools-vscode-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'VSCODE解决禁止运行脚本',
+                                url: 'tools-vscode-2'
                             }
                         ]
                     }
