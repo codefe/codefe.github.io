@@ -89,6 +89,11 @@ let links = {
             url: 'https://www.mithriljs.net/'
         },
         {
+            id: 14,
+            title: 'Vue Test Utils',
+            url: 'https://vue-test-utils.vuejs.org/zh/'
+        },
+        {
             id: 13,
             title: 'SnapSVG',
             url: 'http://snapsvg.io/'
@@ -189,7 +194,8 @@ let links = {
 			id: 1,
             title: "labuladong的算法小抄官方完整版",
             icon: './app/img/ic/pdf.jpg',
-			url: "./app/download/labuladong的算法小抄官方完整版.pdf"
+            desc: '提取码：qm6f',
+			url: "https://pan.baidu.com/s/1fgD5T2Oz4g1JWorhlcCbyg"
 		}
     ]
 };

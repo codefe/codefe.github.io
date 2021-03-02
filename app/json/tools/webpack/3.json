@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"介绍bundle,chunk,module","content":"<p></p><div><div><code>bundle</code>：是由 <code>webpack</code> 打包出来的文件，<br>\n<code>chunk</code>：代码块，一个 <code>chunk</code> 由多个模块组合而成，用于代码的合并和分割。<br>\n<code>module</code>：是开发中的单个模块，在 <code>webpack</code> 的世界，一切皆模块，一个模块对应一个文件，<code>webpack</code> 会从配置的 <code>entry</code> 中递归开始找出所有依赖的模块。</div><br></div>"}}

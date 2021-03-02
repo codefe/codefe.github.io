@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"用vnode描述一个DOM结构","content":"<p>虚拟节点就是用一个对象描述真实的dom元素</p><p>会将 template 先转换成 ast 树, ast 通过代码生成 codegen 转成 rander函数, rander函数内部调用 $createElement 方法简称 _c, 传入 tag (创建的元素), data(元素的属性), children(子元素) . 会判断 children 是不是一个字符串, 否则会做深度递归, 最后返回的结果就是一个对象,可描述出DOM 结构.</p>"}}

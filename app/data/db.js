@@ -1308,7 +1308,44 @@ let db = [
                         id: 332200,
                         title: '初级算法',
                         flag: 'recommend',
-                        icon: './app/img/edu/suanfa.jpg'
+                        icon: './app/img/edu/suanfa.jpg',
+                        child: [
+                            {
+                                id: 1,
+                                title: '翻转字符串算法',
+                                url: 'js-suanfa-1'
+                            },
+                            {
+                                id: 2,
+                                title: '计算所提供整数的阶乘',
+                                url: 'js-suanfa-2'
+                            },
+                            {
+                                id: 3,
+                                title: '回文算法',
+                                url: 'js-suanfa-3'
+                            },
+                            {
+                                id: 4,
+                                title: '查找最长单词',
+                                url: 'js-suanfa-4'
+                            },
+                            {
+                                id: 5,
+                                title: '设置首字母大写算法',
+                                url: 'js-suanfa-5'
+                            },
+                            {
+                                id: 6,
+                                title: '寻找数组中的最大值算法',
+                                url: 'js-suanfa-6'
+                            },
+                            {
+                                id: 7,
+                                title: '确认末尾字符算法',
+                                url: 'js-suanfa-7'
+                            }
+                        ]
                     },
                     {
                         id: 332201,
@@ -1391,7 +1428,14 @@ let db = [
                     {
                         id: 335503,
                         title: '大数据处理',
-                        desc: '大量数据渲染时的处理'
+                        desc: '大量数据渲染时的处理',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'JS控制html分屏加载',
+                                url: 'js-bigdata-1'
+                            }
+                        ]
                     }
                 ]
             }
@@ -1441,53 +1485,258 @@ let db = [
                                 id:6,
                                 title: 'effect',
                                 url: 'frames-vue-6'
+                            },
+                            {
+                                id:7,
+                                title: 'Vue中的事件修饰符',
+                                url: 'frames-vue-7'
+                            },
+                            {
+                                id:8,
+                                title: 'v-for里面数据层次太多，数据不刷新怎么办',
+                                url: 'frames-vue-8'
+                            },
+                            {
+                                id:9,
+                                title: 'keep-alive',
+                                url: 'frames-vue-9'
+                            },
+                            {
+                                id:10,
+                                title: 'Vue中key的作用',
+                                url: 'frames-vue-10'
+                            },
+                            {
+                                id:11,
+                                title: 'Vue.use与Vue.component的区别',
+                                url: 'frames-vue-11'
+                            },
+                            {
+                                id:12,
+                                title: 'Vue中常见的性能优化',
+                                url: 'frames-vue-12'
+                            },
+                            {
+                                id:13,
+                                title: '高精度全局权限处理',
+                                url: 'frames-vue-13'
+                            },
+                            {
+                                id:14,
+                                title: 'Proxy,defineProperty',
+                                url: 'frames-vue-14'
+                            },
+                            {
+                                id:15,
+                                title: 'Vue性能优化方法',
+                                url: 'frames-vue-15'
+                            },
+                            {
+                                id:16,
+                                title: 'vue使用cdn',
+                                url: 'frames-vue-16'
+                            },
+                            {
+                                id:17,
+                                title: 'vue中怎么重置data',
+                                url: 'frames-vue-17'
+                            },
+                            {
+                                id:18,
+                                title: '组件中写name选项的作用',
+                                url: 'frames-vue-18'
+                            },
+                            {
+                                id:19,
+                                title: 'errorCaptured与errorHandler',
+                                url: 'frames-vue-19'
+                            },
+                            {
+                                id:20,
+                                title: 'vue渲染大量数据时优化',
+                                url: 'frames-vue-20'
+                            },
+                            {
+                                id:21,
+                                title: '在watch监听开始之后立即被调用',
+                                url: 'frames-vue-21'
                             }
                         ]
                     },
                     {
                         id: 440002,
                         title: 'Vue源码解析',
-                        icon: './app/img/edu/vue3.jpg'
+                        icon: './app/img/edu/vue3.jpg',
+                        child: [
+                            {
+                                id:1,
+                                title: 'Vue实现数据双向绑定的原理',
+                                url: 'frames-vuesource-1'
+                            },
+                            {
+                                id:2,
+                                title: 'Vue响应式数据的原理',
+                                url: 'frames-vuesource-2'
+                            },
+                            {
+                                id:3,
+                                title: '为何Vue采用异步渲染',
+                                url: 'frames-vuesource-3'
+                            },
+                            {
+                                id:4,
+                                title: 'nextTick实现原理',
+                                url: 'frames-vuesource-4'
+                            },
+                            {
+                                id:5,
+                                title: 'Vue中Computed和watch',
+                                url: 'frames-vuesource-5'
+                            },
+                            {
+                                id:6,
+                                title: 'Vue组件中data为什么必须是一个函数',
+                                url: 'frames-vuesource-6'
+                            },
+                            {
+                                id:7,
+                                title: 'Vue中事件绑定原理',
+                                url: 'frames-vuesource-7'
+                            },
+                            {
+                                id:8,
+                                title: 'v-model的实现原理',
+                                url: 'frames-vuesource-8'
+                            },
+                            {
+                                id:9,
+                                title: 'Vue中的v-show和v-if',
+                                url: 'frames-vuesource-9'
+                            },
+                            {
+                                id:10,
+                                title: 'v-if和v-for为什么不能连用',
+                                url: 'frames-vuesource-10'
+                            },
+                            {
+                                id:11,
+                                title: 'Vue中的v-html会导致哪些问题',
+                                url: 'frames-vuesource-11'
+                            },
+                            {
+                                id:12,
+                                title: 'Vue中父子组件的调用顺序',
+                                url: 'frames-vuesource-12'
+                            },
+                            {
+                                id:13,
+                                title: 'Vue中父组件监听子组件的生命周期',
+                                url: 'frames-vuesource-13'
+                            },
+                            {
+                                id:14,
+                                title: 'Vue中组件怎么通讯',
+                                url: 'frames-vuesource-14'
+                            },
+                            {
+                                id:15,
+                                title: '为什么使用异步组件',
+                                url: 'frames-vuesource-15'
+                            },
+                            {
+                                id:16,
+                                title: '用vnode描述一个DOM结构',
+                                url: 'frames-vuesource-16'
+                            },
+                            {
+                                id:17,
+                                title: 'Vue中diff算法原理',
+                                url: 'frames-vuesource-17'
+                            }
+                        ]
                     },
                     {
                         id: 440003,
                         title: 'VueX',
                         icon: './app/img/edu/vuex.jpg',
+                        desc: 'Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。',
                         child: [
                             {
                                 id:1,
-                                title: '同级action如何互相调用',
+                                title: 'Vuex是什么? 怎么使用它? 哪种功能场景使用?',
                                 url: 'frames-vuex-1'
+                            },
+                            {
+                                id:2,
+                                title: '同级action如何互相调用',
+                                url: 'frames-vuex-2'
+                            },
+                            {
+                                id:3,
+                                title: 'actions和mutations的区别',
+                                url: 'frames-vuex-3'
+                            },
+                            {
+                                id:4,
+                                title: 'assets和static的区别',
+                                url: 'frames-vuex-4'
                             }
                         ]
                     },
                     {
                         id: 440004,
+                        title: 'VueRouter',
+                        desc: 'Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。',
+                        child: [
+                            {
+                                id:1,
+                                title: '$route和$router的区别',
+                                url: 'frames-vuerouter-1'
+                            },
+                            {
+                                id:2,
+                                title: '路由的钩子函数',
+                                url: 'frames-vuerouter-2'
+                            },
+                            {
+                                id:3,
+                                title: 'vue-router路由守卫',
+                                url: 'frames-vuerouter-3'
+                            },
+                            {
+                                id:4,
+                                title: 'hash模式和history模式',
+                                url: 'frames-vuerouter-4'
+                            }
+                        ]
+                    },
+                    {
+                        id: 440005,
                         title: 'VueCLI',
                         icon: './app/img/edu/vuecli.jpg'
                     },
                     {
-                        id: 440005,
+                        id: 440006,
                         title: 'SSR',
                         icon: ''
                     },
                     {
-                        id: 440006,
+                        id: 440007,
                         title: 'VuePress',
                         icon: ''
                     },
                     {
-                        id: 440007,
+                        id: 440008,
                         title: 'Nuxt',
                         icon: ''
                     },
                     {
-                        id: 440008,
+                        id: 440009,
                         title: 'Element',
                         icon: ''
                     },
                     {
-                        id: 440009,
+                        id: 440010,
                         title: 'NutUI',
                         icon: ''
                     }
@@ -1818,7 +2067,34 @@ let db = [
                         title: 'Webpack',
                         flag: 'recommend',
                         icon: './app/img/edu/webpack.jpg',
-                        desc: 'Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。'
+                        desc: 'Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '常见的Loader',
+                                url: 'tools-webpack-1'
+                            },
+                            {
+                                id: 2,
+                                title: '常见的Plugin',
+                                url: 'tools-webpack-2'
+                            },
+                            {
+                                id: 3,
+                                title: '介绍bundle,chunk,module',
+                                url: 'tools-webpack-3'
+                            },
+                            {
+                                id: 4,
+                                title: '提高webpack的构建速度',
+                                url: 'tools-webpack-4'
+                            },
+                            {
+                                id: 5,
+                                title: '文件指纹',
+                                url: 'tools-webpack-5'
+                            }
+                        ]
                     },
                     {
                         id: 770001,

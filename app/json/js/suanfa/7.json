@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"确认末尾字符算法","content":"<p>检查一个字符串(str)是否以指定的字符串(target)结尾。 如果是，返回true;如果不是，返回false。<br></p><pre><code>function confirmEnding(str, target) {\n  return str.substr(str.length-target.length,target.length)===target; \n}    //substr()方法返回一个字符串中从指定位置开始到指定字符数的字符。\nconfirmEnding(\"Bastian\", \"n\");</code></pre><p><br></p>"}}

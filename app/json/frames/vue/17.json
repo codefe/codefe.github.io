@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"vue中怎么重置data","content":"<p>使用Object.assign()，vm.data可以获取当前状态下的data，vm.options.data可以获取到组件初始化状态下的data。</p><pre><code>Object.assign(this.$data, this.$options.data())</code></pre><p><br></p>"}}

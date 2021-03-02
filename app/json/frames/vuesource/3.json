@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"为何Vue采用异步渲染","content":"<p>如不采用异步更新, 则每次更新数据都会对当前组件进行重新渲染, 因此为了性能考虑 Vue 在本轮数据更新结束后，再去异步更新视图。&nbsp;</p><p>当数据变化之后, 会调用 notify 方法去通知 watcher 进行数据更新。而 watcher 会调用 update 方法进行更新( 这里就是发布订阅模式 )。更新时并不是让 wathcer 立即执行，而是放在一个 queueWatcher 队列里进行过滤，相同的 watcher 只存一个。最后在调用 nextTick 方法通过 flushSchedulerQueue 异步清空 watcher 队列。&nbsp;&nbsp;</p>"}}

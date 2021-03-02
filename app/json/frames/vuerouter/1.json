@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"$route和$router的区别","content":"<p></p><div><div><code>$router</code> 为 <code>VueRouter</code> 实例，是个全局路由对象，包含路由跳转方法、钩子函数等。<br>\n<code>$route</code> 是 路由信息对象 || 跳转的路由对象，每一个路由都会有一个<code>route</code>对象，是一个局部对象，包含<code>path，params，hash，query，fullPath，matched，name</code> 等路由信息参数。</div></div>"}}

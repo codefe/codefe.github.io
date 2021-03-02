@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Vue中父组件监听子组件的生命周期","content":"<p>父组件通过<code>@hook:</code>&nbsp;能够监听到子组件的生命周期，举个栗子：<br></p><pre><code>// 这里是父组件\n&lt;template&gt;\n    &lt;child @hook:mounted=\"getChildMounted\"  /&gt;\n&lt;/template&gt;\n&lt;script&gt;\nmethod: {\n    getChildMounted () {\n        // 这里可以获取到子组件mounted的信息\n    }\n}\n&lt;/script&gt;</code></pre><p><br></p>"}}

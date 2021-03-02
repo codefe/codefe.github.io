@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Vue中的事件修饰符","content":"<p>.stop：阻止事件冒泡</p><p>.native：绑定原生事件</p><p>.once：事件只执行一次</p><p>.self：将事件绑定在自身身上，相当于阻止事件冒泡</p><p>.prevent：阻止默认事件</p><p>.caption：用于事件捕获</p>"}}

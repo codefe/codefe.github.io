@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Vue中的v-html会导致哪些问题","content":"<p>v-html 其原理就是用 innerHtml 实现的的, 如果不能保证内容是完全可以被依赖的, 则可能会导致 xxs 攻击。&nbsp;</p><p>在运行的时候, 调用 updateDOMProps 方法或解析配置的属性, 如果判断属性是 innerHTML 的话, 会清除所有的子元素。</p>"}}

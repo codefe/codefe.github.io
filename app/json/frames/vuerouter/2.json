@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"路由的钩子函数","content":"<p></p><div><div>首页可以控制导航跳转，beforeEach，afterEach等，一般用于页面title的修改。<br>\n一些需要登录才能调整页面的重定向功能。<br>\nbeforeEach主要有3个参数to，from，next：<br>\nto：route即将进入的目标路由对象，<br>\nfrom：route当前导航正要离开的路由<br>\nnext：function一定要调用该方法resolve这个钩子。执行效果依赖next方法的调用参数。可以控制网页的跳转。</div><br></div>"}}

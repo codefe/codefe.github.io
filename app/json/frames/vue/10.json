@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Vue中key的作用","content":"<p>需要使用 key 给每一个节点做唯一标识，可让 diff 算法可以正确识别此节点，以更高效的更新虚拟 DOM。</p><p>新旧 children 中的节点只有顺序是不同的时候，最佳的操作应该是通过移动元素的位置来达到更新的目的&nbsp;</p><p>需要在新旧 children 的节点中保存映射关系，以便能够在旧 children 的节点中找到可复用的节点。</p><p>key也就是children中节点的唯一标识</p>"}}
