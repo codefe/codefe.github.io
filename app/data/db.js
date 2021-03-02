@@ -380,7 +380,24 @@ let db = [
                         title: '地理定位',
                         flag: 'recommend',
                         icon: './app/img/edu/Geolocation.jpg',
-                        desc: 'HTML5 Geolocation API 用于获得用户的地理位置。'
+                        desc: 'HTML5 Geolocation API 用于获得用户的地理位置。鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Geolocation对象的方法',
+                                url: 'html5-geolocation-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'getCurrentPosition',
+                                url: 'html5-geolocation-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'watchPosition',
+                                url: 'html5-geolocation-3'
+                            }
+                        ]
                     },
                     {
                         id: 110010,
@@ -412,32 +429,110 @@ let db = [
                     },
                     {
                         id: 110011,
-                        title: 'Battery',
-                        desc: 'Battery Status API，更多时候被称之为 Battery API, 提供了有关系统充电级别的信息并提供了通过电池等级或者充电状态的改变提醒用户的事件。 这个可以在设备电量低的时候调整应用的资源使用状态，或者在电池用尽前保存应用中的修改以防数据丢失。'
+                        title: '电池状态',
+                        desc: 'Battery Status API，更多时候被称之为 Battery API, 提供了有关系统充电级别的信息并提供了通过电池等级或者充电状态的改变提醒用户的事件。 这个可以在设备电量低的时候调整应用的资源使用状态，或者在电池用尽前保存应用中的修改以防数据丢失。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '获取电池状态的基本用法',
+                                url: 'html5-battery-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'getBattery方法返回值',
+                                url: 'html5-battery-2'
+                            },
+                            {
+                                id: 4,
+                                title: 'getBattery方法返回值详解',
+                                url: 'html5-battery-4'
+                            },
+                            {
+                                id: 3,
+                                title: 'Battery的事件',
+                                url: 'html5-battery-3'
+                            }
+                        ]
                     },
                     
                     {
                         id: 110012,
-                        title: 'Intersection Observer',
-                        desc: 'Intersection Observer API提供了一种异步检测目标元素与祖先元素或 viewport 相交情况变化的方法。比如，下面这些情况都需要用到相交检测：<br>图片懒加载——当图片滚动到可见时才进行加载<br>内容无限滚动——也就是用户滚动到接近内容底部时直接加载更多，而无需用户操作翻页，给用户一种网页可以无限滚动的错觉<br>检测广告的曝光情况——为了计算广告收益，需要知道广告元素的曝光情况<br>在用户看见某个区域时执行任务或播放动画'
+                        title: '交叉观察器',
+                        desc: 'Intersection Observer API提供了一种异步检测目标元素与祖先元素或 viewport 相交情况变化的方法。比如，下面这些情况都需要用到相交检测：<br>图片懒加载——当图片滚动到可见时才进行加载<br>内容无限滚动——也就是用户滚动到接近内容底部时直接加载更多，而无需用户操作翻页，给用户一种网页可以无限滚动的错觉<br>检测广告的曝光情况——为了计算广告收益，需要知道广告元素的曝光情况<br>在用户看见某个区域时执行任务或播放动画',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'IntersectionObserver API',
+                                url: 'html5-IntersectionObserver-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'IntersectionObserverEntry对象',
+                                url: 'html5-IntersectionObserver-2'
+                            },
+                            {
+                                id: 3,
+                                title: '惰性加载(lazy load)',
+                                url: 'html5-IntersectionObserver-3'
+                            },
+                            {
+                                id: 4,
+                                title: '无限滚动',
+                                url: 'html5-IntersectionObserver-4'
+                            },
+                            {
+                                id: 5,
+                                title: '注意点',
+                                url: 'html5-IntersectionObserver-5'
+                            }
+                        ]
                     },
                     {
                         id: 110013,
                         title: 'Navigation Timing',
-                        desc: 'Navigation Timing API 提供了可用于衡量一个网站性能的数据。与用于相同目的的其他基于JavaScript的机制不同，该API可以提供可以更有用和更准确的端到端延迟数据。'
+                        desc: 'Navigation Timing API 提供了可用于衡量一个网站性能的数据。与用于相同目的的其他基于JavaScript的机制不同，该API可以提供可以更有用和更准确的端到端延迟数据。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Navigation Timing API',
+                                url: 'html5-NavigationTiming-1'
+                            }
+                        ]
                     },
                     {
                         id: 110014,
-                        title: 'Network Information',
-                        desc: '网络状态 API 可以获取到系统的网络连接信息，比如说连接方式是 WiFi 还是蜂窝。应用程序可以根据此信息为用户展现不同清晰度的内容。'
+                        title: 'Page Visibility',
+                        desc: '使用选项卡式浏览，任何给定网页都有可能在后台，因此对用户不可见。页面可见性 API提供了您可以观察的事件，以便了解文档何时可见或隐藏，以及查看页面当前可见性状态的功能。页面可见性 API对于节省资源和提高性能特别有用，它使页面在文档不可见时避免执行不必要的任务。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Page Visibility API',
+                                url: 'html5-PageVisibility-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'document.visibilityState',
+                                url: 'html5-PageVisibility-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'document.hidden',
+                                url: 'html5-PageVisibility-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'visibilitychange事件',
+                                url: 'html5-PageVisibility-4'
+                            },
+                            {
+                                id: 5,
+                                title: '页面卸载',
+                                url: 'html5-PageVisibility-5'
+                            }
+                        ]
                     },
                     {
                         id: 110015,
-                        title: 'Page Visibility',
-                        desc: '使用选项卡式浏览，任何给定网页都有可能在后台，因此对用户不可见。页面可见性 API提供了您可以观察的事件，以便了解文档何时可见或隐藏，以及查看页面当前可见性状态的功能。页面可见性 API对于节省资源和提高性能特别有用，它使页面在文档不可见时避免执行不必要的任务。'
-                    },
-                    {
-                        id: 110016,
                         title: '手机振动',
                         desc: '现代浏览器里提供的新的API越来越倾向于移动手机应用，而不是传统的桌面应用，比如JavaScript地理位置信息API。另外一个只针对手机应用的JavaScript API就是振动(Vibration) API。很明显，这个API就是允许mobile程序员使用JavaScript调用手机的振动功能，并且能设定振动的方式和时长。',
                         child: [
@@ -449,36 +544,50 @@ let db = [
                         ]
                     },
                     {
-                        id: 110017,
-                        title: '电池状态',
-                        desc: '从Mozilla Aurora 11起，火狐浏览器里实现了一些新功能，其中一个就是对电池状态接口的基本实现。这个很简单的接口能提供你关于电池当前电量，是否在充电等信息，以及一些电池状态变化事件。',
+                        id: 110016,
+                        title: 'Touch Events',
+                        desc: '触摸事件接口是较为底层的 API，可为特定程序提供多点触控交互（比如双指手势）的支持。多点触控交互开始于一个手指（或触控笔）开始接触设备平面的时刻。随后其他手指也可触摸设备表面，并随意进行划动。当所有手指离开设备平面时，交互结束。整个交互期间，程序接收开始、移动、结束三个阶段的触摸事件。每 个 Touch 对象代表一个触点; 每个触点都由其位置，大小，形状，压力大小，和目标 element 描述。 TouchList 对象代表多个触点的一个列表.',
                         child: [
                             {
                                 id: 1,
-                                title: '获取电池状态的基本用法',
-                                url: 'html5-battery-1'
-                            },
+                                title: 'TouchEvents API',
+                                url: 'html5-TouchEvents-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 110017,
+                        title: 'URL',
+                        desc: 'URL API是一个URL标准的组件，它定义了有效的Uniform Resource Locator和访问、操作URL的API。URL标准还定义了像域名、主机和IP地址等概念，并尝试以标准的方式去描述用于以键/值对的形式提交web表单内容的遗留application/x-www-form-urlencoded MIME type 。',
+                        child: [
                             {
-                                id: 2,
-                                title: '获取电池状态的Promises用法',
-                                url: 'html5-battery-2'
+                                id: 1,
+                                title: 'URL API',
+                                url: 'html5-urlapi-1'
                             }
                         ]
                     },
                     {
                         id: 110018,
-                        title: 'Touch Events',
-                        desc: '触摸事件接口是较为底层的 API，可为特定程序提供多点触控交互（比如双指手势）的支持。多点触控交互开始于一个手指（或触控笔）开始接触设备平面的时刻。随后其他手指也可触摸设备表面，并随意进行划动。当所有手指离开设备平面时，交互结束。整个交互期间，程序接收开始、移动、结束三个阶段的触摸事件。'
-                    },
-                    {
-                        id: 110019,
-                        title: 'URL',
-                        desc: 'URL API是一个URL标准的组件，它定义了有效的Uniform Resource Locator和访问、操作URL的API。URL标准还定义了像域名、主机和IP地址等概念，并尝试以标准的方式去描述用于以键/值对的形式提交web表单内容的遗留application/x-www-form-urlencoded MIME type 。'
-                    },
-                    {
-                        id: 110020,
                         title: 'Notifications',
-                        desc: 'Notifications API 允许网页控制向最终用户显示系统通知 —这些都在顶级浏览上下文视口之外，因此即使用户已经切换标签页或移动到不同的应用程序，也可以显示。该API被设计成与不同平台上的现有通知系统兼容。'
+                        desc: 'Notifications API 允许网页控制向最终用户显示系统通知 —这些都在顶级浏览上下文视口之外，因此即使用户已经切换标签页或移动到不同的应用程序，也可以显示。该API被设计成与不同平台上的现有通知系统兼容。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Notifications API',
+                                url: 'html5-notifications-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'Notifications基础说明',
+                                url: 'html5-notifications-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'Notifications实例',
+                                url: 'html5-notifications-3'
+                            }
+                        ]
                     }
                 ]
             },
@@ -1418,7 +1527,29 @@ let db = [
                     {
                         id: 335501,
                         title: '常用函数',
-                        desc: '收集一些实用性很强的函数'
+                        desc: '收集一些实用性很强的函数',
+                        child: [
+                            {
+                                id: 1,
+                                title: '获取地址栏参数',
+                                url: 'js-casefun-1'
+                            },
+                            {
+                                id: 2,
+                                title: '判断微信浏览器',
+                                url: 'js-casefun-2'
+                            },
+                            {
+                                id: 3,
+                                title: '手机端判断浏览器类型',
+                                url: 'js-casefun-3'
+                            },
+                            {
+                                id: 4,
+                                title: '防抖&节流',
+                                url: 'js-casefun-4'
+                            }
+                        ]
                     },
                     {
                         id: 335502,

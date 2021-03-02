@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"注意点","content":"<p>IntersectionObserver API 是异步的，不随着目标元素的滚动同步触发。</p><p></p><p>规格写明，<code>IntersectionObserver</code>的实现，应该采用<code>requestIdleCallback()</code>，即只有线程空闲下来，才会执行观察器。这意味着，这个观察器的优先级非常低，只在其他任务执行完，浏览器有了空闲才会执行。</p>"}}

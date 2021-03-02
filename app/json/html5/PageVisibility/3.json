@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"document.hidden","content":"<p>由于历史原因，这个 API 还定义了<code>document.hidden</code>属性。该属性只读，返回一个布尔值，表示当前页面是否可见。</p><p>当<code>document.visibilityState</code>属性返回<code>visible</code>时，<code>document.hidden</code>属性返回<code>false</code>；其他情况下，都返回<code>true</code>。</p><p></p><p>该属性只是出于历史原因而保留的，只要有可能，都应该使用<code>document.visibilityState</code>属性，而不是使用这个属性。</p>"}}
