@@ -112,31 +112,8 @@
 <script src="./app/data/db.js"></script>
 <script src="./app/data/links.js"></script>
 <script src="./app/js/api.js"></script>
-<script src="./app/js/mouse.js"></script>
+<!-- <script src="./app/js/mouse.js"></script> -->
 <script>
-	//计算路径
-	// Gs.tmp = {};
-	// Gs.tmp.url = Gs.getPara('id').split('/');
-	// if(Gs.tmp.url.length===4){
-	// 	Gs.tmp.path = Gs.tmp.url[0]+'/'+Gs.tmp.url[1]+'/'+Gs.tmp.url[2];
-	// 	Gs.tmp.id = Gs.tmp.url[0]+'/'+Gs.tmp.url[1]+'/'+Gs.tmp.url[2]+'/'+Gs.tmp.url[3];
-	// }else if(Gs.tmp.url.length===3){
-	// 	Gs.tmp.path = Gs.tmp.url[0]+'/'+Gs.tmp.url[1];
-	// 	Gs.tmp.id = Gs.tmp.url[0]+'/'+Gs.tmp.url[1]+'/'+Gs.tmp.url[2];
-	// }else{
-	// 	Gs.tmp.path = Gs.tmp.url[0];
-	// 	Gs.tmp.id = Gs.tmp.url[0]+'/'+Gs.tmp.url[1];
-	// }
-	// //获取介绍及目录
-	// console.log(Gs.tmp.path)
-	// Gs.getData(Gs.tmp.path+'/index').then((jsona)=>{
-	// 	Gs.obj.initArticleDesc(jsona.data,'#articleDesc');
-	// 	//获取文章内容
-	// 	Gs.getData(Gs.tmp.id).then((jsonb)=>{
-	// 		Gs.obj.initArticle(jsonb.data,'#articleCon');
-	// 		document.title = jsonb.data.subTitle + ' - ' +jsona.data.name+ ' | 前端';
-	// 	});
-	// });
 	Gs.obj.initArticle();
 </script>
 </html>
