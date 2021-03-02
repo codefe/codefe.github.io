@@ -22,10 +22,10 @@ let links = {
 			name: "资源下载",
 			url: "./study.html?id=download"
 		},
-		{
-			name: "实例演示",
-			url: "./list.html?id=case"
-		}
+		// {
+		// 	name: "实例演示",
+		// 	url: "./list.html?id=case"
+		// }
 	],
     web: [
         {
