@@ -190,6 +190,12 @@ let links = {
         },
         {
             id: 4,
+            title: '技术胖',
+            icon: './app/img/expert/jspang.jpg',
+            url: 'http://jspang.com/'
+        },
+        {
+            id: 5,
             title: '刘龙宾',
             url: 'https://www.liulongbin.top/'
         }
