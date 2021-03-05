@@ -2404,7 +2404,14 @@ let db = [
                     {
                         id: 770001,
                         title: 'Vite',
-                        icon: ''
+                        desc: '相当于Vue项目构建的第二代产品，当然它也包含了项目的编译功能。需要注意一下Vite的生产环境下打包是通过Rollup来完成的',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'vite使用',
+                                url: 'tools-vite-1'
+                            }
+                        ]
                     },
                     {
                         id: 770002,
