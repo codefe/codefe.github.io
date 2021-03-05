@@ -2469,6 +2469,16 @@ let db = [
                                 id: 2,
                                 title: 'VSCODE解决禁止运行脚本',
                                 url: 'tools-vscode-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'VSCode里直接预览效果',
+                                url: 'tools-vscode-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'VSCode一个插件让你的代码更职业',
+                                url: 'tools-vscode-4'
                             }
                         ]
                     }
@@ -2581,6 +2591,64 @@ let db = [
                         id: 774402,
                         title: 'SVN',
                         icon: ''
+                    }
+                ]
+            },
+            {
+                id: 7755,
+                title: '服务',
+                child: [
+                    {
+                        id: 775500,
+                        title: 'Nginx',
+                        desc: 'Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'nginx环境安装',
+                                url: 'tools-nginx-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'nginx基本配置文件详解',
+                                url: 'tools-nginx-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'nginx服务启动、停止、重启',
+                                url: 'tools-nginx-3'
+                            },
+                            {
+                                id: 4,
+                                title: '自定义错误页和访问设置',
+                                url: 'tools-nginx-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'nginx访问权限详解',
+                                url: 'tools-nginx-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'nginx设置虚拟主机',
+                                url: 'tools-nginx-6'
+                            },
+                            {
+                                id: 7,
+                                title: 'nginx设置反向代理',
+                                url: 'tools-nginx-7'
+                            },
+                            {
+                                id: 8,
+                                title: 'nginx适配PC或移动设备',
+                                url: 'tools-nginx-8'
+                            },
+                            {
+                                id: 9,
+                                title: 'nginx的Gzip压缩配置',
+                                url: 'tools-nginx-9'
+                            }
+                        ]
                     }
                 ]
             }

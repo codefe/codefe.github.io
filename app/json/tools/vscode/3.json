@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"VSCode里直接预览效果","content":"<p>如果你没有双屏显示器，又不想来回切换窗口，而是直接在VSCode里进行预览，这简直太方便了<br></p><p>打开插件管理，然后搜索Browser Preview插件，直接进行安装。</p><p>安装完成后，在Bar上多出一个图标，点击图标就可以在VSCode里打开浏览器了。</p><p>修改默认打开网址</p><p>&nbsp;\n<br>现在的默认地址确实烦人，每次都要重新输入，这是一个有贞操的程序员所不能忍受的。所以我们按住ctrl + ,打开设置，然后找到Extensions,再找到Browser Preview,找到Start Url写上你默认打开的地址就可以了。</p>"}}
