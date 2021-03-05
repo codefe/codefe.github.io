@@ -2121,6 +2121,18 @@ let db = [
                         id: 443304,
                         title: 'clipboard',
                         desc: 'clipboard.js是一款轻量级的实现复制文本到剪贴板功能的JavaScript插件。通过该插件可以将输入框，文本域，DIV元素中的文本等文本内容复制到剪贴板中。它不依赖flash，使用非常简单。'
+                    },
+                    {
+                        id: 443305,
+                        title: 'lib-flexible',
+                        desc: '移动端自适配方案lib-flexible.js 的作用就是让你在不同的终端设备之间如鱼得水，如入无人之境。',
+                        child: [
+                            {
+                                id:1,
+                                title: '移动端自适配方案lib-flexible',
+                                url: 'frames-flexible-1'
+                            }
+                        ]
                     }
                 ]
             }
