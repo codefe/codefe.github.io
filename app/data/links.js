@@ -94,6 +94,11 @@ let links = {
             url: 'https://vue-test-utils.vuejs.org/zh/'
         },
         {
+            id: 15,
+            title: 'TransX',
+            url: 'https://github.com/tnfe/transx'
+        },
+        {
             id: 13,
             title: 'SnapSVG',
             url: 'http://snapsvg.io/'

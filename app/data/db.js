@@ -1848,6 +1848,11 @@ let db = [
                                 id:21,
                                 title: '在watch监听开始之后立即被调用',
                                 url: 'frames-vue-21'
+                            },
+                            {
+                                id:22,
+                                title: 'Vue自定义指令实现按钮级权限控制功能',
+                                url: 'frames-vue-22'
                             }
                         ]
                     },
