@@ -137,6 +137,106 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     border-left:2px solid #01c26f;
     margin-left:-2px;
 }
+/* search-box */
+.search-box {
+    padding:25px 20px;
+    position: relative;
+}
+.search-box input{
+    width: 150px;
+    border:1px solid #eee;
+    border-right:0;
+    border-radius: 3px 0 0 3px;
+    transition: width .3s ease-in-out;
+}
+.search-box input:focus{
+    border-color:#ddd;
+    color: #13d478;
+}
+.search-box dl{
+    position: absolute;
+    background-color: white;
+    right:0;
+    top:89px;
+    z-index: 8;
+    width:500px;
+    height:0px;
+    border-radius: 0 0 4px 4px;
+    border: 0px solid #ddd;
+    overflow: hidden;
+    transition:all .3s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.search-box dl p{
+    text-align: center;
+    color: red;
+    width:100%;
+    line-height: 260px;
+}
+.search-box dl a{
+    margin-right:15px;
+    color:#aaa;
+}
+.search-box dl a::before{
+    content:'•';
+    color:#ccc;
+    margin-right:5px;
+}
+.search-box dl a.colgreen::before{
+    content:'';
+    margin-right:0px;
+}
+.search-box dl a:hover{
+    text-decoration: underline;
+}
+.search-box dl a.colgreen{
+    color: #13d478;
+}
+.search-box dl span{
+    color: red;
+}
+.search-box dl dt{
+    width:100%;
+    height: 30px;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+}
+.search-box dl dd{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.search-box:hover dl{
+    border-width:1px;
+    height:300px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 3px 1px rgba(100,100,100,0.1);
+}
+.search-box button{
+    width: 50px;
+    cursor: pointer;
+    border:0;
+    background-image: linear-gradient(#01c26f,#13d478);
+    color:#fff;
+    border-radius: 0 3px 3px 0;
+}
+.search-box button:hover{
+    background-image: linear-gradient(#13d478,#01c26f);
+}
+.search-box dt{
+    line-height: 30px;
+    color: #13d478;
+    padding-left:20px;
+}
+.search-box dd{
+    line-height: 30px;
+    color: #ccc;
+    padding-left:40px;
+}
 /* foot */
 .foot{background-color:#fbfbfb;padding-bottom:20px;}
 .foot h5{text-align:center;font-size:16px;padding:20px;letter-spacing:5px;}

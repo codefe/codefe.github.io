@@ -2039,12 +2039,17 @@ let db = [
                     {
                         id: 440009,
                         title: 'Element',
-                        icon: ''
+                        desc: 'Element,一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库'
                     },
                     {
                         id: 440010,
+                        title: 'Vant',
+                        desc: 'Vant 是有赞开源的一套基于 vue 的Mobile 组件库。通过 Vant,可以快速搭建出风格统一的页面,提升开发效率。'
+                    },
+                    {
+                        id: 440011,
                         title: 'NutUI',
-                        icon: ''
+                        desc: 'NutUI 是一套来自京东用户体验设计部(JDC)前端开发部的移动端 Vue 组件库'
                     }
                 ]
             },

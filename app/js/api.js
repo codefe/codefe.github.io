@@ -1,4 +1,102 @@
 (function () {
+	//搜索
+	(function () {
+		let el = document.querySelector('#searchKey');
+		let btn = document.querySelector('#searchBtn');
+		if(el && btn){
+			btn.addEventListener('click', function () {
+				find(el.value);
+			});
+	
+			el.addEventListener('input', debounce(function(){
+				find(this.value);
+			},500));
+		}
+		
+		function find(str){
+			if(str.length<2){
+				upsearchdata([],str)
+				return;
+			}
+			let tmp = [];
+			db.filter(item=>{//第一层
+				let tp = [];
+				item.child.filter(itema=>{//第二层分类
+					itema.child.filter(itemb=>{//第三层主题
+						let arr = [];
+						itemb.child && itemb.child.filter(itemc=>{//文章层
+							if(itemc.title.indexOf(str) > -1){
+								arr.push(itemc);
+							}
+						});
+						if(arr.length>0 || itemb.title.indexOf(str) > -1){
+							tp.push({
+								id: itemb.id,
+								title: itemb.title,
+								child: arr
+							})
+						}
+					})
+				})
+				if(tp.length>0){
+					tmp.push({
+						id: item.id,
+						title:item.title,
+						child: tp
+					})
+				}
+			});
+			upsearchdata(tmp,str);
+		}
+		function upsearchdata(data,str){
+			let el = document.querySelector('#searchData');
+			let fragment = document.createDocumentFragment();
+			if(str.length<2){
+				let p = document.createElement('p');
+				p.appendChild(document.createTextNode('关键字不能少于2个字符'));
+				fragment.appendChild(p);
+			}else if(data.length===0){
+				let p = document.createElement('p');
+				p.appendChild(document.createTextNode('没有找到相关信息'));
+				fragment.appendChild(p);
+			}else{
+				for(let itema of data){
+					let dt = document.createElement('dt');
+					dt.innerHTML = `${itema.title}`;
+					fragment.appendChild(dt);
+					for(let itemb of itema.child){
+						let dd = document.createElement('dd');
+						let da = document.createElement('a');
+						da.className = 'colgreen';
+						da.href = '/list.html?id=' + itemb.id;
+						// da.appendChild(document.createTextNode(itemb.title));
+						da.innerHTML = itemb.title.replace(new RegExp(str,'g'), '<span>'+str+'</span>');
+						dd.appendChild(da);
+						for(let itemc of itemb.child){
+							let ha = document.createElement('a');
+							ha.href = '/article.html?id=' + itemc.url + '-' + itemb.id;
+							ha.innerHTML = itemc.title.replace(new RegExp(str,'g'), '<span>'+str+'</span>');
+							// ha.appendChild(document.createTextNode(itemc.title.replace(/str/g, '<span>'+str+'</span>')));
+							dd.appendChild(ha);
+						}
+						fragment.appendChild(dd);
+					}
+				}
+			}
+			el.innerHTML = '';
+			el.appendChild(fragment);
+		}
+	})();
+	//延迟函数防抖
+	function debounce(fn, delay = 500) {
+		let timer;
+		return function () {
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				fn.apply(this, arguments)
+			}, delay)
+		}
+	}
 	//模板替换
 	String.prototype.tpl = function (obj) {
 		return this.replace(/\$\w+\$/gi, function (matchs) {
@@ -27,7 +125,7 @@
 		},
 		//fetch网络请求
 		getData: function (url) {
-			alert('<img src="./app/img/common/loading.gif">','数据加载中...');
+			alert('<img src="./app/img/common/loading.gif">', '数据加载中...');
 			return new Promise(function (resolve, reject) {
 				fetch("./app/json/" + url + ".json?t=" + Date.now(), { method: 'GET' })
 					.then((response) => {
@@ -46,7 +144,7 @@
 						}, 500);
 						reject({ status: -1 });
 					})
-					.finally(()=>{
+					.finally(() => {
 						setTimeout(function () {
 							Gs.pop.hide();
 						}, 500);
@@ -146,7 +244,7 @@
 				this.hotList().then(html => {
 					Gs.$('#aside-hot').innerHTML = html;
 				});
-				this.getCount().then(rs=>{
+				this.getCount().then(rs => {
 					Gs.$('#count').innerHTML = rs.count;
 					Gs.$('#total').innerHTML = rs.total;
 				});
@@ -160,7 +258,7 @@
 				this.hotList().then(html => {
 					Gs.$('#aside-hot').innerHTML = html;
 				});
-				this.getCount().then(rs=>{
+				this.getCount().then(rs => {
 					Gs.$('#count').innerHTML = rs.count;
 					Gs.$('#total').innerHTML = rs.total;
 				});
@@ -181,7 +279,7 @@
 				this.hotList().then(html => {
 					Gs.$('#aside-hot').innerHTML = html;
 				});
-				this.getCount().then(rs=>{
+				this.getCount().then(rs => {
 					Gs.$('#count').innerHTML = rs.count;
 					Gs.$('#total').innerHTML = rs.total;
 				});
@@ -196,10 +294,10 @@
 				Gs.getData(url).then(rs => {
 					document.title = rs.data.subTitle + ' - 初学|前端进阶';
 					Gs.$('#articleCon').innerHTML = Gs.tpls.articleContent.tpl(rs.data);
-				}).catch(err=>{
+				}).catch(err => {
 					document.title = '初学|前端进阶';
 					let el = Gs.$('#articleCon');
-					if(el){
+					if (el) {
 						el.innerHTML = '<h2 class="nofile">没有找到相关文章</h2>';
 					}
 				});
@@ -212,8 +310,8 @@
 						Gs.$('#articleBox').innerHTML = '<h2 class="nofile">错误了,传参有误!!!</h2>';
 					}
 				});
-				
-				this.getCount().then(rs=>{
+
+				this.getCount().then(rs => {
 					Gs.$('#count').innerHTML = rs.count;
 					Gs.$('#total').innerHTML = rs.total;
 				});
@@ -221,13 +319,13 @@
 			//统计
 			getCount: function () {
 				return new Promise(resolve => {
-					let data = {count:0,total:0};
-					for(let ra of db){
-						for(let rb of ra.child){
-							for(let rc of rb.child){
+					let data = { count: 0, total: 0 };
+					for (let ra of db) {
+						for (let rb of ra.child) {
+							for (let rc of rb.child) {
 								data.count += 1;
-								if(rc.child && rc.child.length>0){
-									for(let rd of rc.child){
+								if (rc.child && rc.child.length > 0) {
+									for (let rd of rc.child) {
 										data.total += 1;
 									}
 								}
@@ -278,12 +376,12 @@
 					for (let ra of data.child) {
 						html += '<dl><dt><a href="javascript:void(0)">' + ra.title + '</a></dt><dd>';
 						for (let rb of ra.child) {
-							if(rb.child){
+							if (rb.child) {
 								html += '<a href="list.html?id=' + rb.id + '">' + rb.title + '</a>';
-							}else{
+							} else {
 								html += '<a class="ano" href="javascript:;">' + rb.title + '</a>';
 							}
-							
+
 						}
 						html += '</dd></dl>'
 					}
@@ -480,10 +578,10 @@
 				let url = this.getUrl();
 				let html = '';
 				if (data.child.length > 0) {
-					for (let [key,item] of Object.entries(data.child)) {
-						if(url.args === item.url+'-'+data.id){
+					for (let [key, item] of Object.entries(data.child)) {
+						if (url.args === item.url + '-' + data.id) {
 							html += `<dd><a class="cur" href="article.html?id=${item.url}-${data.id}">${key}. ${item.title}</a></dd>`;
-						}else{
+						} else {
 							html += `<dd><a href="article.html?id=${item.url}-${data.id}">${key}. ${item.title}</a></dd>`;
 						}
 					}
@@ -523,19 +621,19 @@
 				this.ok.addEventListener('click', this.hide);
 				this.bg.addEventListener('click', this.hide);
 			},
-			alert: function (msg,title='提示') {
+			alert: function (msg, title = '提示') {
 				this.init();
 				this.title.innerHTML = title;
-				if(title === '数据加载中...'){
+				if (title === '数据加载中...') {
 					this.btnc.style.display = 'none';
 					this.bg.style.display = 'none';
-				}else{
+				} else {
 					this.btnc.style.display = 'block';
 					this.bg.style.display = 'block';
 				}
-				if(this.msg) {
+				if (this.msg) {
 					this.msg.innerHTML = msg;
-				} 
+				}
 			},
 			hasClass: function (ele, cls) {
 				return ele.className.match(new RegExp("(\\s|^)" + cls + "(\\s|$)"));
@@ -647,7 +745,7 @@
 		}
 	};
 	window.Gs = Gs;
-	window.alert = function (msg,title) {
-		Gs.pop.alert(msg,title);
+	window.alert = function (msg, title) {
+		Gs.pop.alert(msg, title);
 	}
 })();
