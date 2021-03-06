@@ -2006,7 +2006,20 @@ let db = [
                     {
                         id: 440005,
                         title: 'VueCLI',
-                        icon: './app/img/edu/vuecli.jpg'
+                        desc: 'Vue-cli是vue官方出品的快速构建单页应用的脚手架',
+                        icon: './app/img/edu/vuecli.jpg',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'vue init命令来初始化项目',
+                                url: 'frames-vuecli-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'VueCLI项目结构详解',
+                                url: 'frames-vuecli-2'
+                            }
+                        ]
                     },
                     {
                         id: 440006,
