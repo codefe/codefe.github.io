@@ -14,7 +14,7 @@
 		}
 		
 		function find(str){
-			if(str.length<1){
+			if(str.length<2){
 				upsearchdata([],str)
 				return;
 			}
@@ -51,7 +51,7 @@
 		function upsearchdata(data,str){
 			let el = document.querySelector('#searchData');
 			let fragment = document.createDocumentFragment();
-			if(str.length<1){
+			if(str.length<2){
 				let p = document.createElement('p');
 				p.appendChild(document.createTextNode('关键字不能少于2个字符'));
 				fragment.appendChild(p);
