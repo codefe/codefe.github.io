@@ -245,7 +245,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .foot-boxa a{display:inline-table;padding:0 5px;height:20px;line-height:20px;border:1px solid rgba(255,255,255,.5);text-align:center;color:rgba(255,255,255,.8);}
 .foot-a a{margin:0 15px;color:rgba(255,255,255,.8);}
 
-.foot-nav{padding:0 30px;border-bottom:1px solid #ddd;box-shadow: 0 1px 3px rgb(100 100 100 / 10%);}
+.foot-nav{padding:0 30px;border-bottom:1px solid #ddd;box-shadow: 0 1px 5px rgba(0,0,0,.03);}
 .foot-nav dl{flex:1;border-right:1px solid rgba(0,0,0,.05);padding:20px 10px;}
 .foot-nav dl:last-child{border-right:0;}
 .foot-nav dt{margin-bottom:10px;color:#bbb;}
