@@ -14,7 +14,7 @@
 		}
 		
 		function find(str){
-			if(str.length<2){
+			if(str.length<1){
 				upsearchdata([],str)
 				return;
 			}
@@ -51,7 +51,7 @@
 		function upsearchdata(data,str){
 			let el = document.querySelector('#searchData');
 			let fragment = document.createDocumentFragment();
-			if(str.length<2){
+			if(str.length<1){
 				let p = document.createElement('p');
 				p.appendChild(document.createTextNode('关键字不能少于2个字符'));
 				fragment.appendChild(p);
@@ -82,6 +82,9 @@
 						fragment.appendChild(dd);
 					}
 				}
+				let objdiv = document.createElement('div');//加入一行空的div
+				objdiv.appendChild(document.createTextNode('\u00A0'));
+				fragment.appendChild(objdiv);
 			}
 			el.innerHTML = '';
 			el.appendChild(fragment);

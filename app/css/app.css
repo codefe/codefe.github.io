@@ -16,7 +16,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .nos{
     user-select: none;
 }
-/* webkit scrollbar */
+/* chrome scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -36,7 +36,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     background-color: #BBB;
 }
 /* firefox scrollbar */
-:root {
+:root,.search-box dl {
     scrollbar-color: #ddd transparent;
     scrollbar-width: thin;
 }
@@ -171,7 +171,6 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     overflow: hidden;
     transition:all .3s ease-in-out;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -181,6 +180,9 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     color: red;
     width:100%;
     line-height: 260px;
+}
+.search-box dl div{
+    height: 30px;
 }
 .search-box dl a{
     margin-right:15px;
@@ -205,20 +207,30 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     color: red;
 }
 .search-box dl dt{
-    width:100%;
     height: 30px;
+    width:100%;
     border-bottom: 1px solid #eee;
     background: #f8f8f8;
+    line-height: 30px;
+    color: #13d478;
+    padding-left:20px;
 }
 .search-box dl dd{
     word-wrap: break-word;
     word-break: break-all;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    line-height: 30px;
+    color: #ccc;
+    padding-left:40px;
 }
 .search-box:hover dl{
     border-width:1px;
     height:300px;
     overflow-y: auto;
-    padding-bottom: 20px;
+    /* padding-bottom: 30px; */
     box-shadow: 0 2px 3px 1px rgba(100,100,100,0.1);
 }
 .search-box button{
@@ -232,16 +244,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .search-box button:hover{
     background-image: linear-gradient(#13d478,#01c26f);
 }
-.search-box dt{
-    line-height: 30px;
-    color: #13d478;
-    padding-left:20px;
-}
-.search-box dd{
-    line-height: 30px;
-    color: #ccc;
-    padding-left:40px;
-}
+
 /* foot */
 .foot{background-color:#fbfbfb;padding-bottom:20px;}
 .foot h5{text-align:center;font-size:16px;padding:20px;letter-spacing:5px;}
