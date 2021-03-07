@@ -153,6 +153,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     border-right:0;
     border-radius: 3px 0 0 3px;
     transition: width .3s ease-in-out;
+    padding: 0 10px;
 }
 .search-box input:focus{
     border-color:#ddd;
@@ -374,6 +375,11 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .article-content article a{color:#01c26f;text-decoration:underline;}
 .article-content article a:after{display:inline-table;content:'→';font-size:14px; transform:rotate(-45deg);}
 
+.possticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 .article-list{margin:10px;}
 .article-list dt{padding-left:20px;border-bottom:1px dashed #ddd;line-height:40px;color:#ccc;font-weight:400;}
 .article-list dd{padding-left:10px;font-size:12px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
