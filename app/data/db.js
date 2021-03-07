@@ -211,95 +211,6 @@ let db = [
                         ]
                     },
                     {
-                        id: 110006,
-                        title: 'Fetch',
-                        flag: 'recommend,hot',
-                        icon: './app/img/edu/fetch.jpg',
-                        desc: 'XMLHttpRequest来完成ajax有些老而过时了。fetch()能让我们完成类似 XMLHttpRequest (XHR) 提供的ajax功能。它们之间的主要区别是，Fetch API 使用了 Promises，它让接口更简单、简洁，避免了回调的复杂性，省去了使用复杂的 XMLHttpRequest API。',
-                        child: [
-                            {
-                                id: 1,
-                                title: '基本Fetch用法',
-                                url: 'html5-fetch-1'
-                            },
-                            {
-                                id: 2,
-                                title: '返回数据对象的元数据(Metadata)',
-                                url: 'html5-fetch-2'
-                            },
-                            {
-                                id: 3,
-                                title: '响应的对象Response类型',
-                                url: 'html5-fetch-3'
-                            },
-                            {
-                                id: 4,
-                                title: '串联Promises',
-                                url: 'html5-fetch-4'
-                            },
-                            {
-                                id: 5,
-                                title: '用fetch执行表单数据提交',
-                                url: 'html5-fetch-5'
-                            },
-                            {
-                                id: 6,
-                                title: '在Fetch请求里发送用户身份凭证信息',
-                                url: 'html5-fetch-6'
-                            },
-                            {
-                                id: 14,
-                                title: 'POST请求',
-                                url: 'html5-fetch-14'
-                            },
-                            {
-                                id: 7,
-                                title: '提交JSON数据',
-                                url: 'html5-fetch-7'
-                            },
-                            {
-                                id: 8,
-                                title: '提交表单',
-                                url: 'html5-fetch-8'
-                            },
-                            {
-                                id: 9,
-                                title: '文件上传',
-                                url: 'html5-fetch-9'
-                            },
-                            {
-                                id: 10,
-                                title: '直接上传二进制数据',
-                                url: 'html5-fetch-10'
-                            },
-                            {
-                                id: 11,
-                                title: 'cache',
-                                url: 'html5-fetch-11'
-                            },
-                            {
-                                id: 12,
-                                title: 'credentials是否发送Cookie',
-                                url: 'html5-fetch-12'
-                            },
-                            {
-                                id: 13,
-                                title: '取消fetch请求',
-                                url: 'html5-fetch-13'
-                            },
-                            {
-                                id: 15,
-                                title: '读取内容的方法',
-                                url: 'html5-fetch-15'
-                            },
-                            {
-                                id: 16,
-                                title: 'Response.clone',
-                                url: 'html5-fetch-16'
-                            }
-                        ]
-                    },
-                    {
                         id: 110007,
                         title: 'SSE',
                         desc: '服务器发送事件（Server-sent Events）是基于 WebSocket 协议的一种服务器向客户端发送事件和数据的单向通讯。SSE允许网页获得来自服务器的更新。以前也可能做到这一点，前提是网页不得不询问是否有可用的更新。通过服务器发送事件，更新能够自动到达。例子：Facebook/Twitter 更新、股价更新、新的博文、赛事结果等。',
@@ -1442,6 +1353,95 @@ let db = [
                     },
                     {
                         id: 331110,
+                        title: 'Fetch',
+                        flag: 'recommend,hot',
+                        icon: './app/img/edu/fetch.jpg',
+                        desc: 'XMLHttpRequest来完成ajax有些老而过时了。fetch()能让我们完成类似 XMLHttpRequest (XHR) 提供的ajax功能。它们之间的主要区别是，Fetch API 使用了 Promises，它让接口更简单、简洁，避免了回调的复杂性，省去了使用复杂的 XMLHttpRequest API。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '基本Fetch用法',
+                                url: 'js-fetch-1'
+                            },
+                            {
+                                id: 2,
+                                title: '返回数据对象的元数据(Metadata)',
+                                url: 'js-fetch-2'
+                            },
+                            {
+                                id: 3,
+                                title: '响应的对象Response类型',
+                                url: 'js-fetch-3'
+                            },
+                            {
+                                id: 4,
+                                title: '串联Promises',
+                                url: 'js-fetch-4'
+                            },
+                            {
+                                id: 5,
+                                title: '用fetch执行表单数据提交',
+                                url: 'js-fetch-5'
+                            },
+                            {
+                                id: 6,
+                                title: '在Fetch请求里发送用户身份凭证信息',
+                                url: 'js-fetch-6'
+                            },
+                            {
+                                id: 14,
+                                title: 'POST请求',
+                                url: 'js-fetch-14'
+                            },
+                            {
+                                id: 7,
+                                title: '提交JSON数据',
+                                url: 'js-fetch-7'
+                            },
+                            {
+                                id: 8,
+                                title: '提交表单',
+                                url: 'js-fetch-8'
+                            },
+                            {
+                                id: 9,
+                                title: '文件上传',
+                                url: 'js-fetch-9'
+                            },
+                            {
+                                id: 10,
+                                title: '直接上传二进制数据',
+                                url: 'js-fetch-10'
+                            },
+                            {
+                                id: 11,
+                                title: 'cache',
+                                url: 'js-fetch-11'
+                            },
+                            {
+                                id: 12,
+                                title: 'credentials是否发送Cookie',
+                                url: 'js-fetch-12'
+                            },
+                            {
+                                id: 13,
+                                title: '取消fetch请求',
+                                url: 'js-fetch-13'
+                            },
+                            {
+                                id: 15,
+                                title: '读取内容的方法',
+                                url: 'js-fetch-15'
+                            },
+                            {
+                                id: 16,
+                                title: 'Response.clone',
+                                url: 'js-fetch-16'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331111,
                         title: 'JSON',
                         flag: 'recommend',
                         icon: './app/img/edu/json.jpg',

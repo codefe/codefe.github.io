@@ -99,7 +99,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .head{background: #f8f8f8;height: 90px;border-bottom: 1px solid #ddd;/**/box-shadow: 0 1px 3px rgba(100,100,100,0.1);padding:0 20px;}
 .head h1{padding:20px 0 0 0px;width:140px;border-right:1px solid #e8e8e8;}
 .head-right{border-left:1px solid #01c26f;}
-.head-right .popmenu{height:0px;position:absolute;top:90px;left:-1px;right:-1px;background:#fff;border-radius:0 0 4px 4px;border:0px solid #ddd;overflow:hidden;line-height:40px;transition:all 0.5s;z-index:999;}
+.head-right .popmenu{height:0px;position:absolute;top:90px;left:-1px;right:-1px;background:#fff;border-radius:0 0 4px 4px;border:0px solid #ddd;overflow:hidden;line-height:40px;transition:all 0.3s;z-index:999;}
 .head-right:hover .popmenu{border:1px solid #ddd;border-top:0;box-shadow: 0 2px 3px 1px rgba(100,100,100,0.1);}
 .head-right .popmenu .exit{border-top:1px solid #ddd;}
 .head-right li:hover{background-color:#f1f1f1;}
@@ -113,7 +113,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .head-nav{background-image:linear-gradient(#13d478,#01c26f,#13d478);width:120px;height:90px;cursor:pointer;position:relative;}
 .head-nav span{display:block;font-size:16px;width:100%;height:100%;position:relative;line-height:90px;text-indent:20px;color:#fff;}
 .head-nav:hover span{color:#ff0;}
-.head-nav span:after,.head-nav span:before{content:"";width:15px;height:1px;background:#fff;position:absolute;top:45px;transition:all 0.5s;}
+.head-nav span:after,.head-nav span:before{content:"";width:15px;height:1px;background:#fff;position:absolute;top:45px;transition:all 0.3s;}
 .head-nav span:after{right:17px;transform:rotate(45deg);}
 .head-nav span:before{right:27px;transform:rotate(-45deg);}
 .head-nav:hover span:after{right:27px;background:#ff0;}
