@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"指令的执行原理","content":"<p></p><div><div>在模版阶段，会将节点上的指令解析处理并添加到AST的directives属性中。</div><div>随后directives数据会传到Vnode中，接着就可以通过vnode.data.directives获取一个节点所绑定的指令。</div><div>最后，当VDom进行修补时，会根据节点的对比结果触发一些钩子函数。</div><div>更新指令的程序会监听create,update,destory钩子函数，并在这三个钩子函数出发时对VNode和oldVNode进行对比，最终根据对比触发指令的钩子函数。</div><br></div>"}}

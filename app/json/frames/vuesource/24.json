@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"Vue的事件绑定原理","content":"<p>1. 原生 DOM 的绑定：Vue在创建真实DOM时会调用 createElm ，默认会调用 invokeCreateHooks 。会遍历当前平台下相对的属性处理代码，其中就有 updateDOMListeners 方法，内部会传入 add（） 方法&nbsp;</p><p>&nbsp;2. 组件绑定事件，原生事件，自定义事件；组件绑定之间是通过Vue中自定义的 $on 方法实现的。&nbsp;</p><p>&nbsp;（可以理解为：组件的 nativeOnOn 等价于 普通元素on 组件的on会单独处理）</p>"}}

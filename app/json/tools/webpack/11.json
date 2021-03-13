@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"externals拒绝包打入","content":"<pre><code>module.exports={\n   // 拒绝包打入\n  externals:{\n    // 包名：npm下载的包名\n    jquery:'jQuery'\n  }\n}</code></pre><p><br></p>"}}
