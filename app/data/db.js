@@ -2343,6 +2343,12 @@ let db = [
                         title: 'Weex',
                         flag: 'recommend',
                         icon: './app/img/edu/weex.jpg'
+                    },
+                    {
+                        id: 660002,
+                        title: 'uni-app',
+                        flag: 'recommend',
+                        icon: './app/img/edu/uniapp.jpg'
                     }
                 ]
             },
