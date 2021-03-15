@@ -546,6 +546,16 @@ let db = [
                                 id: 1,
                                 title: '文本的语音朗读',
                                 url: 'html5-audio-1'
+                            },
+                            {
+                                id: 2,
+                                title: '文本合成语音',
+                                url: 'html5-audio-2'
+                            },
+                            {
+                                id: 3,
+                                title: '网页中文本朗读功能开发实现',
+                                url: 'html5-audio-3'
                             }
                         ]
                     },
@@ -913,7 +923,22 @@ let db = [
                                 id: 1,
                                 title: '正则表达式图示',
                                 url: 'js-regexp-1'
-                            }
+                            },
+                            {id:2,title:"test,exec,match,replace方法的区别",url: 'js-regexp-2'},
+                            {id:3,title:"元字符",url: 'js-regexp-3'},
+                            {id:4,title:"非打印字符",url: 'js-regexp-4'},
+                            {id:5,title:"特殊字符",url: 'js-regexp-5'},
+                            {id:6,title:"限定符",url: 'js-regexp-6'},
+                            {id:7,title:"定位符",url: 'js-regexp-7'},
+                            {id:8,title:"选择",url: 'js-regexp-8'},
+                            {id:9,title:"反向引用",url: 'js-regexp-9'},
+                            {id:10,title:"运算符优先级",url: 'js-regexp-10'},
+                            {id:11,title:"基本模式匹配",url: 'js-regexp-11'},
+                            {id:12,title:"字符簇",url: 'js-regexp-12'},
+                            {id:13,title:"确定重复出现",url: 'js-regexp-13'},
+                            {id:14,title:"常见表达式示例",url: 'js-regexp-14'},
+                            {id:15,title:"去除字符串左右两端的空格",url: 'js-regexp-15'},
+                            {id:16,title:"正则验证固话与手机",url: 'js-regexp-16'}
                         ]
                     },
                     {
@@ -2264,7 +2289,18 @@ let db = [
                         title: 'React',
                         flag: 'recommend',
                         icon: './app/img/edu/react.jpg',
-                        desc: 'React 是一个用于构建用户界面的 JAVASCRIPT 库。 React主要用于构建UI,很多人认为 React 是 MVC 中的 V(视图)。'
+                        desc: 'React 是一个用于构建用户界面的 JAVASCRIPT 库。 React主要用于构建UI,很多人认为 React 是 MVC 中的 V(视图)。',
+                        child: [
+                            {id:1,title:"阻止多次点击",url:"frames-react-1"},
+                            {id:2,title:"在create-react-app中使用装饰器",url:"frames-react-2"},
+                            {id:3,title:"render里面尽量减少新建变量和bind函数",url:"frames-react-3"},
+                            {id:4,title:"定制shouldComponentUpdate函数",url:"frames-react-4"},
+                            {id:5,title:"Immutable.js",url:"frames-react-5"},
+                            {id:6,title:"多个react组件性能优化，key的优化",url:"frames-react-6"},
+                            {id:7,title:"带坑的写法",url:"frames-react-7"},
+                            {id:8,title:"首屏加载优化",url:"frames-react-8"},
+                            {id:9,title:"在生产中部署ES2015+代码",url:"frames-react-9"}
+                        ]
                     },
                     {
                         id: 441101,
@@ -2375,7 +2411,10 @@ let db = [
                     {
                         id: 443304,
                         title: 'Syntaxy',
-                        desc: 'Syntaxy.js是一款小巧灵活的网页语法高亮js插件。Syntaxy.js支持各种主流的编程语言，提供3种主题样式。它默认是JS插件，但是也可以作为jQuery插件来使用。'
+                        desc: 'Syntaxy.js是一款小巧灵活的网页语法高亮js插件。Syntaxy.js支持各种主流的编程语言，提供3种主题样式。它默认是JS插件，但是也可以作为jQuery插件来使用。',
+                        child: [
+                            {id:1,title:"使用方法",url:"frames-syntaxy-1"},
+                        ]
                     },
                     {
                         id: 443305,
@@ -2399,6 +2438,58 @@ let db = [
                                 id:1,
                                 title: '移动端自适配方案lib-flexible',
                                 url: 'frames-flexible-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 443307,
+                        title: 'vue-simple-uploader',
+                        desc: '基于vue-simple-uploader封装文件分片上传、秒传及断点续传的全局上传插件',
+                        child: [
+                            {
+                                id:1,
+                                title: '关于vue-simple-uploader',
+                                url: 'frames-vueSimpleUploader-1'
+                            },
+                            {
+                                id:2,
+                                title: '基于vue-simple-uploader封装全局上传组件',
+                                url: 'frames-vueSimpleUploader-2'
+                            },
+                            {
+                                id:3,
+                                title: '文件上传流程概览',
+                                url: 'frames-vueSimpleUploader-3'
+                            },
+                            {
+                                id:4,
+                                title: '文件分片',
+                                url: 'frames-vueSimpleUploader-4'
+                            },
+                            {
+                                id:5,
+                                title: 'MD5的计算过程',
+                                url: 'frames-vueSimpleUploader-5'
+                            },
+                            {
+                                id:6,
+                                title: '秒传及断点续传',
+                                url: 'frames-vueSimpleUploader-6'
+                            },
+                            {
+                                id:7,
+                                title: '对于前端来说',
+                                url: 'frames-vueSimpleUploader-7'
+                            },
+                            {
+                                id:8,
+                                title: '前端做分片检验',
+                                url: 'frames-vueSimpleUploader-8'
+                            },
+                            {
+                                id:9,
+                                title: '源码及后记',
+                                url: 'frames-vueSimpleUploader-9'
                             }
                         ]
                     }
