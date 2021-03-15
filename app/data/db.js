@@ -540,7 +540,14 @@ let db = [
                         title: '音频',
                         flag: 'recommend',
                         icon: './app/img/edu/speak.jpg',
-                        desc: 'Web Audio API 提供了在Web上控制音频的一个非常有效通用的系统，允许开发者来自选音频源，对音频添加特效，使音频可视化，添加空间效果 （如平移），等等。'
+                        desc: 'Web Audio API 提供了在Web上控制音频的一个非常有效通用的系统，允许开发者来自选音频源，对音频添加特效，使音频可视化，添加空间效果 （如平移），等等。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '文本的语音朗读',
+                                url: 'html5-audio-1'
+                            }
+                        ]
                     },
                     {
                         id: 111102,
@@ -553,7 +560,32 @@ let db = [
                         id: 111103,
                         title: 'WebGL',
                         icon: './app/img/edu/webgl.jpg',
-                        desc: 'WebGL（Web图形库）是Web上的3D图形的新标准，它是专用于绘制2D图形和交互式3D图形的目的。它是从OpenGL ES 2.0库，用于手机和其他移动设备的低级3D的API衍生。 WebGL提供ES2.0（嵌入式系统）类似的功能并在现代3D图形硬件上表现优异。它可以与HTML5使用一个JavaScript的API。 HTML5有几个功能，支持3D图形，如2D画布，WebGL，SVG，CSS3D变换和SMIL。WebGL代码编写在HTML5的canvas标签内。它是一种规范，允许互联网浏览器使用的计算机访问图形处理单元（GPU）。'
+                        desc: 'WebGL（Web图形库）是Web上的3D图形的新标准，它是专用于绘制2D图形和交互式3D图形的目的。它是从OpenGL ES 2.0库，用于手机和其他移动设备的低级3D的API衍生。 WebGL提供ES2.0（嵌入式系统）类似的功能并在现代3D图形硬件上表现优异。它可以与HTML5使用一个JavaScript的API。 HTML5有几个功能，支持3D图形，如2D画布，WebGL，SVG，CSS3D变换和SMIL。WebGL代码编写在HTML5的canvas标签内。它是一种规范，允许互联网浏览器使用的计算机访问图形处理单元（GPU）。',
+                        child: [
+                            {id:1,title:"WebGL是什么东西?",url:"html5-webgl-1"},
+                            {id:2,title:"WebGL的优势",url:"html5-webgl-2"},
+                            {id:3,title:"WebGL基本图形概念",url:"html5-webgl-3"},
+                            {id:4,title:"Html5 Canvas介绍",url:"html5-webgl-4"},
+                            {id:5,title:"WebGL基础",url:"html5-webgl-5"},
+                            {id:6,title:"WebGL着色器程序",url:"html5-webgl-6"},
+                            {id:7,title:"WebGL图形管线",url:"html5-webgl-7"},
+                            {id:8,title:"WebGL示例程序",url:"html5-webgl-8"},
+                            {id:9,title:"WebGL Context上下文",url:"html5-webgl-9"},
+                            {id:10,title:"WebGL几何体",url:"html5-webgl-10"},
+                            {id:11,title:"WebGL着色器",url:"html5-webgl-11"},
+                            {id:12,title:"WebGL关联属性和缓冲区对象",url:"html5-webgl-12"},
+                            {id:13,title:"WebGL绘制模型",url:"html5-webgl-13"},
+                            {id:14,title:"WebGL绘制点",url:"html5-webgl-14"},
+                            {id:15,title:"WebGL绘制三角形",url:"html5-webgl-15"},
+                            {id:16,title:"WebGL绘图的模式",url:"html5-webgl-16"},
+                            {id:17,title:"WebGL绘制四边形",url:"html5-webgl-17"},
+                            {id:18,title:"WebGL颜色",url:"html5-webgl-18"},
+                            {id:19,title:"WebGL平移",url:"html5-webgl-19"},
+                            {id:20,title:"WebGL缩放",url:"html5-webgl-20"},
+                            {id:21,title:"WebGL旋转",url:"html5-webgl-21"},
+                            {id:22,title:"WebGL立方体旋转",url:"html5-webgl-22"},
+                            {id:23,title:"WebGL交互式立方体",url:"html5-webgl-23"}
+                        ]
                     },
                     {
                         id: 111104,
@@ -570,7 +602,40 @@ let db = [
                         title: 'SVG',
                         flag: 'recommend,hot',
                         icon: './app/img/edu/svg.jpg',
-                        desc: 'HTML5 支持内联 SVG,可伸缩矢量图形。'
+                        desc: 'HTML5 支持内联 SVG,可伸缩矢量图形。',
+                        child: [
+                            {id:1,title:"模糊滤镜",url:"html5-svg-feGaussianBlur"},
+                            {id:2,title:"投/阴影滤镜",url:"html5-svg-dropShadow"},
+                            {id:3,title:"feBlend",url:"html5-svg-feBlend"},
+                            {id:4,title:"feColorMatrix",url:"html5-svg-feColorMatrix"},
+                            {id:5,title:"feComponentTransfer",url:"html5-svg-feComponentTransfer"},
+                            {id:6,title:"feDiffuseLighting",url:"html5-svg-feDiffuseLighting"},
+                            {id:7,title:"线性渐变色",url:"html5-svg-linearGradient"},
+				            {id:8,title:"辐射式渐变色",url:"html5-svg-radialGradient"},
+                            {id:9,title:"animation概览",url:"html5-svg-1"},
+                            {id:10,title:"animation概览 set",url:"html5-svg-2"},
+                            {id:11,title:"animate",url:"html5-svg-3"},
+                            {id:12,title:"animateTransform",url:"html5-svg-4"},
+                            {id:13,title:"animateMotion",url:"html5-svg-5"},
+                            {id:14,title:"自由组合",url:"html5-svg-6"},
+                            {id:15,title:"暂停与播放",url:"html5-svg-7"},
+                            {id:16,title:"animation参数详解",url:"html5-svg-8"}
+                        ]
+                    },
+                    {
+                        id: 111107,
+                        title: 'IndexedDB',
+                        desc: 'IndexedDB是HTML5规范里新出现的浏览器里内置的数据库。对于在浏览器里存储数据，你可以使用cookies或local storage，但它们都是比较简单的技术，而IndexedDB提供了类似数据库风格的数据存储和使用方式。存储在IndexedDB里的数据是永久保存，不像cookies那样只是临时的。IndexedDB里提供了查询数据的功能，在online和offline模式下都能使用。你可以用IndexedDB存储大型数据。<br>IndexedDB里数据以对象的形式存储，每个对象都有一个key值索引。IndexedDB里的操作都是事务性的。一种对象存储在一个objectStore里，objectStore就相当于关系数据库里的表。IndexedDB可以有很多objectStore，objectStore里可以有很多对象。每个对象可以用key值获取。',
+                        child: [
+                            {id:1,title:"IndexedDB vs LocalStorage",url:"html5-IndexedDB-1"},
+                            {id:2,title:"IndexedDB vs Web SQL",url:"html5-IndexedDB-2"},
+                            {id:3,title:"IndexedDB vs Cookies",url:"html5-IndexedDB-3"},
+                            {id:4,title:"打开一个IndexedDB数据库",url:"html5-IndexedDB-4"},
+                            {id:5,title:"往ObjectStore里新增对象",url:"html5-IndexedDB-5"},
+                            {id:6,title:"从ObjectStore里删除对象",url:"html5-IndexedDB-6"},
+                            {id:7,title:"通过key取出对象",url:"html5-IndexedDB-7"},
+                            {id:8,title:"更新一个对象",url:"html5-IndexedDB-8"}
+                        ]
                     }
                 ]
             },
@@ -781,6 +846,13 @@ let db = [
                 child: [
                     {
                         id: 223300,
+                        title: '移动端',
+                        child: [
+                            {id:1,title:"修改手机地址栏状态栏颜色",url:"css3-mt-1"}
+                        ]
+                    },
+                    {
+                        id: 223301,
                         title: '布局适配',
                         flag: 'recommend',
                         icon: './app/img/edu/layout.jpg'
@@ -965,6 +1037,11 @@ let db = [
                                 id: 8,
                                 title: 'Array.from达到.map 的效果',
                                 url: 'js-array-8'
+                            },
+                            {
+                                id: 9,
+                                title: '5种迭代方法',
+                                url: 'js-array-9'
                             }
                         ]
                     },
@@ -1494,8 +1571,13 @@ let db = [
                             },
                             {
                                 id: 5,
-                                title: 'JSON.parse',
+                                title: 'stringify定义toJSON',
                                 url: 'js-json-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'JSON.parse',
+                                url: 'js-json-6'
                             }
                         ]
                     }
@@ -1611,11 +1693,6 @@ let db = [
                 id: 3355,
                 title: '实例',
                 child: [
-                    {
-                        id: 335500,
-                        title: '功能开发',
-                        desc: '收集一些实用性很强的功能接口'
-                    },
                     {
                         id: 335501,
                         title: '常用函数',
@@ -1735,6 +1812,61 @@ let db = [
                                 id: 23,
                                 title: '把原始list转换成树形结构',
                                 url: 'js-casefun-23'
+                            },
+                            {
+                                id: 24,
+                                title: '删除左右两端的空格',
+                                url: 'js-casefun-24'
+                            },
+                            {
+                                id: 25,
+                                title: '判断密码强度',
+                                url: 'js-casefun-25'
+                            },
+                            {
+                                id: 26,
+                                title: '判断是否为email',
+                                url: 'js-casefun-26'
+                            },
+                            {
+                                id: 27,
+                                title: '生成X位随机数',
+                                url: 'js-casefun-27'
+                            },
+                            {
+                                id: 28,
+                                title: '获取日期前几后几天',
+                                url: 'js-casefun-28'
+                            },
+                            {
+                                id: 29,
+                                title: '获取最近的12个月份',
+                                url: 'js-casefun-29'
+                            },
+                            {
+                                id: 30,
+                                title: '生成一个uuid',
+                                url: 'js-casefun-30'
+                            },
+                            {
+                                id: 31,
+                                title: '实现平滑返回顶部动画',
+                                url: 'js-casefun-31'
+                            },
+                            {
+                                id: 32,
+                                title: '原生scrollTo平滑滚动',
+                                url: 'js-casefun-32'
+                            },
+                            {
+                                id: 33,
+                                title: '无阻塞加载',
+                                url: 'js-casefun-33'
+                            },
+                            {
+                                id: 34,
+                                title: '把json导出为xls',
+                                url: 'js-casefun-34'
                             }
                         ]
                     },
@@ -2162,7 +2294,14 @@ let db = [
                         title: 'ECharts',
                         flag: 'recommend',
                         icon: './app/img/edu/echarts.jpg',
-                        desc: 'ECharts开源来自百度商业前端数据可视化团队,基于html5 Canvas，是一个纯Javascript图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。创新的拖拽重计算、数据视图、值域漫游等特性大大增强了用户体验，赋予了用户对数据进行挖掘、整合的能力。'
+                        desc: 'ECharts开源来自百度商业前端数据可视化团队,基于html5 Canvas，是一个纯Javascript图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。创新的拖拽重计算、数据视图、值域漫游等特性大大增强了用户体验，赋予了用户对数据进行挖掘、整合的能力。',
+                        child: [
+                            {id:1,title:"柱状图虚线显示",url:"frames-echarts-1"},
+                            {id:2,title:"折线图虚线显示",url:"frames-echarts-2"},
+                            {id:3,title:"渐变的折线",url:"frames-echarts-3"},
+                            {id:4,title:"用阴影加背色添加虚构数据",url:"frames-echarts-4"},
+                            {id:5,title:"折线分段颜色",url:"frames-echarts-5"}
+                        ]
                     },
                     {
                         id: 442204,
@@ -2215,12 +2354,23 @@ let db = [
                         id: 443302,
                         title: 'wowjs',
                         icon: './app/img/edu/wowjs.jpg',
-                        desc: '如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。'
+                        desc: '如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。',
+                        child: [
+                            {id:1,title:"WOW.js介绍及浏览器兼容",url:"frames-wowjs-1"},
+				            {id:2,title:"WOW.js使用方法",url:"frames-wowjs-2"},
+                            {id:3,title:"WOW.js配置",url:"frames-wowjs-3"}
+                        ]
                     },
                     {
                         id: 443303,
                         title: 'chobi',
-                        desc: 'chobi是一款轻量级的客户端处理图片javascript插件。该图片处理插件使用过滤器算法来处理图片，为图片设置不同的亮度、对比度和饱和度。它使用canvas来重绘图片，可以下载处理后的图片。'
+                        desc: 'chobi是一款轻量级的客户端处理图片javascript插件。该图片处理插件使用过滤器算法来处理图片，为图片设置不同的亮度、对比度和饱和度。它使用canvas来重绘图片，可以下载处理后的图片。',
+                        child: [
+                            {id:1,title:"支持的图片效果",url:"frames-chobi-1"},
+                            {id:2,title:"使用方法",url:"frames-chobi-2"},
+                            {id:3,title:"chobi API",url:"frames-chobi-3"},
+                            {id:4,title:"chobi 下载地址",url:"frames-chobi-4"}
+                        ]
                     },
                     {
                         id: 443304,
@@ -2230,7 +2380,15 @@ let db = [
                     {
                         id: 443305,
                         title: 'clipboard',
-                        desc: 'clipboard.js是一款轻量级的实现复制文本到剪贴板功能的JavaScript插件。通过该插件可以将输入框，文本域，DIV元素中的文本等文本内容复制到剪贴板中。它不依赖flash，使用非常简单。'
+                        desc: 'clipboard.js是一款轻量级的实现复制文本到剪贴板功能的JavaScript插件。通过该插件可以将输入框，文本域，DIV元素中的文本等文本内容复制到剪贴板中。它不依赖flash，使用非常简单。',
+                        child: [
+                            {id:1,title:"浏览器兼容及安装使用与下载",url:"frames-clipboard-s1"},
+                            {id:2,title:"复制文本",url:"frames-clipboard-s2"},
+                            {id:3,title:"剪切文本",url:"frames-clipboard-s3"},
+                            {id:4,title:"从属性中复制",url:"frames-clipboard-s4"},
+                            {id:5,title:"事件",url:"frames-clipboard-s5"},
+                            {id:6,title:"高级参数",url:"frames-clipboard-s6"}
+                        ]
                     },
                     {
                         id: 443306,
