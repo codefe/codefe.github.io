@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"从数组中获取随机值","content":"<p>有时我们需要从数组中随机选择一个值。一种方便的方法是可以根据数组长度获得一个随机索引，如下所示：<br></p><pre><code>var arr = ['a','b','c','d','e','f']\nvar newArr = arr[(Math.floor(Math.random()*(arr.length)))]\nconsole.log(newArr)\n// 'd'</code></pre><p><br></p>"}}

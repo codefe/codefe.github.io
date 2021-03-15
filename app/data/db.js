@@ -940,6 +940,31 @@ let db = [
                                 id: 3,
                                 title: 'Array.of',
                                 url: 'js-array-3'
+                            },
+                            {
+                                id: 4,
+                                title: '从数组中删除虚值',
+                                url: 'js-array-4'
+                            },
+                            {
+                                id: 5,
+                                title: '从数组中获取随机值',
+                                url: 'js-array-5'
+                            },
+                            {
+                                id: 6,
+                                title: '求两个数组的交集',
+                                url: 'js-array-6'
+                            },
+                            {
+                                id: 7,
+                                title: '将数组转换为对象',
+                                url: 'js-array-7'
+                            },
+                            {
+                                id: 8,
+                                title: 'Array.from达到.map 的效果',
+                                url: 'js-array-8'
                             }
                         ]
                     },
@@ -1705,6 +1730,11 @@ let db = [
                                 id: 22,
                                 title: '实现锚点滚动',
                                 url: 'js-casefun-22'
+                            },
+                            {
+                                id: 23,
+                                title: '把原始list转换成树形结构',
+                                url: 'js-casefun-23'
                             }
                         ]
                     },
@@ -2166,27 +2196,44 @@ let db = [
                     },
                     {
                         id: 443301,
+                        title: 'CryptoJS',
+                        desc: 'crypto-js(GitHub)是谷歌开发的一个纯JavaScript的加密算法类库，可以非常方便的在前端进行其所支持的加解密操作。目前crypto-js已支持的算法有：MD5,SHA-1,SHA-256,AES,Rabbit,MARC4,HMAC,HMAC-MD5,HMAC-SHA1,HMAC-SHA256,PBKDF2。常用的加密方式有MD5和AES，使用时可以引用总文件，也可以单独引用某一文件。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Hash、AES、Base64和HEX功能',
+                                url: 'frames-crypto-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'vue应用Aes',
+                                url: 'frames-crypto-2'
+                            }
+                        ]
+                    },
+                    {
+                        id: 443302,
                         title: 'wowjs',
                         icon: './app/img/edu/wowjs.jpg',
                         desc: '如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。'
                     },
                     {
-                        id: 443302,
+                        id: 443303,
                         title: 'chobi',
                         desc: 'chobi是一款轻量级的客户端处理图片javascript插件。该图片处理插件使用过滤器算法来处理图片，为图片设置不同的亮度、对比度和饱和度。它使用canvas来重绘图片，可以下载处理后的图片。'
                     },
                     {
-                        id: 443303,
+                        id: 443304,
                         title: 'Syntaxy',
                         desc: 'Syntaxy.js是一款小巧灵活的网页语法高亮js插件。Syntaxy.js支持各种主流的编程语言，提供3种主题样式。它默认是JS插件，但是也可以作为jQuery插件来使用。'
                     },
                     {
-                        id: 443304,
+                        id: 443305,
                         title: 'clipboard',
                         desc: 'clipboard.js是一款轻量级的实现复制文本到剪贴板功能的JavaScript插件。通过该插件可以将输入框，文本域，DIV元素中的文本等文本内容复制到剪贴板中。它不依赖flash，使用非常简单。'
                     },
                     {
-                        id: 443305,
+                        id: 443306,
                         title: 'lib-flexible',
                         desc: '移动端自适配方案lib-flexible.js 的作用就是让你在不同的终端设备之间如鱼得水，如入无人之境。',
                         child: [
@@ -2687,19 +2734,35 @@ let db = [
                                 id: 17,
                                 title: 'error SSL_connect 443',
                                 url: 'tools-git-17'
+                            },
+                            {
+                                id: 18,
+                                title: '撤销 git revert',
+                                url: 'tools-git-18'
+                            },
+                            {
+                                id: 19,
+                                title: '解决远程冲突',
+                                url: 'tools-git-19'
+                            },
+                            {
+                                id: 20,
+                                title: '本地branch改名',
+                                url: 'tools-git-20'
+                            },
+                            {
+                                id: 21,
+                                title: '合并本地branch',
+                                url: 'tools-git-21'
                             }
                         ]
                     },
                     {
                         id: 774401,
                         title: 'Jenkins',
+                        desc: 'Jenkins是一个开源的持续集成的服务器，Jenkins开源帮助我们自动构建各类项目。Jenkins强大的插件式，使得Jenkins可以集成很多软件，可能帮助我们持续集成我们的工程项目。',
                         flag: 'recommend',
                         icon: './app/img/edu/Jenkins.jpg'
-                    },
-                    {
-                        id: 774402,
-                        title: 'SVN',
-                        icon: ''
                     }
                 ]
             },
@@ -2756,6 +2819,11 @@ let db = [
                                 id: 9,
                                 title: 'nginx的Gzip压缩配置',
                                 url: 'tools-nginx-9'
+                            },
+                            {
+                                id: 10,
+                                title: 'CORS nginx 添加跨域',
+                                url: 'tools-nginx-10'
                             }
                         ]
                     }

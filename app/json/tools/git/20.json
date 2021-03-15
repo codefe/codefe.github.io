@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"本地branch改名","content":"<p>有时候想重命名本地 branch， 命令如下：<br></p><pre><code>git branch -m &lt;old_branch&gt; &lt;new_branch&gt;  \n# 例如，重命名 feature branch \"FixBug123\" 至 \"FixBug124\"  \ngit branch -m FixBug123 FixBug124</code></pre><p><br></p>"}}

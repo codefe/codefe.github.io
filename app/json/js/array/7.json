@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"将数组转换为对象","content":"<p>有时候，出于某种目的，需要将数组转化成对象，一个简单快速的方法是就使用展开运算符号(...):<br></p><pre><code>var arr = ['a','b','c']\nvar obj = {...arr}\nconsole.log(obj)\n// {0: \"a\", 1: \"b\", 2: \"c\"}</code></pre><p><br></p>"}}

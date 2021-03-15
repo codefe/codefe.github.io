@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"从数组中删除虚值","content":"<p>在 JS 中，虚值有false,0，''，null,NaN,undefined。咱们可以.filter()方法来过滤这些虚值。<br></p><pre><code>var arr = [0,'blue','',NaN,9,true,undefined,'white',false]\nvar newArr = arr.filter(Boolean)\nconsole.log(newArr)\n// ['blue',9,true,'white']</code></pre><p><br></p>"}}

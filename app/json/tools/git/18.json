@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"撤销 git revert","content":"<pre><code>撤销前一次 commit\ngit revert HEAD \n撤销所有本地修改\ngit reset --hard\n撤销所有本地到上一次修改\ngit reset --hard HEAD^</code></pre><p><br></p>"}}
