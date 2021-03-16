@@ -2040,6 +2040,11 @@ let db = [
                                 id:22,
                                 title: 'Vue自定义指令实现按钮级权限控制功能',
                                 url: 'frames-vue-22'
+                            },
+                            {
+                                id:23,
+                                title: 'Vue项目中,如何禁止页面的缩放',
+                                url: 'frames-vue-23'
                             }
                         ]
                     },
@@ -2833,7 +2838,44 @@ let db = [
                     {
                         id: 771100,
                         title: 'Babel',
-                        icon: ''
+                        desc: '将 ECMAScript 2015 及其版本以后的 javascript 代码转为旧版本浏览器或者是环境中向后兼容版本的 javascript 代码。',
+                        child: [
+                            {
+                                id:1,
+                                title: 'Babel',
+                                url: 'tools-babel-1'
+                            },
+                            {
+                                id:2,
+                                title: 'babel-preset-es2015 ( ES2015 / ES6 插件集合 )',
+                                url: 'tools-babel-2'
+                            },
+                            {
+                                id:3,
+                                title: 'babel-preset-es2016 （ ES2016 / ES7 插件集合 ）',
+                                url: 'tools-babel-3'
+                            },
+                            {
+                                id:4,
+                                title: 'babel-preset-es2017（ ES2017 / es8 插件集合 ）',
+                                url: 'tools-babel-4'
+                            },
+                            {
+                                id:5,
+                                title: 'babel-preset-stage-x （ ES2018/stage 插件集合 ）',
+                                url: 'tools-babel-5'
+                            },
+                            {
+                                id:6,
+                                title: '预设(presets)',
+                                url: 'tools-babel-6'
+                            },
+                            {
+                                id:7,
+                                title: '插件(plugins)',
+                                url: 'tools-babel-7'
+                            }
+                        ]
                     },
                     {
                         id: 771101,

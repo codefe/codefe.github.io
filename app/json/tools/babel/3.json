@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"babel-preset-es2016 （ ES2016 / ES7 插件集合 ）","content":"<p>将 ES2016(es7) 的 javascript 代码 转为 浏览器兼容代码</p><p></p><blockquote>　exponentiation-operator　　：幂运算转化 x **= 3 ，x的3次幂</blockquote>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"babel-preset-stage-x （ ES2018/stage 插件集合 ）","content":"<p>将 stage 阶段的代码转化</p><blockquote>　　　　async-generator-function　　：将异步函数进行转化<br>　　　　dotall-regex　　：点号正则优化<br>　　　　object-rest-spread　　：解析构优化<br>　　　　optional-catch-binding　　：catch 加 finally 优化<br>　　　　unicode-proprty-regex　</blockquote><p></p>"}}

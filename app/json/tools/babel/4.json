@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"babel-preset-es2017（ ES2017 / es8 插件集合 ）","content":"<p>将 ES2017(es8) 的代码进行转化　</p><p></p><blockquote>　　　async-to-generator　　： 转化 async/await 转为 generator 函数</blockquote>"}}
