@@ -2822,12 +2822,6 @@ let db = [
                                 url: 'tools-vite-1'
                             }
                         ]
-                    },
-                    {
-                        id: 770002,
-                        title: 'FIS',
-                        flag: 'recommend',
-                        icon: './app/img/edu/fis.jpg'
                     }
                 ]
             },
