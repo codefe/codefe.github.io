@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取cookie值","content":"<pre><code>function getCookie(name) {\n  var arr = document.cookie.match(new RegExp(\"(^| )\" + name + \"=([^;]*)(;|$)\"));\n  if (arr != null) return unescape(arr[2]);\n  return null;\n}</code></pre><p><br></p>"}}

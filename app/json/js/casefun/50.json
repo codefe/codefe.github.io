@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取网页被卷去的位置","content":"<pre><code>function getScrollXY() {\n  return document.body.scrollTop\n    ? {\n        x: document.body.scrollLeft,\n        y: document.body.scrollTop\n      }\n    : {\n        x: document.documentElement.scrollLeft,\n        y: document.documentElement.scrollTop\n      };\n}</code></pre><p><br></p>"}}

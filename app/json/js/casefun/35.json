@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"跨浏览器绑定事件","content":"<pre><code>function addEventSamp(obj, evt, fn) {\n  if (!oTarget) {\n    return;\n  }\n  if (obj.addEventListener) {\n    obj.addEventListener(evt, fn, false);\n  } else if (obj.attachEvent) {\n    obj.attachEvent(\"on\" + evt, fn);\n  } else {\n    oTarget[\"on\" + sEvtType] = fn;\n  }\n}</code></pre><p><br></p>"}}

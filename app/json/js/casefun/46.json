@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取页面高度","content":"<pre><code>function getPageHeight() {\n  var g = document,\n    a = g.body,\n    f = g.documentElement,\n    d = g.compatMode == \"BackCompat\" ? a : g.documentElement;\n  return Math.max(f.scrollHeight, a.scrollHeight, d.clientHeight);\n}</code></pre><p><br></p>"}}

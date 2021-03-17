@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"实现vue路由拦截浏览器的需求，进行一系列操作，如草稿保存等等","content":"<p>场景：为了防止用户失误点错关闭按钮等等，导致没有保存已输入的信息(关键信息)。&nbsp;</p><p>用法如下：<br></p><pre><code>// 在路由组件中：\n   ...\nbeforeRouteLeave (to, from, next) {\n    if (用户已经输入信息) {\n        // 出现弹窗提醒保存草稿，或者自动后台为其保存\n    } else {\n        next(true);//用户离开\n    }\n}</code></pre><p>还有beforeEach、beforeRouteUpdate这些生命周期函数。</p>"}}

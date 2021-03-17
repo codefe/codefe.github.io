@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"去掉url前缀","content":"<pre><code>function removeUrlPrefix(a) {\n  a = a\n    .replace(/：/g, \":\")\n    .replace(/．/g, \".\")\n    .replace(/／/g, \"/\");\n  while (\n    trim(a)\n      .toLowerCase()\n      .indexOf(\"http://\") == 0\n  ) {\n    a = trim(a.replace(/http:\\/\\//i, \"\"));\n  }\n  return a;\n}</code></pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"将键值对拼接成URL带参数","content":"<pre><code>export default const fnParams2Url = obj=&gt; {\n      let aUrl = []\n      let fnAdd = function(key, value) {\n        return key + '=' + value\n      }\n      for (var k in obj) {\n        aUrl.push(fnAdd(k, obj[k]))\n      }\n      return encodeURIComponent(aUrl.join('&amp;'))\n }</code></pre><p><br></p>"}}

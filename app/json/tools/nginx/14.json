@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"静态资源服务器","content":"<pre><code>location ~* \\.(png|gif|jpg|jpeg)$ {\n  root    /root/static/;  \n  autoindex on;\n  access_log  off;\n  expires     10h;# 设置过期时间为10小时          \n}</code></pre><p>匹配以png|gif|jpg|jpeg为结尾的请求，并将请求转发到本地路径，root中指定的路径即nginx本地路径。同时也可以进行一些缓存的设置。</p>"}}

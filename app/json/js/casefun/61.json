@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"清除脚本内容","content":"<pre><code>function stripscript(s) {\n  return s.replace(/&lt;script.*?&gt;.*?&lt;\\/script&gt;/gi, \"\");\n}</code></pre><p><br></p>"}}

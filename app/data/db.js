@@ -532,6 +532,16 @@ let db = [
                                 id: 3,
                                 title: 'Video对象方法',
                                 url: 'html5-video-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'Video 标签沉浸式播放解决方案',
+                                url: 'html5-video-4'
+                            },
+                            {
+                                id: 5,
+                                title: '能省流量的 HTML5 视频播放器 西瓜播放器',
+                                url: 'html5-video-5'
                             }
                         ]
                     },
@@ -629,7 +639,8 @@ let db = [
                             {id:13,title:"animateMotion",url:"html5-svg-5"},
                             {id:14,title:"自由组合",url:"html5-svg-6"},
                             {id:15,title:"暂停与播放",url:"html5-svg-7"},
-                            {id:16,title:"animation参数详解",url:"html5-svg-8"}
+                            {id:16,title:"animation参数详解",url:"html5-svg-8"},
+                            {id:17,title:"SVG 实现动态模糊动画效果",url:"html5-svg-17"}
                         ]
                     },
                     {
@@ -858,7 +869,9 @@ let db = [
                         id: 223300,
                         title: '移动端',
                         child: [
-                            {id:1,title:"修改手机地址栏状态栏颜色",url:"css3-mt-1"}
+                            {id:1,title:"修改手机地址栏状态栏颜色",url:"css3-mt-1"},
+                            {id:2,title:"移动端1px问题的解决办法",url:"css3-mt-2"},
+                            {id:3,title:"CSS3 动画卡顿性能优化解决方案",url:"css3-mt-3"}
                         ]
                     },
                     {
@@ -866,6 +879,17 @@ let db = [
                         title: '布局适配',
                         flag: 'recommend',
                         icon: './app/img/edu/layout.jpg'
+                    },
+                    {
+                        id: 223302,
+                        title: '实例',
+                        child: [
+                            {
+                                id:1,
+                                title: '滚动视差',
+                                url: 'css3-case-1'
+                            }
+                        ]
                     }
                 ]
             }
@@ -938,7 +962,8 @@ let db = [
                             {id:13,title:"确定重复出现",url: 'js-regexp-13'},
                             {id:14,title:"常见表达式示例",url: 'js-regexp-14'},
                             {id:15,title:"去除字符串左右两端的空格",url: 'js-regexp-15'},
-                            {id:16,title:"正则验证固话与手机",url: 'js-regexp-16'}
+                            {id:16,title:"正则验证固话与手机",url: 'js-regexp-16'},
+                            {id:17,title:"正则实例",url: 'js-regexp-17'}
                         ]
                     },
                     {
@@ -1313,6 +1338,16 @@ let db = [
                                 id: 22,
                                 title: '留整 Math.trunc',
                                 url: 'js-math-22'
+                            },
+                            {
+                                id: 23,
+                                title: '三角函数在动画中的应用',
+                                url: 'js-math-23'
+                            },
+                            {
+                                id: 24,
+                                title: '水波图实现原理',
+                                url: 'js-math-24'
                             }
                         ]
                     },
@@ -1671,7 +1706,7 @@ let db = [
             },
             {
                 id: 3333,
-                title: '模式',
+                title: '设计模式',
                 child: [
                     {
                         id: 333300,
@@ -1684,33 +1719,101 @@ let db = [
             },
             {
                 id: 3344,
-                title: 'ES6-11',
+                title: '数据结构',
                 child: [
                     {
                         id: 334400,
-                        title: 'ES6',
-                        flag: 'recommend',
-                        icon: './app/img/edu/es6.jpg'
+                        title: '栈(Stack)',
+                        desc: '栈是一种遵循后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端就叫栈底。在栈里，新元素都接近栈顶，旧元素都接近栈底。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '栈数据结构',
+                                url: 'js-dataStructure-stack1'
+                            },
+                            {
+                                id: 2,
+                                title: '栈的实现',
+                                url: 'js-dataStructure-stack2'
+                            },
+                            {
+                                id: 3,
+                                title: '栈的应用,十进制转任意进制',
+                                url: 'js-dataStructure-stack3'
+                            },
+                            {
+                                id: 4,
+                                title: '栈的应用,逆波兰表达式计算',
+                                url: 'js-dataStructure-stack4'
+                            },
+                            {
+                                id: 5,
+                                title: '栈的应用,利用普通栈实现一个有min方法的栈',
+                                url: 'js-dataStructure-stack5'
+                            }
+                        ]
                     },
                     {
                         id: 334401,
-                        title: 'ES7'
+                        title: '队列(Queue)',
+                        desc: '队列是遵循先进先出（FIFO，也称为先来先服务）原则的一组有序的项。队列在尾部添加新元素，并从顶部移除元素。最新添加的元素必须排在队列的末尾。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '队列数据结构',
+                                url: 'js-dataStructure-queue1'
+                            },
+                            {
+                                id: 2,
+                                title: '队列的实现',
+                                url: 'js-dataStructure-queue2'
+                            },
+                            {
+                                id: 3,
+                                title: '队列的应用,约瑟夫环（普通模式）',
+                                url: 'js-dataStructure-queue3'
+                            },
+                            {
+                                id: 4,
+                                title: '队列的应用,菲波那切数列（普通模式）',
+                                url: 'js-dataStructure-queue4'
+                            },
+                            {
+                                id: 5,
+                                title: '队列的应用,用队列实现一个栈',
+                                url: 'js-dataStructure-queue5'
+                            }
+                        ]
                     },
                     {
                         id: 334402,
-                        title: 'ES8'
+                        title: '链表(Linked List)',
+                        desc: '',
+                        child: []
                     },
                     {
                         id: 334403,
-                        title: 'ES9'
+                        title: '树(Tree)',
+                        desc: '',
+                        child: []
                     },
                     {
                         id: 334404,
-                        title: 'ES10'
+                        title: '图(Graph)',
+                        desc: '',
+                        child: []
                     },
                     {
                         id: 334405,
-                        title: 'ES11'
+                        title: '堆(Heap)',
+                        desc: '',
+                        child: []
+                    },
+                    {
+                        id: 334406,
+                        title: '散列表(Hash)',
+                        desc: '',
+                        child: []
                     }
                 ]
             },
@@ -1892,6 +1995,166 @@ let db = [
                                 id: 34,
                                 title: '把json导出为xls',
                                 url: 'js-casefun-34'
+                            },
+                            {
+                                id: 35,
+                                title: '跨浏览器绑定事件',
+                                url: 'js-casefun-35'
+                            },
+                            {
+                                id: 36,
+                                title: '加入收藏夹',
+                                url: 'js-casefun-36'
+                            },
+                            {
+                                id: 37,
+                                title: '提取页面代码中所有网址',
+                                url: 'js-casefun-37'
+                            },
+                            {
+                                id: 38,
+                                title: '实现base64解码',
+                                url: 'js-casefun-38'
+                            },
+                            {
+                                id: 39,
+                                title: '确认是否是键盘有效输入值',
+                                url: 'js-casefun-39'
+                            },
+                            {
+                                id: 40,
+                                title: '全角半角转换',
+                                url: 'js-casefun-40'
+                            },
+                            {
+                                id: 41,
+                                title: '字符串长度截取',
+                                url: 'js-casefun-41'
+                            },
+                            {
+                                id: 42,
+                                title: '跨浏览器删除事件',
+                                url: 'js-casefun-42'
+                            },
+                            {
+                                id: 43,
+                                title: '获取cookie值',
+                                url: 'js-casefun-43'
+                            },
+                            {
+                                id: 44,
+                                title: '获得URL中GET参数值',
+                                url: 'js-casefun-44'
+                            },
+                            {
+                                id: 45,
+                                title: '获取移动设备初始化大小',
+                                url: 'js-casefun-45'
+                            },
+                            {
+                                id: 46,
+                                title: '获取页面高度',
+                                url: 'js-casefun-46'
+                            },
+                            {
+                                id: 47,
+                                title: '获取页面scrollLeft,scrollTop',
+                                url: 'js-casefun-47'
+                            },
+                            {
+                                id: 48,
+                                title: '获取页面宽度,可视宽度,高度',
+                                url: 'js-casefun-48'
+                            },
+                            {
+                                id: 49,
+                                title: '获取移动设备屏幕宽度',
+                                url: 'js-casefun-49'
+                            },
+                            {
+                                id: 50,
+                                title: '获取网页被卷去的位置',
+                                url: 'js-casefun-50'
+                            },
+                            {
+                                id: 51,
+                                title: '获取移动设备最大化大小',
+                                url: 'js-casefun-51'
+                            },
+                            {
+                                id: 52,
+                                title: '判断是否安卓/苹果移动设备访问',
+                                url: 'js-casefun-52'
+                            },
+                            {
+                                id: 53,
+                                title: '替换地址栏',
+                                url: 'js-casefun-53'
+                            },
+                            {
+                                id: 54,
+                                title: '解决offsetX兼容性问题',
+                                url: 'js-casefun-54'
+                            },
+                            {
+                                id: 55,
+                                title: '将键值对拼接成URL带参数',
+                                url: 'js-casefun-55'
+                            },
+                            {
+                                id: 56,
+                                title: '去掉url前缀',
+                                url: 'js-casefun-56'
+                            },
+                            {
+                                id: 57,
+                                title: 'resize的操作',
+                                url: 'js-casefun-57'
+                            },
+                            {
+                                id: 58,
+                                title: '设置cookie值',
+                                url: 'js-casefun-58'
+                            },
+                            {
+                                id: 59,
+                                title: '设为首页',
+                                url: 'js-casefun-59'
+                            },
+                            {
+                                id: 60,
+                                title: '延时执行',
+                                url: 'js-casefun-60'
+                            },
+                            {
+                                id: 61,
+                                title: '清除脚本内容',
+                                url: 'js-casefun-61'
+                            },
+                            {
+                                id: 62,
+                                title: '时间个性化输出功能',
+                                url: 'js-casefun-62'
+                            },
+                            {
+                                id: 63,
+                                title: '金额大写转换函数',
+                                url: 'js-casefun-63'
+                            },
+                            {
+                                id: 64,
+                                title: '实现utf8解码',
+                                url: 'js-casefun-64'
+                            },
+                            {
+                                id: 65,
+                                title: '前端js实现打印/导出excel表格',
+                                url: 'js-casefun-65'
+                            },
+                            {
+                                id: 66,
+                                title: '函数柯里化',
+                                url: 'js-casefun-66'
                             }
                         ]
                     },
@@ -2045,6 +2308,31 @@ let db = [
                                 id:23,
                                 title: 'Vue项目中,如何禁止页面的缩放',
                                 url: 'frames-vue-23'
+                            },
+                            {
+                                id:24,
+                                title: '路由变化页面数据不刷新问题',
+                                url: 'frames-vue-24'
+                            },
+                            {
+                                id:25,
+                                title: '异步回调函数中使用this无法指向vue实例对象',
+                                url: 'frames-vue-25'
+                            },
+                            {
+                                id:26,
+                                title: 'setInterval路由跳转继续运行并没有及时进行销毁',
+                                url: 'frames-vue-26'
+                            },
+                            {
+                                id:27,
+                                title: 'vue 滚动行为用法，进入路由需要滚动到浏览器底部、头部等等',
+                                url: 'frames-vue-27'
+                            },
+                            {
+                                id:28,
+                                title: '实现vue路由拦截浏览器的需求，进行一系列操作，如草稿保存等等',
+                                url: 'frames-vue-28'
                             }
                         ]
                     },
@@ -2250,6 +2538,11 @@ let db = [
                                 id: 2,
                                 title: 'VueCLI项目结构详解',
                                 url: 'frames-vuecli-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'VueCLI原理分析',
+                                url: 'frames-vuecli-3'
                             }
                         ]
                     },
@@ -2888,6 +3181,33 @@ let db = [
                         title: 'PostMan',
                         flag: 'recommend',
                         icon: './app/img/edu/postman.jpg'
+                    },
+                    {
+                        id: 772201,
+                        title: 'Performance',
+                        desc: 'Chrome dev tools 家族的一个小兄弟，它在 Chrome 57 之前叫作「Timeline」，而现在换了个更长的马甲 —— 「Performance」',
+                        child: [
+                            {
+                                id: 1,
+                                title: '什么会影响你的页面性能',
+                                url: 'tools-Performance-1'
+                            },
+                            {
+                                id: 2,
+                                title: '用正确的姿势启动 Performance',
+                                url: 'tools-Performance-2'
+                            },
+                            {
+                                id: 3,
+                                title: '简单页面分析',
+                                url: 'tools-Performance-3'
+                            },
+                            {
+                                id: 4,
+                                title: '动画分析',
+                                url: 'tools-Performance-4'
+                            }
+                        ]
                     }
                 ]
             },
@@ -3044,6 +3364,11 @@ let db = [
                                 id: 22,
                                 title: 'git stash 用法总结和注意点',
                                 url: 'tools-git-22'
+                            },
+                            {
+                                id: 23,
+                                title: 'Git 如何优雅的版本回退',
+                                url: 'tools-git-23'
                             }
                         ]
                     },
@@ -3114,6 +3439,26 @@ let db = [
                                 id: 10,
                                 title: 'CORS nginx 添加跨域',
                                 url: 'tools-nginx-10'
+                            },
+                            {
+                                id: 11,
+                                title: '配置结构',
+                                url: 'tools-nginx-11'
+                            },
+                            {
+                                id: 12,
+                                title: '请求过滤',
+                                url: 'tools-nginx-12'
+                            },
+                            {
+                                id: 13,
+                                title: '负载均衡',
+                                url: 'tools-nginx-13'
+                            },
+                            {
+                                id: 14,
+                                title: '静态资源服务器',
+                                url: 'tools-nginx-14'
                             }
                         ]
                     }

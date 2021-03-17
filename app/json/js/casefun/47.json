@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取页面scrollLeft,scrollTop","content":"<pre><code>function getPageScrollLeft() {\n  var a = document;\n  return a.documentElement.scrollLeft || a.body.scrollLeft;\n}</code></pre><p><br></p><pre><code>function getPageScrollTop() {\n  var a = document;\n  return a.documentElement.scrollTop || a.body.scrollTop;\n}</code></pre><p><br></p>"}}

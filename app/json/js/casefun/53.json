@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"替换地址栏","content":"<pre><code>function locationReplace(url) {\n  if (history.replaceState) {\n    history.replaceState(null, document.title, url);\n    history.go(0);\n  } else {\n    location.replace(url);\n  }\n}</code></pre><p><br></p>"}}
