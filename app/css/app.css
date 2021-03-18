@@ -299,6 +299,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 }
 /* right side */
 .side-title{height:50px;line-height:50px;padding-left:20px;font-size:14px;border-bottom:1px solid #e8e8e8;background-color:#fbfbfb;}
+.side-title span{margin-left:10px;font-weight: 400;color:#ccc;}
 .side-count{height:61px;border-bottom:1px solid #e8e8e8;position:relative;}
 .side-count p{flex:1;text-align:center;line-height:25px;padding-top:10px;}
 .side-count p:first-child{border-right:1px solid #e8e8e8;}
@@ -380,11 +381,16 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
     position: sticky;
     top: 0;
 }
-.article-list{margin:10px;}
+.article-list::-webkit-scrollbar{width: 0 !important}
+.article-list{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+.article-list{margin:10px;max-height:80vh;overflow: hidden;overflow-y: auto;}
 .article-list dt{padding-left:20px;border-bottom:1px dashed #ddd;line-height:40px;color:#ccc;font-weight:400;}
-.article-list dd{padding-left:10px;font-size:12px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.article-list dd{padding-left:10px;font-size:12px;}
 .article-list dd:nth-child(even){background-color:#fbfbfb;}
-.article-list dd a{transition:all 1s;display:block;line-height:35px;}
+.article-list dd a{transition:all 1s;display:block;line-height:35px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
 .article-list dd a:hover{padding-left:20px;}
 .article-list dd a:hover,.article-list dd .cur{color:#13d478;}
 .nofile{font-size:14px;color:red;text-align: center;padding:20px;}

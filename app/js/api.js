@@ -309,6 +309,8 @@
 					if (data) {
 						Gs.$('#articleDesc').innerHTML = Gs.tpls.listDesc.tpl(data);
 						Gs.$('#article-list').innerHTML = this.articleList(data);
+						this.moveScrollTop(data);
+						Gs.$('#article-total').innerHTML = (data.child.length||0) + '篇';
 					} else {
 						Gs.$('#articleBox').innerHTML = '<h2 class="nofile">错误了,传参有误!!!</h2>';
 					}
@@ -583,13 +585,32 @@
 				if (data.child.length > 0) {
 					for (let [key, item] of Object.entries(data.child)) {
 						if (url.args === item.url + '-' + data.id) {
-							html += `<dd><a class="cur" href="article.html?id=${item.url}-${data.id}">${key}. ${item.title}</a></dd>`;
+							html += `<dd><a class="cur" href="article.html?id=${item.url}-${data.id}">${parseInt(key)+1}. ${item.title}</a></dd>`;
 						} else {
-							html += `<dd><a href="article.html?id=${item.url}-${data.id}">${key}. ${item.title}</a></dd>`;
+							html += `<dd><a href="article.html?id=${item.url}-${data.id}">${parseInt(key)+1}. ${item.title}</a></dd>`;
 						}
 					}
 				}
 				return html;
+			},
+			moveScrollTop: function(data){
+				let tp = '-' + data.id;
+				let url = this.getUrl().args.replace(tp,'');
+				let elid;
+				if(data.child && data.child.length>0){
+					data.child.forEach((it,index)=>{
+						if(it.url===url){
+							elid = index
+						}
+					})
+					//获取外框信息
+					let outEl = document.querySelector('#article-list');
+					let outElInfo = outEl.getBoundingClientRect();
+					//获取当前标题元素信息
+					let el = document.querySelectorAll('#article-list dd')[elid];
+					//向上滚动距离
+					outEl.scrollTop = el.offsetTop - outElInfo.height / 2;
+				}
 			}
 		},
 		//弹出框

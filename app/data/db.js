@@ -3137,6 +3137,11 @@ let db = [
                                 id: 14,
                                 title: '骨架屏插件',
                                 url: 'tools-webpack-14'
+                            },
+                            {
+                                id: 15,
+                                title: 'splitChunks',
+                                url: 'tools-webpack-15'
                             }
                         ]
                     },
