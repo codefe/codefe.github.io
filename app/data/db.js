@@ -1117,6 +1117,11 @@ let db = [
                                 id: 11,
                                 title: 'flatMap',
                                 url: 'js-array-11'
+                            },
+                            {
+                                id: 13,
+                                title: '扁平化并去重并排序',
+                                url: 'js-array-13'
                             }
                         ]
                     },
