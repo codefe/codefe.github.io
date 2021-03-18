@@ -968,35 +968,18 @@ let db = [
                     },
                     {
                         id: 330007,
-                        title: 'DOM',
-                        flag: 'recommend',
-                        icon: './app/img/edu/dom.jpg',
-                        desc: '通过HTML DOM,JavaScript 能够访问和改变 HTML 文档的所有元素。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'DOM思维导图',
-                                url: 'js-dom-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'DOM对象方法',
-                                url: 'js-dom-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'DOM属性',
-                                url: 'js-dom-3'
-                            }
-                        ]
-                    },
+                        title: 'TypeScript',
+                        desc: '',
+                        icon: './app/img/edu/ts.jpg'
+                    }
+                ]
+            },
+            {
+                id: 3311,
+                title: '进阶',
+                child: [
                     {
-                        id: 330008,
-                        title: 'BOM',
-                        desc: 'BOM 概念比较古老，但是一直没有被标准化，不过各主流浏览器均支持 BOM，都遵守最基本的规则和用法，W3C 也将 BOM 主要内容纳入了 HTML5 规范之中。',
-                    },
-                    {
-                        id: 330009,
+                        id: 331100,
                         title: 'Window',
                         desc: '',
                         child: [
@@ -1028,229 +1011,65 @@ let db = [
                         ]
                     },
                     {
-                        id: 330010,
-                        title: '类型判断',
-                        desc: '',
-                        child: [
-                            {
-                                id: 1,
-                                title: '类型判断',
-                                url: 'js-type-1'
-                            }
-                        ]
-                    },
-                    {
-                        id: 330011,
-                        title: 'TypeScript',
-                        desc: '',
-                        icon: './app/img/edu/ts.jpg'
-                    }
-                ]
-            },
-            {
-                id: 3311,
-                title: '内置对象',
-                child: [
-                    {
-                        id: 331100,
-                        title: '数组',
-                        flag: 'recommend',
-                        desc: 'JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象。',
-                        icon: './app/img/edu/array.jpg',
-                        child: [
-                            {
-                                id: 1,
-                                title: '数组思维导图',
-                                url: 'js-array-1'
-                            },
-                            {
-                                id: 12,
-                                title: 'Array对象方法',
-                                url: 'js-array-12'
-                            },
-                            {
-                                id: 2,
-                                title: 'Array.from',
-                                url: 'js-array-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'Array.of',
-                                url: 'js-array-3'
-                            },
-                            {
-                                id: 4,
-                                title: '从数组中删除虚值',
-                                url: 'js-array-4'
-                            },
-                            {
-                                id: 5,
-                                title: '从数组中获取随机值',
-                                url: 'js-array-5'
-                            },
-                            {
-                                id: 6,
-                                title: '求两个数组的交集',
-                                url: 'js-array-6'
-                            },
-                            {
-                                id: 7,
-                                title: '将数组转换为对象',
-                                url: 'js-array-7'
-                            },
-                            {
-                                id: 8,
-                                title: 'Array.from达到.map 的效果',
-                                url: 'js-array-8'
-                            },
-                            {
-                                id: 9,
-                                title: '5种迭代方法',
-                                url: 'js-array-9'
-                            },
-                            {
-                                id: 10,
-                                title: 'flat将多维数组展平成一维数组',
-                                url: 'js-array-10'
-                            },
-                            {
-                                id: 11,
-                                title: 'flatMap',
-                                url: 'js-array-11'
-                            },
-                            {
-                                id: 13,
-                                title: '扁平化并去重并排序',
-                                url: 'js-array-13'
-                            }
-                        ]
-                    },
-                    {
                         id: 331101,
-                        title: 'Reflect',
-                        desc: 'Reflect 是一个内置的对象，它提供拦截 JavaScript 操作的方法。',
+                        title: 'DOM',
+                        flag: 'recommend',
+                        icon: './app/img/edu/dom.jpg',
+                        desc: '通过HTML DOM,JavaScript 能够访问和改变 HTML 文档的所有元素。',
                         child: [
                             {
                                 id: 1,
-                                title: '常见的方法',
-                                url: 'js-reflect-1'
+                                title: 'DOM思维导图',
+                                url: 'js-dom-1'
                             },
                             {
                                 id: 2,
-                                title: 'Reflect.set',
-                                url: 'js-reflect-2'
+                                title: 'DOM对象方法',
+                                url: 'js-dom-2'
                             },
                             {
                                 id: 3,
-                                title: 'Reflect.construct',
-                                url: 'js-reflect-3'
-                            },
-                            {
-                                id: 4,
-                                title: 'Reflect.get',
-                                url: 'js-reflect-4'
-                            },
-                            {
-                                id: 5,
-                                title: 'Reflect.apply',
-                                url: 'js-reflect-5'
-                            },
-                            {
-                                id: 6,
-                                title: 'Reflect.has',
-                                url: 'js-reflect-6'
-                            },
-                            {
-                                id: 7,
-                                title: 'Reflect.defineProperty',
-                                url: 'js-reflect-7'
-                            },
-                            {
-                                id: 8,
-                                title: 'Reflect.deleteProperty',
-                                url: 'js-reflect-8'
-                            },
-                            {
-                                id: 9,
-                                title: 'Reflect.getOwnPropertyDescriptor',
-                                url: 'js-reflect-9'
-                            },
-                            {
-                                id: 10,
-                                title: 'Reflect.ownKeys',
-                                url: 'js-reflect-10'
-                            },
-                            {
-                                id: 11,
-                                title: 'Reflect.isExtensible',
-                                url: 'js-reflect-11'
-                            },
-                            {
-                                id: 12,
-                                title: 'Reflect.preventExtensions',
-                                url: 'js-reflect-12'
-                            },
-                            {
-                                id: 13,
-                                title: 'Reflect.setPrototypeOf',
-                                url: 'js-reflect-13'
+                                title: 'DOM属性',
+                                url: 'js-dom-3'
                             }
                         ]
                     },
                     {
                         id: 331102,
-                        title: 'Proxy',
-                        desc: 'Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写。Proxy 这个词的原意是代理，用在这里表示由它来“代理”某些操作，可以译为“代理器”。',
+                        title: 'JSON',
+                        flag: 'recommend',
+                        icon: './app/img/edu/json.jpg',
+                        desc: 'JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。是JavaScript的一个子集。JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。',
                         child: [
                             {
                                 id: 1,
-                                title: 'Proxy',
-                                url: 'js-proxy-1'
+                                title: 'stringify转字符串',
+                                url: 'js-json-1'
                             },
                             {
                                 id: 2,
-                                title: 'Proxy.revocable',
-                                url: 'js-proxy-2'
+                                title: 'stringify转格式化字符串',
+                                url: 'js-json-2'
                             },
                             {
                                 id: 3,
-                                title: 'handler 对象的方法',
-                                url: 'js-proxy-3'
+                                title: 'stringify转指定key的字符串',
+                                url: 'js-json-3'
                             },
                             {
                                 id: 4,
-                                title: '无操作转发代理',
-                                url: 'js-proxy-4'
+                                title: 'stringify传函数',
+                                url: 'js-json-4'
                             },
                             {
                                 id: 5,
-                                title: '验证',
-                                url: 'js-proxy-5'
+                                title: 'stringify定义toJSON',
+                                url: 'js-json-5'
                             },
                             {
                                 id: 6,
-                                title: '扩展构造函数',
-                                url: 'js-proxy-6'
-                            },
-                            {
-                                id: 7,
-                                title: '操作 DOM 节点',
-                                url: 'js-proxy-7'
-                            },
-                            {
-                                id: 8,
-                                title: '值修正及附加属性',
-                                url: 'js-proxy-8'
-                            },
-                            {
-                                id: 9,
-                                title: '通过属性查找数组中的特定对象',
-                                url: 'js-proxy-9'
-                            },
-                            {
-                                id: 10,
-                                title: '一个完整的 traps 列表示例',
-                                url: 'js-proxy-10'
+                                title: 'JSON.parse',
+                                url: 'js-json-6'
                             }
                         ]
                     },
@@ -1383,18 +1202,6 @@ let db = [
                     },
                     {
                         id: 331104,
-                        title: 'NaN',
-                        desc: '全局属性 NaN 的值表示不是一个数字（Not-A-Number）。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'NaN',
-                                url: 'js-nan-1'
-                            }
-                        ]
-                    },
-                    {
-                        id: 331105,
                         title: 'Object',
                         desc: 'Object 构造函数创建一个对象包装器。',
                         child: [
@@ -1446,110 +1253,79 @@ let db = [
                         ]
                     },
                     {
-                        id: 331106,
-                        title: 'Promise',
-                        desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
+                        id: 331105,
+                        title: 'Reflect',
+                        desc: 'Reflect 是一个内置的对象，它提供拦截 JavaScript 操作的方法。',
                         child: [
                             {
                                 id: 1,
-                                title: 'Promise.all',
-                                url: 'js-promise-1'
+                                title: '常见的方法',
+                                url: 'js-reflect-1'
                             },
                             {
                                 id: 2,
-                                title: 'Promise.allSettled',
-                                url: 'js-promise-2'
+                                title: 'Reflect.set',
+                                url: 'js-reflect-2'
                             },
                             {
                                 id: 3,
-                                title: 'Promise.any',
-                                url: 'js-promise-3'
+                                title: 'Reflect.construct',
+                                url: 'js-reflect-3'
                             },
                             {
                                 id: 4,
-                                title: 'Promise.prototype.then',
-                                url: 'js-promise-4'
+                                title: 'Reflect.get',
+                                url: 'js-reflect-4'
                             },
                             {
                                 id: 5,
-                                title: 'Promise.prototype.catch',
-                                url: 'js-promise-5'
+                                title: 'Reflect.apply',
+                                url: 'js-reflect-5'
                             },
                             {
                                 id: 6,
-                                title: 'Promise.prototype.finally',
-                                url: 'js-promise-6'
+                                title: 'Reflect.has',
+                                url: 'js-reflect-6'
                             },
                             {
                                 id: 7,
-                                title: 'Promise.race',
-                                url: 'js-promise-7'
+                                title: 'Reflect.defineProperty',
+                                url: 'js-reflect-7'
+                            },
+                            {
+                                id: 8,
+                                title: 'Reflect.deleteProperty',
+                                url: 'js-reflect-8'
+                            },
+                            {
+                                id: 9,
+                                title: 'Reflect.getOwnPropertyDescriptor',
+                                url: 'js-reflect-9'
+                            },
+                            {
+                                id: 10,
+                                title: 'Reflect.ownKeys',
+                                url: 'js-reflect-10'
+                            },
+                            {
+                                id: 11,
+                                title: 'Reflect.isExtensible',
+                                url: 'js-reflect-11'
+                            },
+                            {
+                                id: 12,
+                                title: 'Reflect.preventExtensions',
+                                url: 'js-reflect-12'
+                            },
+                            {
+                                id: 13,
+                                title: 'Reflect.setPrototypeOf',
+                                url: 'js-reflect-13'
                             }
                         ]
                     },
                     {
-                        id: 331107,
-                        title: 'String',
-                        desc: 'String 全局对象是一个用于字符串或一个字符序列的构造函数。',
-                        child: [
-                            {
-                                id: 5,
-                                title: '字符串函数学习思维导图',
-                                url: 'js-string-5'
-                            },
-                            {
-                                id: 1,
-                                title: 'charAt',
-                                url: 'js-string-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'repeat',
-                                url: 'js-string-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'substring',
-                                url: 'js-string-3'
-                            },
-                            {
-                                id: 4,
-                                title: 'raw',
-                                url: 'js-string-4'
-                            }
-                        ]
-                    },
-                    {
-                        id: 331108,
-                        title: 'WeakSet',
-                        desc: 'WeakSet 对象允许你将弱保持对象存储在一个集合中。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'WeakSet',
-                                url: 'js-weakset-1'
-                            }
-                        ]
-                    },
-                    {
-                        id: 331109,
-                        title: '函数',
-                        desc: '',
-                        child: [
-                            {
-                                id: 1,
-                                title: '函数基础',
-                                url: 'js-function-1'
-                            },
-                            {
-                                id: 2,
-                                title: '字符串函数',
-                                url: 'js-function-2'
-                            }
-                        ]
-                    },
-                    {
-                        id: 331110,
+                        id: 331106,
                         title: 'Fetch',
                         flag: 'recommend,hot',
                         icon: './app/img/edu/fetch.jpg',
@@ -1638,41 +1414,251 @@ let db = [
                         ]
                     },
                     {
-                        id: 331111,
-                        title: 'JSON',
+                        id: 331107,
+                        title: '数组',
                         flag: 'recommend',
-                        icon: './app/img/edu/json.jpg',
-                        desc: 'JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。是JavaScript的一个子集。JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。',
+                        desc: 'JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象。',
+                        icon: './app/img/edu/array.jpg',
                         child: [
                             {
                                 id: 1,
-                                title: 'stringify转字符串',
-                                url: 'js-json-1'
+                                title: '数组思维导图',
+                                url: 'js-array-1'
+                            },
+                            {
+                                id: 12,
+                                title: 'Array对象方法',
+                                url: 'js-array-12'
                             },
                             {
                                 id: 2,
-                                title: 'stringify转格式化字符串',
-                                url: 'js-json-2'
+                                title: 'Array.from',
+                                url: 'js-array-2'
                             },
                             {
                                 id: 3,
-                                title: 'stringify转指定key的字符串',
-                                url: 'js-json-3'
+                                title: 'Array.of',
+                                url: 'js-array-3'
                             },
                             {
                                 id: 4,
-                                title: 'stringify传函数',
-                                url: 'js-json-4'
+                                title: '从数组中删除虚值',
+                                url: 'js-array-4'
                             },
                             {
                                 id: 5,
-                                title: 'stringify定义toJSON',
-                                url: 'js-json-5'
+                                title: '从数组中获取随机值',
+                                url: 'js-array-5'
                             },
                             {
                                 id: 6,
-                                title: 'JSON.parse',
-                                url: 'js-json-6'
+                                title: '求两个数组的交集',
+                                url: 'js-array-6'
+                            },
+                            {
+                                id: 7,
+                                title: '将数组转换为对象',
+                                url: 'js-array-7'
+                            },
+                            {
+                                id: 8,
+                                title: 'Array.from达到.map 的效果',
+                                url: 'js-array-8'
+                            },
+                            {
+                                id: 9,
+                                title: '5种迭代方法',
+                                url: 'js-array-9'
+                            },
+                            {
+                                id: 10,
+                                title: 'flat将多维数组展平成一维数组',
+                                url: 'js-array-10'
+                            },
+                            {
+                                id: 11,
+                                title: 'flatMap',
+                                url: 'js-array-11'
+                            },
+                            {
+                                id: 13,
+                                title: '扁平化并去重并排序',
+                                url: 'js-array-13'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331108,
+                        title: 'String',
+                        desc: 'String 全局对象是一个用于字符串或一个字符序列的构造函数。',
+                        child: [
+                            {
+                                id: 5,
+                                title: '字符串函数学习思维导图',
+                                url: 'js-string-5'
+                            },
+                            {
+                                id: 1,
+                                title: 'charAt',
+                                url: 'js-string-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'repeat',
+                                url: 'js-string-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'substring',
+                                url: 'js-string-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'raw',
+                                url: 'js-string-4'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331109,
+                        title: 'Proxy',
+                        desc: 'Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写。Proxy 这个词的原意是代理，用在这里表示由它来“代理”某些操作，可以译为“代理器”。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Proxy',
+                                url: 'js-proxy-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'Proxy.revocable',
+                                url: 'js-proxy-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'handler 对象的方法',
+                                url: 'js-proxy-3'
+                            },
+                            {
+                                id: 4,
+                                title: '无操作转发代理',
+                                url: 'js-proxy-4'
+                            },
+                            {
+                                id: 5,
+                                title: '验证',
+                                url: 'js-proxy-5'
+                            },
+                            {
+                                id: 6,
+                                title: '扩展构造函数',
+                                url: 'js-proxy-6'
+                            },
+                            {
+                                id: 7,
+                                title: '操作 DOM 节点',
+                                url: 'js-proxy-7'
+                            },
+                            {
+                                id: 8,
+                                title: '值修正及附加属性',
+                                url: 'js-proxy-8'
+                            },
+                            {
+                                id: 9,
+                                title: '通过属性查找数组中的特定对象',
+                                url: 'js-proxy-9'
+                            },
+                            {
+                                id: 10,
+                                title: '一个完整的 traps 列表示例',
+                                url: 'js-proxy-10'
+                            }
+                        ]
+                    },
+                    
+                    {
+                        id: 331110,
+                        title: 'NaN',
+                        desc: '全局属性 NaN 的值表示不是一个数字（Not-A-Number）。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'NaN',
+                                url: 'js-nan-1'
+                            }
+                        ]
+                    },
+                    
+                    {
+                        id: 331111,
+                        title: 'Promise',
+                        desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Promise.all',
+                                url: 'js-promise-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'Promise.allSettled',
+                                url: 'js-promise-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'Promise.any',
+                                url: 'js-promise-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'Promise.prototype.then',
+                                url: 'js-promise-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'Promise.prototype.catch',
+                                url: 'js-promise-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'Promise.prototype.finally',
+                                url: 'js-promise-6'
+                            },
+                            {
+                                id: 7,
+                                title: 'Promise.race',
+                                url: 'js-promise-7'
+                            }
+                        ]
+                    },
+                    
+                    {
+                        id: 331112,
+                        title: 'WeakSet',
+                        desc: 'WeakSet 对象允许你将弱保持对象存储在一个集合中。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'WeakSet',
+                                url: 'js-weakset-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331113,
+                        title: '函数',
+                        desc: '',
+                        child: [
+                            {
+                                id: 1,
+                                title: '函数基础',
+                                url: 'js-function-1'
+                            },
+                            {
+                                id: 2,
+                                title: '字符串函数',
+                                url: 'js-function-2'
                             }
                         ]
                     }
@@ -2190,6 +2176,11 @@ let db = [
                                 id: 66,
                                 title: '函数柯里化',
                                 url: 'js-casefun-66'
+                            },
+                            {
+                                id: 67,
+                                title: '类型判断',
+                                url: 'js-casefun-67'
                             }
                         ]
                     },
@@ -2913,7 +2904,19 @@ let db = [
                     {
                         id: 551100,
                         title: 'nodemon',
-                        icon: ''
+                        desc: 'nodemon是一种工具，可以自动检测到目录中的文件更改时通过重新启动应用程序来调试基于node.js的应用程序。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'nodemon安装与使用',
+                                url: 'nodejs-nodemon-1'
+                            },
+                            {
+                                id: 2,
+                                title: '通过配置nodemon.json文件来使用',
+                                url: 'nodejs-nodemon-2'
+                            }
+                        ]
                     },
                     {
                         id: 551101,
@@ -2952,7 +2955,35 @@ let db = [
                         id: 551103,
                         title: 'PM2',
                         flag: 'recommend',
-                        icon: './app/img/edu/pm2.jpg'
+                        desc: 'PM2（Process Manager 2 ）是具有内置负载均衡器的Node.js应用程序的生产运行时和进程管理器。 它允许您永久保持应用程序活跃，无需停机即可重新加载它们，并促进常见的Devops任务。',
+                        icon: './app/img/edu/pm2.jpg',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'PM2特性',
+                                url: 'nodejs-pm2-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'PM2安装',
+                                url: 'nodejs-pm2-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'PM2命令大全',
+                                url: 'nodejs-pm2-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'PM2配置文件方式',
+                                url: 'nodejs-pm2-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'PM2命令方式',
+                                url: 'nodejs-pm2-5'
+                            }
+                        ]
                     }
                 ]
             },
