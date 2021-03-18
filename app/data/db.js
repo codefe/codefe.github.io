@@ -977,6 +977,16 @@ let db = [
                                 id: 1,
                                 title: 'DOM思维导图',
                                 url: 'js-dom-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'DOM对象方法',
+                                url: 'js-dom-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'DOM属性',
+                                url: 'js-dom-3'
                             }
                         ]
                     },
@@ -1054,6 +1064,11 @@ let db = [
                                 url: 'js-array-1'
                             },
                             {
+                                id: 12,
+                                title: 'Array对象方法',
+                                url: 'js-array-12'
+                            },
+                            {
                                 id: 2,
                                 title: 'Array.from',
                                 url: 'js-array-2'
@@ -1092,6 +1107,16 @@ let db = [
                                 id: 9,
                                 title: '5种迭代方法',
                                 url: 'js-array-9'
+                            },
+                            {
+                                id: 10,
+                                title: 'flat将多维数组展平成一维数组',
+                                url: 'js-array-10'
+                            },
+                            {
+                                id: 11,
+                                title: 'flatMap',
+                                url: 'js-array-11'
                             }
                         ]
                     },
@@ -1462,6 +1487,11 @@ let db = [
                         title: 'String',
                         desc: 'String 全局对象是一个用于字符串或一个字符序列的构造函数。',
                         child: [
+                            {
+                                id: 5,
+                                title: '字符串函数学习思维导图',
+                                url: 'js-string-5'
+                            },
                             {
                                 id: 1,
                                 title: 'charAt',
@@ -2790,6 +2820,12 @@ let db = [
                                 url: 'frames-vueSimpleUploader-9'
                             }
                         ]
+                    },
+                    {
+                        id: 443308,
+                        title: 'face-api',
+                        desc: '一个建立在「tensorflow.js」内核上的 javascript API——「face-api.js」，它实现了三种卷积神经网络架构，用于完成人脸检测、识别和特征点检测任务，可以在浏览器中进行人脸识别。',
+                        child: []
                     }
                 ]
             }
