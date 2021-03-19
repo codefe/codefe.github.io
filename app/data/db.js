@@ -1659,6 +1659,11 @@ let db = [
                                 id: 2,
                                 title: '字符串函数',
                                 url: 'js-function-2'
+                            },
+                            {
+                                id: 3,
+                                title: '函数的调用模式',
+                                url: 'js-function-3'
                             }
                         ]
                     }
@@ -2491,6 +2496,11 @@ let db = [
                                 id:25,
                                 title: '为什么Vue采用异步渲染呢？',
                                 url: 'frames-vuesource-25'
+                            },
+                            {
+                                id:26,
+                                title: 'Vue中判断是否为自定义组件',
+                                url: 'frames-vuesource-26'
                             }
                         ]
                     },
@@ -3013,16 +3023,34 @@ let db = [
             },
             {
                 id: 5544,
-                title: 'MongoDB',
+                title: 'Fastify',
                 child: [
                     {
                         id: 554400,
+                        title: 'Fastify',
+                        desc: 'Fastify 是一个高度专注于以最少的开销和强大的插件架构为开发人员提供最佳开发体验的 Web 框架。 Fastify 受到 Hapi 和 Express 框架的启发。据我们所知，Fastify 是我们村最快的 web 框架之一，也是我们“全村的希望”！',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Fastify核心功能',
+                                url: 'nodejs-fastify-1'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 5545,
+                title: 'MongoDB',
+                child: [
+                    {
+                        id: 554500,
                         title: 'MongoDB',
                         flag: 'recommend',
                         icon: './app/img/edu/MongoDB.jpg'
                     },
                     {
-                        id: 554401,
+                        id: 554501,
                         title: 'Studio3T',
                         icon: ''
                     }
@@ -3192,6 +3220,30 @@ let db = [
                                 url: 'tools-vite-1'
                             }
                         ]
+                    },
+                    {
+                        id: 770002,
+                        title: 'Parcel',
+                        desc: '极速零配置Web应用打包工具',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'vite使用',
+                                url: 'tools-vite-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 770003,
+                        title: 'Rollup',
+                        desc: 'Rollup 是一个 JavaScript 模块打包器,可以将小块代码编译成大块复杂的代码,Rollup 对代码模块使用新的标准化格式,这些标准都包含在 JavaScript 的 ES6 版本中。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Rollup使用',
+                                url: 'tools-Rollup-1'
+                            }
+                        ]
                     }
                 ]
             },
@@ -3285,6 +3337,11 @@ let db = [
                                 url: 'tools-Performance-4'
                             }
                         ]
+                    },
+                    {
+                        id: 772202,
+                        title: 'Mock',
+                        desc: ''
                     }
                 ]
             },
