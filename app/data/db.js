@@ -777,7 +777,14 @@ let db = [
                         title: '动画',
                         flag: 'recommend',
                         icon: './app/img/edu/animation.jpg',
-                        desc: 'animation是CSS3中新增的属性,它可以制作出多种酷炫的动画效果,如果对flash有一定的了解,那这个属性就会很容易学习。 '
+                        desc: 'animation是CSS3中新增的属性,它可以制作出多种酷炫的动画效果,如果对flash有一定的了解,那这个属性就会很容易学习。 ',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'CSS3动画之逐帧动画',
+                                url: 'css3-animation-1'
+                            }
+                        ]
                     },
                     {
                         id: 221106,
@@ -845,6 +852,38 @@ let db = [
                                 id: 12,
                                 title: '所有滤镜实例',
                                 url: 'css3-filter-12'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221107,
+                        title: 'Scroll Snap',
+                        desc: 'CSS的新特性 scroll-snap 能解决平时开发的什么问题呢？主要是滚动商品列表、滚动图片列表等，日常开发中为了实现这类效果我们往往需要借助js来实现滚动时的平滑过渡，而有了 scroll-snap 我们则可以摆脱js，直接使用css来实现这类效果。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Scroll Snap介绍',
+                                url: 'css3-scrollSnap-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'scroll-snap-type',
+                                url: 'css3-scrollSnap-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'scroll-snap-align',
+                                url: 'css3-scrollSnap-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'scroll-snap-stop',
+                                url: 'css3-scrollSnap-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'scroll-padding',
+                                url: 'css3-scrollSnap-5'
                             }
                         ]
                     }
@@ -3341,7 +3380,31 @@ let db = [
                     {
                         id: 772202,
                         title: 'Mock',
-                        desc: ''
+                        desc: 'mockjs 一个国人开发的库，可以拦截 ajax 请求和生成随机数据。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'mockjs的基础语法',
+                                url: 'tools-mock-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'mockjs基础API',
+                                url: 'tools-mock-2'
+                            }
+                        ]
+                    },
+                    {
+                        id: 772203,
+                        title: 'Charles',
+                        desc: 'Charles 中文叫「青花瓷」，是一款 Mac 网络代理软件，前端开发者应该挺熟悉的一个 App，通常用于网络请求抓包调试',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Charles用法',
+                                url: 'tools-charles-1'
+                            }
+                        ]
                     }
                 ]
             },
