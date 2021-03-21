@@ -2242,6 +2242,11 @@ let db = [
                                 id: 1,
                                 title: 'JS控制html分屏加载',
                                 url: 'js-bigdata-1'
+                            },
+                            {
+                                id: 2,
+                                title: '大规格文件的上传优化',
+                                url: 'js-bigdata-2'
                             }
                         ]
                     }

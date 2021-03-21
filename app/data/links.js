@@ -89,19 +89,24 @@ let links = {
             url: 'https://www.mithriljs.net/'
         },
         {
-            id: 14,
+            id: 13,
             title: 'Vue Test Utils',
             url: 'https://vue-test-utils.vuejs.org/zh/'
         },
         {
-            id: 15,
+            id: 14,
             title: 'TransX',
             url: 'https://github.com/tnfe/transx'
         },
         {
-            id: 13,
+            id: 15,
             title: 'SnapSVG',
             url: 'http://snapsvg.io/'
+        },
+        {
+            id: 16,
+            title: 'GPU',
+            url: 'https://gpu.rocks/'
         }
     ],
     study: [
