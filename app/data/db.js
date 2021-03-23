@@ -1759,7 +1759,14 @@ let db = [
                         id: 332201,
                         title: '中级算法',
                         flag: 'recommend',
-                        icon: './app/img/edu/suanfa1.jpg'
+                        icon: './app/img/edu/suanfa1.jpg',
+                        child: [
+                            {
+                                id: 1,
+                                title: '斐波那契数列',
+                                url: 'js-suanfa-c1'
+                            }
+                        ]
                     },
                     {
                         id: 332202,
@@ -2225,6 +2232,16 @@ let db = [
                                 id: 67,
                                 title: '类型判断',
                                 url: 'js-casefun-67'
+                            },
+                            {
+                                id: 68,
+                                title: '防抖节流原理、区别以及应用',
+                                url: 'js-casefun-68'
+                            },
+                            {
+                                id: 69,
+                                title: '把一堆整数分成三份，确保每一份和尽量相等',
+                                url: 'js-casefun-69'
                             }
                         ]
                     },
@@ -3250,6 +3267,36 @@ let db = [
                                 id: 15,
                                 title: 'splitChunks',
                                 url: 'tools-webpack-15'
+                            },
+                            {
+                                id: 16,
+                                title: '优化 Webpack 的构建速度',
+                                url: 'tools-webpack-16'
+                            },
+                            {
+                                id: 17,
+                                title: 'noParse',
+                                url: 'tools-webpack-17'
+                            },
+                            {
+                                id: 18,
+                                title: 'IgnorePlugin',
+                                url: 'tools-webpack-18'
+                            },
+                            {
+                                id: 19,
+                                title: 'thread-loader',
+                                url: 'tools-webpack-19'
+                            },
+                            {
+                                id: 20,
+                                title: '压缩加速——开启多线程压缩',
+                                url: 'tools-webpack-20'
+                            },
+                            {
+                                id: 21,
+                                title: '优化 Webpack 的打包体积',
+                                url: 'tools-webpack-21'
                             }
                         ]
                     },

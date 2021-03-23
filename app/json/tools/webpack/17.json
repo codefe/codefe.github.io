@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"noParse","content":"<p></p><ul><li>不去解析某个库内部的依赖关系</li><li>比如jquery 这个库是独立的， 则不去解析这个库内部依赖的其他的东西</li><li>在独立库的时候可以使用</li><li><pre><code>module.exports = {\n  module: {\n    noParse: /jquery/,\n    rules:[]\n  }\n}</code></pre><p><br></p></li></ul>"}}

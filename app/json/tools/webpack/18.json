@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"IgnorePlugin","content":"<p></p><ul><li>忽略掉某些内容 不去解析依赖库内部引用的某些内容</li><li>从moment中引用 ./locol 则忽略掉</li><li>如果要用local的话 则必须在项目中必须手动引入 import 'moment/locale/zh-cn'</li><li><pre><code>module.exports = {\n    plugins: [\n        new Webpack.IgnorePlugin(/./local/, /moment/),\n    ]\n}</code></pre><p><br></p></li></ul>"}}
