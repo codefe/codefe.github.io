@@ -3297,6 +3297,106 @@ let db = [
                                 id: 21,
                                 title: '优化 Webpack 的打包体积',
                                 url: 'tools-webpack-21'
+                            },
+                            {
+                                id: 22,
+                                title: '添加 IE 兼容',
+                                url: 'tools-webpack-22'
+                            },
+                            {
+                                id: 23,
+                                title: '压缩图片',
+                                url: 'tools-webpack-23'
+                            },
+                            {
+                                id: 24,
+                                title: '添加打包分析',
+                                url: 'tools-webpack-24'
+                            },
+                            {
+                                id: 25,
+                                title: '配置 externals 引入 cdn 资源',
+                                url: 'tools-webpack-25'
+                            },
+                            {
+                                id: 26,
+                                title: '多页面打包 multi-page',
+                                url: 'tools-webpack-26'
+                            },
+                            {
+                                id: 27,
+                                title: '删除 moment 语言包',
+                                url: 'tools-webpack-27'
+                            },
+                            {
+                                id: 28,
+                                title: '去掉 console.log',
+                                url: 'tools-webpack-28'
+                            },
+                            {
+                                id: 29,
+                                title: '利用 splitChunks 单独打包第三方模块',
+                                url: 'tools-webpack-29'
+                            },
+                            {
+                                id: 30,
+                                title: '开启 gzip Zopfli 压缩',
+                                url: 'tools-webpack-30'
+                            },
+                            {
+                                id: 31,
+                                title: '为 sass 提供全局样式，以及全局变量',
+                                url: 'tools-webpack-31'
+                            },
+                            {
+                                id: 32,
+                                title: '为 stylus 提供全局变量',
+                                url: 'tools-webpack-32'
+                            },
+                            {
+                                id: 33,
+                                title: '预渲染 prerender-spa-plugin',
+                                url: 'tools-webpack-33'
+                            },
+                            {
+                                id: 34,
+                                title: '静态资源自动打包上传阿里 oss、华为 obs',
+                                url: 'tools-webpack-34'
+                            },
+                            {
+                                id: 35,
+                                title: '配置多环境变量',
+                                url: 'tools-webpack-35'
+                            },
+                            {
+                                id: 36,
+                                title: '修复 HMR(热更新)失效',
+                                url: 'tools-webpack-36'
+                            },
+                            {
+                                id: 37,
+                                title: '修复 Lazy loading routes Error： Cyclic dependency',
+                                url: 'tools-webpack-37'
+                            },
+                            {
+                                id: 38,
+                                title: '添加别名 alias',
+                                url: 'tools-webpack-38'
+                            },
+                            {
+                                id: 39,
+                                title: '自动生成雪碧图',
+                                url: 'tools-webpack-39'
+                            },
+                            {
+                                id: 40,
+                                title: 'SVG 转 font 字体',
+                                url: 'tools-webpack-40'
+                            },
+                            {
+                                id: 41,
+                                title: '使用 SVG 组件',
+                                url: 'tools-webpack-41'
                             }
                         ]
                     },

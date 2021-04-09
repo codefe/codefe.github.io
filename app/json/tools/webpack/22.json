@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"添加 IE 兼容","content":"在 main.js 中添加<blockquote>import 'core-js/stable';<br> import 'regenerator-runtime/runtime';</blockquote><p>配置 babel.config.js</p><pre><code>const plugins = [];\n\nmodule.exports = {\n  presets: [[\"@vue/app\", { useBuiltIns: \"entry\" }]],\n  plugins: plugins\n};</code></pre><p><br></p>"}}

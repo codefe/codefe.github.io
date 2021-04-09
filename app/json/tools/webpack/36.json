@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"修复 HMR(热更新)失效","content":"<p>如果热更新失效，如下操作：<br></p><pre><code>module.exports = {\n  chainWebpack: config =&gt; {\n    // 修复HMR\n    config.resolve.symlinks(true);\n  }\n};</code></pre><p><br></p>"}}
