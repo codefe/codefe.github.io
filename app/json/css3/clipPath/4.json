@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"椭圆形ellipse（长、短轴半径at圆心坐标）","content":"<pre><code>.ellipse{\n    width:100px;\n    height:100px;\n    background:#aaa;\n    -webkit-clip-path:ellipse(25% 50% at 50% 50%);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/2.png\" style=\"max-width:100%;\"></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"perspective","content":"<p>语法&nbsp;</p><blockquote>perspective: number|none;</blockquote><pre><code>值\t描述\nnumber\t元素距离视图的距离，以像素计。\nnone\t默认值。与 0 相同。不设置透视。</code></pre><pre><code>div{\n    perspective: 500;\n    -webkit-perspective: 500; /* Safari 和 Chrome */\n}</code></pre><p><br></p><p><br></p><p><br></p>"}}

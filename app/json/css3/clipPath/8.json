@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"正五边形","content":"<p>正五边形就要计算一下了，59/（59+95）=38.31%，31/（81*2）=19.14%<br></p><pre><code>.c{\n    width:162px;\n    height:154px;\n    background:#095;\n    -webkit-clip-path:polygon(0% 38.31%, 50% 0%,100% 38.31%,80.86% 100%,19.14% 100%);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/6.png\" style=\"max-width:100%;\"></p>"}}

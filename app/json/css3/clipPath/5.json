@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"内置矩形inset（上右下左的边距round上右下左圆角）","content":"<pre><code>.inset{\n    width:100px;\n    height:100px;\n    background:#99f;\n    -webkit-clip-path:inset(10px 20px 30px 10px round 20px 5px 50px 0);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/3.png\" style=\"max-width:100%;\"></p>"}}

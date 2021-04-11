@@ -690,12 +690,26 @@ let db = [
                     {
                         id: 220001,
                         title: '边框',
-                        desc: 'CSS border是控制对象的边框边线宽度、颜色、虚线、实线等样式CSS属性。通过CSS3,您能够创建圆角边框,向矩形添加阴影,使用图片来绘制边框。'
+                        desc: 'CSS border是控制对象的边框边线宽度、颜色、虚线、实线等样式CSS属性。通过CSS3,您能够创建圆角边框,向矩形添加阴影,使用图片来绘制边框。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'border-image',
+                                url: 'css3-border-1'
+                            }
+                        ]
                     },
                     {
                         id: 220002,
                         title: '阴影',
-                        desc: 'CSS3 box-shadow 属性用来描述一个元素的一个或多个阴影效果,该属性几乎可以让你完成你想要的任何阴影效果。'
+                        desc: 'CSS3 box-shadow 属性用来描述一个元素的一个或多个阴影效果,该属性几乎可以让你完成你想要的任何阴影效果。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'box-shadow',
+                                url: 'css3-shadow-1'
+                            }
+                        ]
                     },
                     {
                         id: 220003,
@@ -705,7 +719,61 @@ let db = [
                     {
                         id: 220004,
                         title: '背景',
-                        desc: 'CSS3 包含多个新的背景属性,它们提供了对背景更强大的控制。例如背景剪切,多个背景以及调整背景大小的选项。'
+                        desc: 'CSS3 包含多个新的背景属性,它们提供了对背景更强大的控制。例如背景剪切,多个背景以及调整背景大小的选项。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'background-blend-mode',
+                                url: 'css3-background-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'background-size',
+                                url: 'css3-background-2'
+                            }
+                        ]
+                    },
+                    {
+                        id: 220005,
+                        title: '文本',
+                        desc: 'CSS3 包含多个新的背景属性,它们提供了对背景更强大的控制。例如背景剪切,多个背景以及调整背景大小的选项。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'text-overflow',
+                                url: 'css3-text-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'text-transform',
+                                url: 'css3-text-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'writing-mode',
+                                url: 'css3-text-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'word-break',
+                                url: 'css3-text-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'word-spacing',
+                                url: 'css3-text-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'word-wrap',
+                                url: 'css3-text-6'
+                            },
+                            {
+                                id: 7,
+                                title: '单行或多行文本溢出显示省略号',
+                                url: 'css3-text-7'
+                            }
+                        ]
                     }
                 ]
             },
@@ -756,14 +824,58 @@ let db = [
                         title: '多列',
                         flag: 'recommend',
                         icon: './app/img/edu/colum.jpg',
-                        desc: 'CSS3中新出现的多列布局(multi-column)是传统HTML网页中块状布局模式的有力扩充。这种新语法能够让WEB开发人员轻松的让文本呈现多列显示。'
+                        desc: 'CSS3中新出现的多列布局(multi-column)是传统HTML网页中块状布局模式的有力扩充。这种新语法能够让WEB开发人员轻松的让文本呈现多列显示。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '多列(Multi-column) 属性',
+                                url: 'css3-multiColumn-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'column-count',
+                                url: 'css3-multiColumn-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'column-width',
+                                url: 'css3-multiColumn-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'columns',
+                                url: 'css3-multiColumn-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'column-gap(列间隙)',
+                                url: 'css3-multiColumn-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'column-rule',
+                                url: 'css3-multiColumn-6'
+                            },
+                            {
+                                id: 7,
+                                title: 'column-span',
+                                url: 'css3-multiColumn-7'
+                            }
+                        ]
                     },
                     {
                         id: 221103,
                         title: '用户界面',
                         flag: 'recommend',
                         icon: './app/img/edu/boxsizing.jpg',
-                        desc: 'CSS3 用户界面 在CSS3 中, 增加了一些新的用户界面特性来调整元素尺寸,框尺寸和外边框。 resize, box-sizing, outline-offset'
+                        desc: 'CSS3 用户界面 在CSS3 中, 增加了一些新的用户界面特性来调整元素尺寸,框尺寸和外边框。 resize, box-sizing, outline-offset',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'box-sizing',
+                                url: 'css3-boxsizing-1'
+                            }
+                        ]
                     },
                     {
                         id: 221104,
@@ -857,6 +969,70 @@ let db = [
                     },
                     {
                         id: 221107,
+                        title: '裁剪样式',
+                        desc:'通过clip-path把一个div（元素，可以是图片等）裁切成不同的形状',
+                        flag: 'recommend',
+                        icon: './app/img/edu/css-clip-path.png',
+                        child: [
+                            {
+                                id: 1,
+                                title: '定义和用法',
+                                url: 'css3-clipPath-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'css3的clip-path方法剪裁实现（三角形，多边形，圆，椭圆）',
+                                url: 'css3-clipPath-2'
+                            },
+                            {
+                                id: 3,
+                                title: '圆形circle（半径at圆心坐标）',
+                                url: 'css3-clipPath-3'
+                            },
+                            {
+                                id: 4,
+                                title: '椭圆形ellipse（长、短轴半径at圆心坐标）',
+                                url: 'css3-clipPath-4'
+                            },
+                            {
+                                id: 5,
+                                title: '内置矩形inset（上右下左的边距round上右下左圆角）',
+                                url: 'css3-clipPath-5'
+                            },
+                            {
+                                id: 6,
+                                title: '正三角形',
+                                url: 'css3-clipPath-6'
+                            },
+                            {
+                                id: 7,
+                                title: '正方形',
+                                url: 'css3-clipPath-7'
+                            },
+                            {
+                                id: 8,
+                                title: '正五边形',
+                                url: 'css3-clipPath-8'
+                            },
+                            {
+                                id: 9,
+                                title: '正六边形',
+                                url: 'css3-clipPath-9'
+                            },
+                            {
+                                id: 10,
+                                title: '正七边形',
+                                url: 'css3-clipPath-10'
+                            },
+                            {
+                                id: 11,
+                                title: '正八边形',
+                                url: 'css3-clipPath-11'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221108,
                         title: 'Scroll Snap',
                         desc: 'CSS的新特性 scroll-snap 能解决平时开发的什么问题呢？主要是滚动商品列表、滚动图片列表等，日常开发中为了实现这类效果我们往往需要借助js来实现滚动时的平滑过渡，而有了 scroll-snap 我们则可以摆脱js，直接使用css来实现这类效果。',
                         child: [
@@ -884,6 +1060,47 @@ let db = [
                                 id: 5,
                                 title: 'scroll-padding',
                                 url: 'css3-scrollSnap-5'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221109,
+                        title: 'object-fit',
+                        desc: 'object-fit 属性指定元素的内容应该如何去适应指定容器的高度与宽度。object-fit 一般用于 img 和 video 标签，一般可以对这些元素进行保留原始比例的剪切、缩放或者直接进行拉伸等。注意: Internet Explorer/Edge 15 或更早版本的浏览器不支持 object-fit 属性。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'object-fit',
+                                url: 'css3-object-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221110,
+                        title: 'object-position',
+                        desc: '根据容器大小重置图片的大小，并设置图片的位置',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'object-position',
+                                url: 'css3-object-2'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221111,
+                        title: 'perspective',
+                        desc: '设置元素被查看位置的视图,perspective 属性定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。<br>当为元素定义 perspective 属性时，其子元素会获得透视效果，而不是元素本身。<br>注释：perspective 属性只影响 3D 转换元素。<br>请与 perspective-origin 属性一同使用该属性，这样您就能够改变 3D 元素的底部位置。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'perspective',
+                                url: 'css3-perspective-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'perspective-origin',
+                                url: 'css3-perspective-2'
                             }
                         ]
                     }
@@ -1632,6 +1849,8 @@ let db = [
                     {
                         id: 331111,
                         title: 'Promise',
+                        flag: 'recommend',
+                        icon: './app/img/edu/promise.jpg',
                         desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
                         child: [
                             {
@@ -2893,7 +3112,32 @@ let db = [
                         title: 'face-api',
                         desc: '一个建立在「tensorflow.js」内核上的 javascript API——「face-api.js」，它实现了三种卷积神经网络架构，用于完成人脸检测、识别和特征点检测任务，可以在浏览器中进行人脸识别。',
                         child: []
+                    },
+                    {
+                        id: 443309,
+                        title: '二维码',
+                        flag: 'recommend',
+                        icon: './app/img/edu/qrcode.jpg',
+                        desc: '',
+                        child: []
+                    },
+                    {
+                        id: 443310,
+                        title: 'Alipay',
+                        flag: 'recommend',
+                        icon: './app/img/edu/alipay.jpg',
+                        desc: '',
+                        child: []
+                    },
+                    {
+                        id: 443311,
+                        title: 'templateJS',
+                        flag: 'recommend',
+                        icon: './app/img/edu/template.jpg',
+                        desc: '',
+                        child: []
                     }
+                    
                 ]
             }
         ]
@@ -3435,6 +3679,14 @@ let db = [
                                 url: 'tools-Rollup-1'
                             }
                         ]
+                    },
+                    {
+                        id: 770004,
+                        title: 'FIS',
+                        flag: 'recommend',
+                        icon: './app/img/edu/fis.jpg',
+                        desc: 'FIS3 , 为你定制的前端工程构建工具,解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题',
+                        child: []
                     }
                 ]
             },

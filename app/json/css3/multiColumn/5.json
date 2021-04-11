@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"column-gap(列间隙)","content":"<p>除了想要设置列数和列宽外，我们有时还想要设置列间隙和列的边框。\n<br>column-gap(列间隙)：建议值为1em</p><p>代码如下：</p><pre><code>.container{\n    columns: 5 10rem;\n    column-gap: 1rem;\n}\n&lt;div class=\"container\"&gt;内容&lt;/div&gt;</code></pre><p><br></p>"}}

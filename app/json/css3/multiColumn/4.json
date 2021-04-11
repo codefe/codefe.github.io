@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"columns","content":"<p>是column-count 和 column-width的简写,优先保证宽度，在宽度⾄至少能达到指定宽度时，设置列列数。&nbsp;<br></p><p>代码如下：</p><pre><code>.container{\n    columns: 5 10rem;\n}\n&lt;div class=\"container\"&gt;内容&lt;/div&gt;</code></pre><p><br></p>"}}

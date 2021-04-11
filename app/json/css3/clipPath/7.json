@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"正方形","content":"<pre><code>.b{\n    width:100px;\n    height:100px;\n    background:#069;\n    -webkit-clip-path:polygon(0% 0%, 0% 100%,100% 100%,100% 0%);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/5.png\" style=\"max-width:100%;\"></p>"}}

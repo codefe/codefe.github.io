@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"column-count","content":"<p>设置列的个数。数字为想要把文章分为的列数，浏览器会自动计算每 列的宽度。<br>如：将文字分成4列，代码如下：</p><pre><code>.container{\n    column-count:4;\n}\n&lt;div class=\"container\"&gt;内容&lt;/div&gt;</code></pre><p><br></p>"}}

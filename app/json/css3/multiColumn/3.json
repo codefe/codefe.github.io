@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"column-width","content":"<p>设置每列的宽度。设置后，浏览器会根据设置的宽度自动计算调整列数，如果宽度不足两列，则只显示一列，宽度设置也将失效。&nbsp;<br></p><p>代码如下：</p><pre><code>.container{\n    column-width:10rem;\n}\n&lt;div class=\"container\"&gt;内容&lt;/div&gt;</code></pre><p><br></p>"}}

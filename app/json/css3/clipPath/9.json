@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"正六边形","content":"<p>正六边形的计算比较简单</p><pre><code>.d{\n    width:200px;\n    height:174px;\n    background:#f80;\n    -webkit-clip-path:polygon(25% 0%, 75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/7.png\" style=\"max-width:100%;\"></p>"}}

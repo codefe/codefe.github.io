@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"word-wrap","content":"<p>word-wrap 属性允许长单词或 URL 地址换行到下一行。<br></p><p>语法\n<br><blockquote>word-wrap: normal|break-word;</blockquote></p><pre><code>值           描述\nnormal       只在允许的断字点换行（浏览器保持默认处理）。\nbreak-word   在长单词或 URL 地址内部进行换行。</code></pre><p>允许长单词换行到下一行：<br><blockquote>p.test {word-wrap:break-word;}</blockquote></p>"}}

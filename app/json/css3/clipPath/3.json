@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"圆形circle（半径at圆心坐标）","content":"<pre><code>.circle{\n    width:100px;\n    height:100px;\n    background:#0cc;\n    -webkit-clip-path:circle(50% at 50% 50%);\n  }</code></pre><p><img src=\"/app/json/css3/clipPath/img/1.png\" style=\"max-width:100%;\"></p>"}}
