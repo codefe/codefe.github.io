@@ -296,6 +296,7 @@
 
 				Gs.getData(url).then(rs => {
 					document.title = rs.data.subTitle + ' - 初学|前端进阶';
+					rs.data.content = rs.data.content.replace(/<pre><code>/g,'<pre>').replace(/<\/code><\/pre>/g,'<\/pre>');
 					Gs.$('#articleCon').innerHTML = Gs.tpls.articleContent.tpl(rs.data);
 				}).catch(err => {
 					document.title = '初学|前端进阶';
@@ -772,7 +773,7 @@
 				if (Gs.file.flag) {
 					json.data.content = Gs.file.editor.txt.html();
 				}
-				this.download("s1-.json", JSON.stringify(json).replace(/(<!--).*?(-->)/g, ''));
+				this.download("s1-.json", JSON.stringify(json).replace(/(<!--).*?(-->)/g, '').replace(/<pre><code>/g,'<pre>').replace(/<\/code><\/pre>/g,'<\/pre>'));
 			}
 		},
 		//返回顶部

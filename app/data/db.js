@@ -574,7 +574,14 @@ let db = [
                         title: 'Canvas',
                         flag: 'recommend',
                         icon: './app/img/edu/canvas.jpg',
-                        desc: '标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。你可以通过多种方法使用 canvas 绘制路径,盒、圆、字符以及添加图像。'
+                        desc: '标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。你可以通过多种方法使用 canvas 绘制路径,盒、圆、字符以及添加图像。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Pointer Lock API实现的图片无限3D旋转实例',
+                                url: 'html5-canvas-1'
+                            }
+                        ]
                     },
                     {
                         id: 111103,
@@ -903,6 +910,11 @@ let db = [
                                 id: 1,
                                 title: 'CSS3动画之逐帧动画',
                                 url: 'css3-animation-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'CSS3实现闪光字',
+                                url: 'css3-animation-2'
                             }
                         ]
                     },
@@ -2522,6 +2534,11 @@ let db = [
                                 id: 70,
                                 title: '前端网页截图：Canvas截图 vs SVG截图',
                                 url: 'js-casefun-70'
+                            },
+                            {
+                                id: 71,
+                                title: '获取日历的上一个月和下一个月',
+                                url: 'js-casefun-71'
                             }
                         ]
                     },
