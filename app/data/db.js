@@ -189,6 +189,11 @@ let db = [
                         desc: 'WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。',
                         child: [
                             {
+                                id: 0,
+                                title: 'WebSocket的JavaScript接口详解',
+                                url: 'html5-socket-0'
+                            },
+                            {
                                 id: 1,
                                 title: 'WebSocket介绍',
                                 url: 'html5-socket-1'
@@ -502,6 +507,23 @@ let db = [
                                 id: 3,
                                 title: 'Notifications实例',
                                 url: 'html5-notifications-3'
+                            },
+                            {
+                                id: 4,
+                                title: '使用Notification API实现html5桌面通知',
+                                url: 'html5-notifications-4'
+                            }
+                        ]
+                    },
+                    {
+                        id: 110019,
+                        title: 'Meta',
+                        desc: 'meta属性在HTML中占据了很重要的位置。如：针对搜索引擎的SEO，文档的字符编码，设置刷新缓存等。虽然一些网页可能没有使用meta，但是作为正规军，我们还是有必要了解一些meta的属性，并且能够熟练使用它们。 ',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'meta属性的使用详解',
+                                url: 'html5-meta-1'
                             }
                         ]
                     }
@@ -580,6 +602,26 @@ let db = [
                                 id: 1,
                                 title: 'Pointer Lock API实现的图片无限3D旋转实例',
                                 url: 'html5-canvas-1'
+                            },
+                            {
+                                id: 2,
+                                title: '使用Canvas实现黑客帝国数字雨',
+                                url: 'html5-canvas-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'canvas 实现本地文件上传预览功能',
+                                url: 'html5-canvas-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'Canvas手写字',
+                                url: 'html5-canvas-4'
+                            },
+                            {
+                                id: 5,
+                                title: '让Canvas全屏',
+                                url: 'html5-canvas-5'
                             }
                         ]
                     },
@@ -2545,7 +2587,14 @@ let db = [
                     {
                         id: 336602,
                         title: '动画',
-                        desc: 'JS动画特效实例演示'
+                        desc: 'JS动画特效实例演示',
+                        child: [
+                            {
+                                id: 1,
+                                title: '原生js实现碰撞反弹球特效',
+                                url: 'js-animation-1'
+                            }
+                        ]
                     },
                     {
                         id: 336603,
@@ -2561,6 +2610,11 @@ let db = [
                                 id: 2,
                                 title: '大规格文件的上传优化',
                                 url: 'js-bigdata-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'JavaScript操作文件和二进制数据',
+                                url: 'js-bigdata-3'
                             }
                         ]
                     }
