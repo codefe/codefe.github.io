@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"解决UC浏览器默认把wap页面字体放大问题","content":"<p>UC手机浏览器在识别到页面文字很多的情况下会自动放大字体优化阅读体验，如果要关闭这个功能需要在网页头部添加：</p><pre><code><span>&lt;meta</span> <span>name=</span><span>\"wap-font-scale\"</span> <span>content=</span><span>\"no\"</span><span>&gt; 代码即可；\n</span></code></pre><p></p><p>不得不说这个功能对开发者来说真的挺坑的！</p>"}}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+html,body {background-color:#fff;font:14px/1.8 "PingFang SC",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;color: #666;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+html,body,div,p,ul,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,i{margin:0;padding:0;box-sizing: border-box;}
+header,footer,article,aside,details,figcaption,figure,hgroup,main,menu,nav,section,summary {display: block;box-sizing: border-box;}
+dl,ul{list-style:none;}
+img{border:0;display: block;vertical-align: middle;}
+a,input{text-decoration:none;outline:none;color:#666;}
+button,textarea{outline:none;}
+a:active{outline:0;}
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,body{
+    height:100%;
+}
+body{
+    display: flex;
+}
+aside{
+    flex:0 1 280px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+aside h1{
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 14px;
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.aside-footer{
+    height: 30px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+}

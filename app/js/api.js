@@ -456,6 +456,8 @@
 						return 'cur';
 					} else if (url.args === 'download' && cur === '资源下载') {
 						return 'cur';
+					} else if (url.args === 'tool' && cur === '前端工具') {
+						return 'cur';
 					}
 				} else {
 					if (name === 'index.html' && cur === '返回首页') {
@@ -502,7 +504,19 @@
 			//study
 			study: function () {
 				let url = this.getUrl();
-				Gs.$('#navigation').innerHTML = url.args === 'study' ? '学习平台' : url.args === 'expert' ? '前端大牛' : '资源下载';
+				let titleName = (() => {
+					switch (url.args){
+						case 'study':
+							return '学习平台';
+						case 'expert':
+							return '前端大牛';
+						case 'download':
+							return '资源下载';
+						case 'tool':
+							return '前端工具';
+					}
+				})();
+				Gs.$('#navigation').innerHTML = titleName;
 				return new Promise(resolve => {
 					var html = '';
 					if (url.args === 'study') {
@@ -522,6 +536,14 @@
 							}
 						}
 					} else if (url.args === 'download') {
+						html += '<ul class="flex-wrap flex-break study-list expert-list">';
+						for (let item of links[url.args]) {
+							html += Gs.tpls.studyList.tpl(item);
+							if (item.id % 2 === 0) {
+								html += '</ul><ul class="flex-wrap flex-break study-list expert-list">';
+							}
+						}
+					} else if (url.args === 'tool') {
 						html += '<ul class="flex-wrap flex-break study-list expert-list">';
 						for (let item of links[url.args]) {
 							html += Gs.tpls.studyList.tpl(item);

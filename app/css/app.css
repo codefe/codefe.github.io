@@ -125,7 +125,7 @@ pre,code{white-space:pre-wrap;word-wrap:break-word;}
 .head-nav dd{line-height: 2;padding-top:5px;}
 .head-nav dd.rnav{line-height: 2.5;}
 .head-nav dd a{display:inline-block;}
-.head-nav:hover .popmenu{height:320px;left:-600px;}
+.head-nav:hover .popmenu{height:350px;left:-600px;}
 .head-nav .popmenu>section{padding:20px;}
 .head-nav .popmenu>section a:hover{color:#13d478;}
 .flex-nav-tab{

@@ -22,10 +22,10 @@ let links = {
 			name: "资源下载",
 			url: "./study.html?id=download"
 		},
-		// {
-		// 	name: "实例演示",
-		// 	url: "./list.html?id=case"
-		// }
+		{
+			name: "前端工具",
+			url: "./study.html?id=tool"
+		}
 	],
     web: [
         {
@@ -80,33 +80,43 @@ let links = {
         },
         {
             id: 11,
+            title: 'Swiper',
+            url: 'https://3.swiper.com.cn/api/index.html'
+        },
+        {
+            id: 12,
             title: 'AnimeJS',
             url: 'https://www.animejs.cn/'
         },
         {
-            id: 12,
+            id: 13,
             title: 'Mithril',
             url: 'https://www.mithriljs.net/'
         },
         {
-            id: 13,
+            id: 14,
             title: 'Vue Test Utils',
             url: 'https://vue-test-utils.vuejs.org/zh/'
         },
         {
-            id: 14,
+            id: 15,
             title: 'TransX',
             url: 'https://github.com/tnfe/transx'
         },
         {
-            id: 15,
+            id: 16,
             title: 'SnapSVG',
             url: 'http://snapsvg.io/'
         },
         {
-            id: 16,
+            id: 17,
             title: 'GPU',
             url: 'https://gpu.rocks/'
+        },
+        {
+            id: 18,
+            title: 'VAPTCHA',
+            url: 'https://www.vaptcha.com/'
         }
     ],
     study: [
@@ -212,6 +222,15 @@ let links = {
             icon: './app/img/ic/pdf.jpg',
             desc: '提取码：qm6f',
 			url: "https://pan.baidu.com/s/1fgD5T2Oz4g1JWorhlcCbyg"
+		}
+    ],
+    tool: [
+        {
+			id: 1,
+            title: "图片在线转换为Base64",
+            icon: './app/img/ic/pdf.jpg',
+            desc: '可以在线任意图片格式转Base64编码工具',
+			url: "./tool.html?id=imgTobase64"
 		}
     ]
 };

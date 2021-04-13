@@ -657,6 +657,14 @@ let db = [
                             {id:7,title:"通过key取出对象",url:"html5-IndexedDB-7"},
                             {id:8,title:"更新一个对象",url:"html5-IndexedDB-8"}
                         ]
+                    },
+                    {
+                        id: 111108,
+                        title: 'img',
+                        desc: 'img 元素向网页中嵌入一幅图像。img标签并不会在网页中插入图像，而是从网页上链接图像。img标签创建的是被引用图像的占位空间。img标签每出现一次，一个 Image 对象就会被创建。',
+                        child: [
+                            {id:1,title:"base64数据 1×1的Gif透明图片",url:"html5-img-5"}
+                        ]
                     }
                 ]
             },
@@ -1127,7 +1135,9 @@ let db = [
                         child: [
                             {id:1,title:"修改手机地址栏状态栏颜色",url:"css3-mt-1"},
                             {id:2,title:"移动端1px问题的解决办法",url:"css3-mt-2"},
-                            {id:3,title:"CSS3 动画卡顿性能优化解决方案",url:"css3-mt-3"}
+                            {id:3,title:"CSS3 动画卡顿性能优化解决方案",url:"css3-mt-3"},
+                            {id:4,title:"解决UC浏览器默认把wap页面字体放大问题",url:"css3-mt-4"},
+                            {id:5,title:"解决苹果浏览器iframe不能滚动问题",url:"css3-mt-5"}
                         ]
                     },
                     {
@@ -1144,6 +1154,11 @@ let db = [
                                 id:1,
                                 title: '滚动视差',
                                 url: 'css3-case-1'
+                            },
+                            {
+                                id:2,
+                                title: 'CSS实现代码高亮显示行数原理解析',
+                                url: 'css3-case-2'
                             }
                         ]
                     }
@@ -1196,34 +1211,6 @@ let db = [
                     },
                     {
                         id: 330006,
-                        title: '正则表达式',
-                        desc: '正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。',
-                        child: [
-                            {
-                                id: 1,
-                                title: '正则表达式图示',
-                                url: 'js-regexp-1'
-                            },
-                            {id:2,title:"test,exec,match,replace方法的区别",url: 'js-regexp-2'},
-                            {id:3,title:"元字符",url: 'js-regexp-3'},
-                            {id:4,title:"非打印字符",url: 'js-regexp-4'},
-                            {id:5,title:"特殊字符",url: 'js-regexp-5'},
-                            {id:6,title:"限定符",url: 'js-regexp-6'},
-                            {id:7,title:"定位符",url: 'js-regexp-7'},
-                            {id:8,title:"选择",url: 'js-regexp-8'},
-                            {id:9,title:"反向引用",url: 'js-regexp-9'},
-                            {id:10,title:"运算符优先级",url: 'js-regexp-10'},
-                            {id:11,title:"基本模式匹配",url: 'js-regexp-11'},
-                            {id:12,title:"字符簇",url: 'js-regexp-12'},
-                            {id:13,title:"确定重复出现",url: 'js-regexp-13'},
-                            {id:14,title:"常见表达式示例",url: 'js-regexp-14'},
-                            {id:15,title:"去除字符串左右两端的空格",url: 'js-regexp-15'},
-                            {id:16,title:"正则验证固话与手机",url: 'js-regexp-16'},
-                            {id:17,title:"正则实例",url: 'js-regexp-17'}
-                        ]
-                    },
-                    {
-                        id: 330007,
                         title: 'TypeScript',
                         desc: '',
                         icon: './app/img/edu/ts.jpg'
@@ -1232,102 +1219,91 @@ let db = [
             },
             {
                 id: 3311,
-                title: '进阶',
+                title: 'JS对象',
                 child: [
                     {
                         id: 331100,
-                        title: 'Window',
-                        desc: '',
+                        title: 'Array',
+                        flag: 'recommend',
+                        icon: './app/img/edu/array.jpg',
+                        desc: 'JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象。',
                         child: [
                             {
                                 id: 1,
-                                title: 'Window对象',
-                                url: 'js-window-1'
+                                title: '数组思维导图',
+                                url: 'js-array-1'
+                            },
+                            {
+                                id: 12,
+                                title: 'Array对象方法',
+                                url: 'js-array-12'
                             },
                             {
                                 id: 2,
-                                title: 'atob/btoa',
-                                url: 'js-window-2'
+                                title: 'Array.from',
+                                url: 'js-array-2'
                             },
                             {
                                 id: 3,
-                                title: 'crypto',
-                                url: 'js-window-3'
+                                title: 'Array.of',
+                                url: 'js-array-3'
                             },
                             {
                                 id: 4,
-                                title: 'Fullscreen',
-                                url: 'js-window-4'
+                                title: '从数组中删除虚值',
+                                url: 'js-array-4'
                             },
                             {
                                 id: 5,
-                                title: 'History',
-                                url: 'js-window-5'
+                                title: '从数组中获取随机值',
+                                url: 'js-array-5'
+                            },
+                            {
+                                id: 6,
+                                title: '求两个数组的交集',
+                                url: 'js-array-6'
+                            },
+                            {
+                                id: 7,
+                                title: '将数组转换为对象',
+                                url: 'js-array-7'
+                            },
+                            {
+                                id: 8,
+                                title: 'Array.from达到.map 的效果',
+                                url: 'js-array-8'
+                            },
+                            {
+                                id: 9,
+                                title: '5种迭代方法',
+                                url: 'js-array-9'
+                            },
+                            {
+                                id: 10,
+                                title: 'flat将多维数组展平成一维数组',
+                                url: 'js-array-10'
+                            },
+                            {
+                                id: 11,
+                                title: 'flatMap',
+                                url: 'js-array-11'
+                            },
+                            {
+                                id: 13,
+                                title: '扁平化并去重并排序',
+                                url: 'js-array-13'
                             }
                         ]
                     },
                     {
                         id: 331101,
-                        title: 'DOM',
-                        flag: 'recommend',
-                        icon: './app/img/edu/dom.jpg',
-                        desc: '通过HTML DOM,JavaScript 能够访问和改变 HTML 文档的所有元素。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'DOM思维导图',
-                                url: 'js-dom-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'DOM对象方法',
-                                url: 'js-dom-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'DOM属性',
-                                url: 'js-dom-3'
-                            }
-                        ]
+                        title: 'Boolean',
+                        desc: ''
                     },
                     {
                         id: 331102,
-                        title: 'JSON',
-                        flag: 'recommend',
-                        icon: './app/img/edu/json.jpg',
-                        desc: 'JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。是JavaScript的一个子集。JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'stringify转字符串',
-                                url: 'js-json-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'stringify转格式化字符串',
-                                url: 'js-json-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'stringify转指定key的字符串',
-                                url: 'js-json-3'
-                            },
-                            {
-                                id: 4,
-                                title: 'stringify传函数',
-                                url: 'js-json-4'
-                            },
-                            {
-                                id: 5,
-                                title: 'stringify定义toJSON',
-                                url: 'js-json-5'
-                            },
-                            {
-                                id: 6,
-                                title: 'JSON.parse',
-                                url: 'js-json-6'
-                            }
-                        ]
+                        title: 'Date',
+                        desc: ''
                     },
                     {
                         id: 331103,
@@ -1458,6 +1434,106 @@ let db = [
                     },
                     {
                         id: 331104,
+                        title: 'Number',
+                        desc: ''
+                    },
+                    {
+                        id: 331105,
+                        title: 'String',
+                        desc: 'String 全局对象是一个用于字符串或一个字符序列的构造函数。',
+                        child: [
+                            {
+                                id: 5,
+                                title: '字符串函数学习思维导图',
+                                url: 'js-string-5'
+                            },
+                            {
+                                id: 1,
+                                title: 'charAt',
+                                url: 'js-string-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'repeat',
+                                url: 'js-string-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'substring',
+                                url: 'js-string-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'raw',
+                                url: 'js-string-4'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331106,
+                        title: 'RegExp',
+                        desc: '正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。',
+                        child: [
+                            {id:1,title: '正则表达式图示',url: 'js-regexp-1'},
+                            {id:2,title:"test,exec,match,replace方法的区别",url: 'js-regexp-2'},
+                            {id:3,title:"元字符",url: 'js-regexp-3'},
+                            {id:4,title:"非打印字符",url: 'js-regexp-4'},
+                            {id:5,title:"特殊字符",url: 'js-regexp-5'},
+                            {id:6,title:"限定符",url: 'js-regexp-6'},
+                            {id:7,title:"定位符",url: 'js-regexp-7'},
+                            {id:8,title:"选择",url: 'js-regexp-8'},
+                            {id:9,title:"反向引用",url: 'js-regexp-9'},
+                            {id:10,title:"运算符优先级",url: 'js-regexp-10'},
+                            {id:11,title:"基本模式匹配",url: 'js-regexp-11'},
+                            {id:12,title:"字符簇",url: 'js-regexp-12'},
+                            {id:13,title:"确定重复出现",url: 'js-regexp-13'},
+                            {id:14,title:"常见表达式示例",url: 'js-regexp-14'},
+                            {id:15,title:"去除字符串左右两端的空格",url: 'js-regexp-15'},
+                            {id:16,title:"正则验证固话与手机",url: 'js-regexp-16'},
+                            {id:17,title:"正则实例",url: 'js-regexp-17'}
+                        ]
+                    },
+                    {
+                        id: 331107,
+                        title: 'Functions',
+                        desc: '',
+                        child: [
+                            {
+                                id: 1,
+                                title: '函数基础',
+                                url: 'js-function-1'
+                            },
+                            {
+                                id: 2,
+                                title: '字符串函数',
+                                url: 'js-function-2'
+                            },
+                            {
+                                id: 3,
+                                title: '函数的调用模式',
+                                url: 'js-function-3'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331108,
+                        title: 'Events',
+                        desc: ''
+                    },
+                    {
+                        id: 331109,
+                        title: 'NaN',
+                        desc: '全局属性 NaN 的值表示不是一个数字（Not-A-Number）。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'NaN',
+                                url: 'js-nan-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331110,
                         title: 'Object',
                         desc: 'Object 构造函数创建一个对象包装器。',
                         child: [
@@ -1509,7 +1585,7 @@ let db = [
                         ]
                     },
                     {
-                        id: 331105,
+                        id: 331111,
                         title: 'Reflect',
                         desc: 'Reflect 是一个内置的对象，它提供拦截 JavaScript 操作的方法。',
                         child: [
@@ -1581,7 +1657,108 @@ let db = [
                         ]
                     },
                     {
-                        id: 331106,
+                        id: 331112,
+                        title: 'Promise',
+                        flag: 'recommend',
+                        icon: './app/img/edu/promise.jpg',
+                        desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Promise.all',
+                                url: 'js-promise-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'Promise.allSettled',
+                                url: 'js-promise-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'Promise.any',
+                                url: 'js-promise-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'Promise.prototype.then',
+                                url: 'js-promise-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'Promise.prototype.catch',
+                                url: 'js-promise-5'
+                            },
+                            {
+                                id: 6,
+                                title: 'Promise.prototype.finally',
+                                url: 'js-promise-6'
+                            },
+                            {
+                                id: 7,
+                                title: 'Promise.race',
+                                url: 'js-promise-7'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331113,
+                        title: 'Proxy',
+                        desc: 'Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写。Proxy 这个词的原意是代理，用在这里表示由它来“代理”某些操作，可以译为“代理器”。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Proxy',
+                                url: 'js-proxy-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'Proxy.revocable',
+                                url: 'js-proxy-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'handler 对象的方法',
+                                url: 'js-proxy-3'
+                            },
+                            {
+                                id: 4,
+                                title: '无操作转发代理',
+                                url: 'js-proxy-4'
+                            },
+                            {
+                                id: 5,
+                                title: '验证',
+                                url: 'js-proxy-5'
+                            },
+                            {
+                                id: 6,
+                                title: '扩展构造函数',
+                                url: 'js-proxy-6'
+                            },
+                            {
+                                id: 7,
+                                title: '操作 DOM 节点',
+                                url: 'js-proxy-7'
+                            },
+                            {
+                                id: 8,
+                                title: '值修正及附加属性',
+                                url: 'js-proxy-8'
+                            },
+                            {
+                                id: 9,
+                                title: '通过属性查找数组中的特定对象',
+                                url: 'js-proxy-9'
+                            },
+                            {
+                                id: 10,
+                                title: '一个完整的 traps 列表示例',
+                                url: 'js-proxy-10'
+                            }
+                        ]
+                    },
+                    {
+                        id: 331114,
                         title: 'Fetch',
                         flag: 'recommend,hot',
                         icon: './app/img/edu/fetch.jpg',
@@ -1670,229 +1847,46 @@ let db = [
                         ]
                     },
                     {
-                        id: 331107,
-                        title: '数组',
+                        id: 331115,
+                        title: 'JSON',
                         flag: 'recommend',
-                        desc: 'JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象。',
-                        icon: './app/img/edu/array.jpg',
+                        icon: './app/img/edu/json.jpg',
+                        desc: 'JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。是JavaScript的一个子集。JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。',
                         child: [
                             {
                                 id: 1,
-                                title: '数组思维导图',
-                                url: 'js-array-1'
-                            },
-                            {
-                                id: 12,
-                                title: 'Array对象方法',
-                                url: 'js-array-12'
+                                title: 'stringify转字符串',
+                                url: 'js-json-1'
                             },
                             {
                                 id: 2,
-                                title: 'Array.from',
-                                url: 'js-array-2'
+                                title: 'stringify转格式化字符串',
+                                url: 'js-json-2'
                             },
                             {
                                 id: 3,
-                                title: 'Array.of',
-                                url: 'js-array-3'
+                                title: 'stringify转指定key的字符串',
+                                url: 'js-json-3'
                             },
                             {
                                 id: 4,
-                                title: '从数组中删除虚值',
-                                url: 'js-array-4'
+                                title: 'stringify传函数',
+                                url: 'js-json-4'
                             },
                             {
                                 id: 5,
-                                title: '从数组中获取随机值',
-                                url: 'js-array-5'
+                                title: 'stringify定义toJSON',
+                                url: 'js-json-5'
                             },
                             {
                                 id: 6,
-                                title: '求两个数组的交集',
-                                url: 'js-array-6'
-                            },
-                            {
-                                id: 7,
-                                title: '将数组转换为对象',
-                                url: 'js-array-7'
-                            },
-                            {
-                                id: 8,
-                                title: 'Array.from达到.map 的效果',
-                                url: 'js-array-8'
-                            },
-                            {
-                                id: 9,
-                                title: '5种迭代方法',
-                                url: 'js-array-9'
-                            },
-                            {
-                                id: 10,
-                                title: 'flat将多维数组展平成一维数组',
-                                url: 'js-array-10'
-                            },
-                            {
-                                id: 11,
-                                title: 'flatMap',
-                                url: 'js-array-11'
-                            },
-                            {
-                                id: 13,
-                                title: '扁平化并去重并排序',
-                                url: 'js-array-13'
+                                title: 'JSON.parse',
+                                url: 'js-json-6'
                             }
                         ]
                     },
                     {
-                        id: 331108,
-                        title: 'String',
-                        desc: 'String 全局对象是一个用于字符串或一个字符序列的构造函数。',
-                        child: [
-                            {
-                                id: 5,
-                                title: '字符串函数学习思维导图',
-                                url: 'js-string-5'
-                            },
-                            {
-                                id: 1,
-                                title: 'charAt',
-                                url: 'js-string-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'repeat',
-                                url: 'js-string-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'substring',
-                                url: 'js-string-3'
-                            },
-                            {
-                                id: 4,
-                                title: 'raw',
-                                url: 'js-string-4'
-                            }
-                        ]
-                    },
-                    {
-                        id: 331109,
-                        title: 'Proxy',
-                        desc: 'Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写。Proxy 这个词的原意是代理，用在这里表示由它来“代理”某些操作，可以译为“代理器”。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'Proxy',
-                                url: 'js-proxy-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'Proxy.revocable',
-                                url: 'js-proxy-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'handler 对象的方法',
-                                url: 'js-proxy-3'
-                            },
-                            {
-                                id: 4,
-                                title: '无操作转发代理',
-                                url: 'js-proxy-4'
-                            },
-                            {
-                                id: 5,
-                                title: '验证',
-                                url: 'js-proxy-5'
-                            },
-                            {
-                                id: 6,
-                                title: '扩展构造函数',
-                                url: 'js-proxy-6'
-                            },
-                            {
-                                id: 7,
-                                title: '操作 DOM 节点',
-                                url: 'js-proxy-7'
-                            },
-                            {
-                                id: 8,
-                                title: '值修正及附加属性',
-                                url: 'js-proxy-8'
-                            },
-                            {
-                                id: 9,
-                                title: '通过属性查找数组中的特定对象',
-                                url: 'js-proxy-9'
-                            },
-                            {
-                                id: 10,
-                                title: '一个完整的 traps 列表示例',
-                                url: 'js-proxy-10'
-                            }
-                        ]
-                    },
-                    
-                    {
-                        id: 331110,
-                        title: 'NaN',
-                        desc: '全局属性 NaN 的值表示不是一个数字（Not-A-Number）。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'NaN',
-                                url: 'js-nan-1'
-                            }
-                        ]
-                    },
-                    
-                    {
-                        id: 331111,
-                        title: 'Promise',
-                        flag: 'recommend',
-                        icon: './app/img/edu/promise.jpg',
-                        desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
-                        child: [
-                            {
-                                id: 1,
-                                title: 'Promise.all',
-                                url: 'js-promise-1'
-                            },
-                            {
-                                id: 2,
-                                title: 'Promise.allSettled',
-                                url: 'js-promise-2'
-                            },
-                            {
-                                id: 3,
-                                title: 'Promise.any',
-                                url: 'js-promise-3'
-                            },
-                            {
-                                id: 4,
-                                title: 'Promise.prototype.then',
-                                url: 'js-promise-4'
-                            },
-                            {
-                                id: 5,
-                                title: 'Promise.prototype.catch',
-                                url: 'js-promise-5'
-                            },
-                            {
-                                id: 6,
-                                title: 'Promise.prototype.finally',
-                                url: 'js-promise-6'
-                            },
-                            {
-                                id: 7,
-                                title: 'Promise.race',
-                                url: 'js-promise-7'
-                            }
-                        ]
-                    },
-                    
-                    {
-                        id: 331112,
+                        id: 331116,
                         title: 'WeakSet',
                         desc: 'WeakSet 对象允许你将弱保持对象存储在一个集合中。',
                         child: [
@@ -1902,40 +1896,229 @@ let db = [
                                 url: 'js-weakset-1'
                             }
                         ]
-                    },
-                    {
-                        id: 331113,
-                        title: '函数',
-                        desc: '',
-                        child: [
-                            {
-                                id: 1,
-                                title: '函数基础',
-                                url: 'js-function-1'
-                            },
-                            {
-                                id: 2,
-                                title: '字符串函数',
-                                url: 'js-function-2'
-                            },
-                            {
-                                id: 3,
-                                title: '函数的调用模式',
-                                url: 'js-function-3'
-                            }
-                        ]
                     }
                 ]
             },
             {
                 id: 3322,
-                title: '算法',
+                title: 'BOM',
                 child: [
                     {
                         id: 332200,
-                        title: '初级算法',
+                        title: 'Window',
+                        desc: '',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'Window对象',
+                                url: 'js-window-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'atob/btoa',
+                                url: 'js-window-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'crypto',
+                                url: 'js-window-3'
+                            },
+                            {
+                                id: 4,
+                                title: 'Fullscreen',
+                                url: 'js-window-4'
+                            },
+                            {
+                                id: 5,
+                                title: 'History',
+                                url: 'js-window-5'
+                            }
+                        ]
+                    },
+                    {
+                        id: 332201,
+                        title: 'Navigator',
+                        desc: ''
+                    },
+                    {
+                        id: 332202,
+                        title: 'Screen',
+                        desc: ''
+                    },
+                    {
+                        id: 332203,
+                        title: 'History',
+                        desc: ''
+                    },
+                    {
+                        id: 332204,
+                        title: 'Location',
+                        desc: ''
+                    }
+                ]
+            },
+            {
+                id: 3333,
+                title: 'DOM',
+                child: [
+                    {
+                        id: 333300,
+                        title: 'DOM',
+                        flag: 'recommend',
+                        icon: './app/img/edu/dom.jpg',
+                        desc: '通过HTML DOM,JavaScript 能够访问和改变 HTML 文档的所有元素。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'DOM思维导图',
+                                url: 'js-dom-1'
+                            },
+                            {
+                                id: 2,
+                                title: 'DOM对象方法',
+                                url: 'js-dom-2'
+                            },
+                            {
+                                id: 3,
+                                title: 'DOM属性',
+                                url: 'js-dom-3'
+                            }
+                        ]
+                    },
+                    {
+                        id: 333301,
+                        title: 'Document',
+                        desc: ''
+                    },
+                    {
+                        id: 333302,
+                        title: 'Element',
+                        desc: ''
+                    },
+                    {
+                        id: 333303,
+                        title: 'Attribute',
+                        desc: ''
+                    },
+                    {
+                        id: 333304,
+                        title: 'Event',
+                        desc: ''
+                    }
+                ]
+            },
+            {
+                id: 3344,
+                title: '设计模式',
+                child: [
+                    {
+                        id: 334400,
+                        title: '设计模式',
+                        flag: 'recommend',
+                        icon: './app/img/edu/module.jpg',
+                        desc: '每个JS开发者都力求写出可维护、复用性和可读性高的代码。随着应用不断扩大，代码组织的合理性也越来越重要。设计模式为特定环境下的常见问题提供了一个组织结构，对于克服这些挑战起到至关重要的作用。'
+                    }
+                ]
+            },
+            {
+                id: 3355,
+                title: '数据结构',
+                child: [
+                    {
+                        id: 335500,
+                        title: '栈',
+                        desc: '栈(Stack)是一种遵循后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端就叫栈底。在栈里，新元素都接近栈顶，旧元素都接近栈底。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '栈数据结构',
+                                url: 'js-dataStructure-stack1'
+                            },
+                            {
+                                id: 2,
+                                title: '栈的实现',
+                                url: 'js-dataStructure-stack2'
+                            },
+                            {
+                                id: 3,
+                                title: '栈的应用,十进制转任意进制',
+                                url: 'js-dataStructure-stack3'
+                            },
+                            {
+                                id: 4,
+                                title: '栈的应用,逆波兰表达式计算',
+                                url: 'js-dataStructure-stack4'
+                            },
+                            {
+                                id: 5,
+                                title: '栈的应用,利用普通栈实现一个有min方法的栈',
+                                url: 'js-dataStructure-stack5'
+                            }
+                        ]
+                    },
+                    {
+                        id: 335501,
+                        title: '队列',
+                        desc: '队列(Queue)是遵循先进先出（FIFO，也称为先来先服务）原则的一组有序的项。队列在尾部添加新元素，并从顶部移除元素。最新添加的元素必须排在队列的末尾。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '队列数据结构',
+                                url: 'js-dataStructure-queue1'
+                            },
+                            {
+                                id: 2,
+                                title: '队列的实现',
+                                url: 'js-dataStructure-queue2'
+                            },
+                            {
+                                id: 3,
+                                title: '队列的应用,约瑟夫环（普通模式）',
+                                url: 'js-dataStructure-queue3'
+                            },
+                            {
+                                id: 4,
+                                title: '队列的应用,菲波那切数列（普通模式）',
+                                url: 'js-dataStructure-queue4'
+                            },
+                            {
+                                id: 5,
+                                title: '队列的应用,用队列实现一个栈',
+                                url: 'js-dataStructure-queue5'
+                            }
+                        ]
+                    },
+                    {
+                        id: 335502,
+                        title: '链表',
+                        desc: '链表(Linked List)'
+                    },
+                    {
+                        id: 335503,
+                        title: '树',
+                        desc: '树(Tree)'
+                    },
+                    {
+                        id: 335504,
+                        title: '图',
+                        desc: '图(Graph)'
+                    },
+                    {
+                        id: 335505,
+                        title: '堆',
+                        desc: '堆(Heap)'
+                    },
+                    {
+                        id: 335506,
+                        title: '散列表',
+                        desc: '散列表(Hash)'
+                    },
+                    {
+                        id: 335507,
+                        title: '算法',
                         flag: 'recommend',
                         icon: './app/img/edu/suanfa.jpg',
+                        desc: '',
                         child: [
                             {
                                 id: 1,
@@ -1971,149 +2154,22 @@ let db = [
                                 id: 7,
                                 title: '确认末尾字符算法',
                                 url: 'js-suanfa-7'
-                            }
-                        ]
-                    },
-                    {
-                        id: 332201,
-                        title: '中级算法',
-                        flag: 'recommend',
-                        icon: './app/img/edu/suanfa1.jpg',
-                        child: [
+                            },
                             {
-                                id: 1,
+                                id: 8,
                                 title: '斐波那契数列',
-                                url: 'js-suanfa-c1'
+                                url: 'js-suanfa-8'
                             }
                         ]
-                    },
-                    {
-                        id: 332202,
-                        title: '高级算法',
-                        flag: 'recommend',
-                        icon: './app/img/edu/suanfa2.jpg'
                     }
                 ]
             },
             {
-                id: 3333,
-                title: '设计模式',
-                child: [
-                    {
-                        id: 333300,
-                        title: '设计模式',
-                        flag: 'recommend',
-                        icon: './app/img/edu/module.jpg',
-                        desc: '每个JS开发者都力求写出可维护、复用性和可读性高的代码。随着应用不断扩大，代码组织的合理性也越来越重要。设计模式为特定环境下的常见问题提供了一个组织结构，对于克服这些挑战起到至关重要的作用。'
-                    }
-                ]
-            },
-            {
-                id: 3344,
-                title: '数据结构',
-                child: [
-                    {
-                        id: 334400,
-                        title: '栈(Stack)',
-                        desc: '栈是一种遵循后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端就叫栈底。在栈里，新元素都接近栈顶，旧元素都接近栈底。',
-                        child: [
-                            {
-                                id: 1,
-                                title: '栈数据结构',
-                                url: 'js-dataStructure-stack1'
-                            },
-                            {
-                                id: 2,
-                                title: '栈的实现',
-                                url: 'js-dataStructure-stack2'
-                            },
-                            {
-                                id: 3,
-                                title: '栈的应用,十进制转任意进制',
-                                url: 'js-dataStructure-stack3'
-                            },
-                            {
-                                id: 4,
-                                title: '栈的应用,逆波兰表达式计算',
-                                url: 'js-dataStructure-stack4'
-                            },
-                            {
-                                id: 5,
-                                title: '栈的应用,利用普通栈实现一个有min方法的栈',
-                                url: 'js-dataStructure-stack5'
-                            }
-                        ]
-                    },
-                    {
-                        id: 334401,
-                        title: '队列(Queue)',
-                        desc: '队列是遵循先进先出（FIFO，也称为先来先服务）原则的一组有序的项。队列在尾部添加新元素，并从顶部移除元素。最新添加的元素必须排在队列的末尾。',
-                        child: [
-                            {
-                                id: 1,
-                                title: '队列数据结构',
-                                url: 'js-dataStructure-queue1'
-                            },
-                            {
-                                id: 2,
-                                title: '队列的实现',
-                                url: 'js-dataStructure-queue2'
-                            },
-                            {
-                                id: 3,
-                                title: '队列的应用,约瑟夫环（普通模式）',
-                                url: 'js-dataStructure-queue3'
-                            },
-                            {
-                                id: 4,
-                                title: '队列的应用,菲波那切数列（普通模式）',
-                                url: 'js-dataStructure-queue4'
-                            },
-                            {
-                                id: 5,
-                                title: '队列的应用,用队列实现一个栈',
-                                url: 'js-dataStructure-queue5'
-                            }
-                        ]
-                    },
-                    {
-                        id: 334402,
-                        title: '链表(Linked List)',
-                        desc: '',
-                        child: []
-                    },
-                    {
-                        id: 334403,
-                        title: '树(Tree)',
-                        desc: '',
-                        child: []
-                    },
-                    {
-                        id: 334404,
-                        title: '图(Graph)',
-                        desc: '',
-                        child: []
-                    },
-                    {
-                        id: 334405,
-                        title: '堆(Heap)',
-                        desc: '',
-                        child: []
-                    },
-                    {
-                        id: 334406,
-                        title: '散列表(Hash)',
-                        desc: '',
-                        child: []
-                    }
-                ]
-            },
-            {
-                id: 3355,
+                id: 3366,
                 title: '实例',
                 child: [
                     {
-                        id: 335501,
+                        id: 336601,
                         title: '常用函数',
                         desc: '收集一些实用性很强的函数',
                         child: [
@@ -2461,16 +2517,21 @@ let db = [
                                 id: 69,
                                 title: '把一堆整数分成三份，确保每一份和尽量相等',
                                 url: 'js-casefun-69'
+                            },
+                            {
+                                id: 70,
+                                title: '前端网页截图：Canvas截图 vs SVG截图',
+                                url: 'js-casefun-70'
                             }
                         ]
                     },
                     {
-                        id: 335502,
+                        id: 336602,
                         title: '动画',
                         desc: 'JS动画特效实例演示'
                     },
                     {
-                        id: 335503,
+                        id: 336603,
                         title: '大数据处理',
                         desc: '大量数据渲染时的处理',
                         child: [
