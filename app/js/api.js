@@ -110,7 +110,8 @@
 	var Gs = {
 		//右侧快速菜单
 		quickMenu: function () {
-			var quickHTML = '<button class="btn quick-hb" onclick="Gs.hb(event)"></button><button class="btn quick-top" onclick="Gs.scrollToTop(event)"><i class="ic-up"></i></button>',
+			//var quickHTML = '<button class="btn quick-hb" onclick="Gs.hb(event)"></button><button class="btn quick-top" onclick="Gs.scrollToTop(event)"><i class="ic-up"></i></button>',
+			var quickHTML = '<button class="btn quick-reward">赏<p><img src="/app/img/alipay/wx.jpg"/></p></button><button class="btn quick-top" onclick="Gs.scrollToTop(event)"><i class="ic-up"></i></button>',
 				quickShell = document.createElement('section');
 			quickShell.innerHTML = quickHTML;
 			quickShell.className = 'quick-aside';

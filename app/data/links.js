@@ -124,7 +124,7 @@ let links = {
             id: 1,
             title: 'B站',
             url: 'https://www.bilibili.com/',
-            icon: ''
+            icon: './app/img/study/bilibili.jpg'
         },
         {
             id: 2,
@@ -219,7 +219,7 @@ let links = {
         {
 			id: 1,
             title: "labuladong的算法小抄官方完整版",
-            icon: './app/img/ic/pdf.jpg',
+            icon: './app/img/tool/suanfa.jpg',
             desc: '提取码：qm6f',
 			url: "https://pan.baidu.com/s/1fgD5T2Oz4g1JWorhlcCbyg"
 		}
@@ -227,10 +227,24 @@ let links = {
     tool: [
         {
 			id: 1,
-            title: "图片在线转换为Base64",
-            icon: './app/img/ic/pdf.jpg',
-            desc: '可以在线任意图片格式转Base64编码工具',
-			url: "./tool.html?id=imgTobase64"
+            title: "任意文件转Base64",
+            icon: './app/img/tool/base64.jpg',
+            desc: '可以在线任意文件转Base64编码工具',
+			url: "/app/tool/base64.html"
+		},
+        {
+			id: 2,
+            title: "获取键盘Code码",
+            icon: './app/img/tool/code.jpg',
+            desc: '获取键盘上各个按键的Code码',
+			url: "/app/tool/codeValue.html"
+		},
+        {
+			id: 3,
+            title: "二维码生成",
+            icon: './app/img/tool/qrcode.jpg',
+            desc: '在线二维码生成器提供免费的在线二维码生成服务',
+			url: "/app/tool/qrcode.html"
 		}
     ]
 };

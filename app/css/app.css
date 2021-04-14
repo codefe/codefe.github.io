@@ -312,6 +312,37 @@ pre:before,code:before{
     display:none;  /*隐藏红包*/
 }
 
+.quick-reward{
+    background-color: #fb4607;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    padding:0;
+    position: relative;
+}
+.quick-reward p{
+    width:0px;
+    border:0px solid #e8e8e8;
+    background-color: #fff;
+    border-radius: 5px 5px 0 5px;
+    position: absolute;
+    bottom:-2px;
+    right:39px;
+    transition: all .3s;
+    overflow: hidden;
+}
+.quick-reward p img{
+    width:100%;
+}
+.quick-reward:hover {
+    opacity: 1;
+}
+.quick-reward:hover p{
+    box-shadow: 0 1px 3px rgb(100 100 100 / 10%);
+    width:280px;
+    border-width:1px;
+}
 @keyframes hb {
     0% {
         background-position: 0 0;

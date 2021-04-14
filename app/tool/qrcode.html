@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端工具-初学|前端进阶</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        .empty{
+            display:flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 30px auto ;
+        }
+        .empty p{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>前端工具</h1>
+        <nav></nav>
+        <footer class="aside-footer">aaa</footer>
+    </aside>
+    <article class="pr">
+        <h2>二维码生成</h2>
+        <section class="empty">
+            <img id="qrious">
+
+		    <form autocomplete="off">
+		      <p>
+		        value
+		        <input type="text" name="value" value="https://www.baidu.com/" spellcheck="false">
+              </p>
+
+		      <p>
+		        size
+		        <input type="number" name="size" placeholder="100" min="100" max="1000" value="250">
+              </p>
+
+		      <p>
+		        level
+		        <select name="level">
+		          <option value="L">L - 7% damage</option>
+		          <option value="M">M - 15% damage</option>
+		          <option value="Q">Q - 25% damage</option>
+		          <option value="H">H - 30% damage</option>
+		        </select>
+            </p>
+
+		      <p>
+		        background
+		        <input type="color" name="background" value="#ffffff">
+              </p>
+
+		      <p>
+		        foreground
+		        <input type="color" name="foreground" value="#000000">
+              </p>
+		    </form>
+        </section>
+    </article>
+</body>
+<script src="../data/links.js"></script>
+<script src="../js/tool.js"></script>
+<script src="./qrcode/qrcode.js"></script>
+<script>
+    (function() {
+      var $background = document.querySelector('.empty form [name="background"]')
+      var $foreground = document.querySelector('.empty form [name="foreground"]')
+      var $level = document.querySelector('.empty form [name="level"]')
+      var $section = document.querySelector('.empty  section')
+      var $size = document.querySelector('.empty form [name="size"]')
+      var $value = document.querySelector('.empty form [name="value"]')
+
+      var qr = window.qr = new QRious({
+        element: document.getElementById('qrious'),
+        size: 250,
+        value: 'https://www.baidu.com/'
+      })
+
+      $background.addEventListener('change', function() {
+        qr.background = $background.value || null
+      })
+
+      $foreground.addEventListener('change', function() {
+        qr.foreground = $foreground.value || null
+      })
+
+      $level.addEventListener('change', function() {
+        qr.level = $level.value
+      })
+
+      $size.addEventListener('change', function() {
+        if (!$size.validity.valid) {
+          return
+        }
+
+        qr.size = $size.value || null
+
+        $section.style.minWidth = qr.size + 'px'
+      })
+
+      $value.addEventListener('input', function() {
+        qr.value = $value.value
+      })
+    })()
+  </script>
+</html>

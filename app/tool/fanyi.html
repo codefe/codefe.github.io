@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端工具-初学|前端进阶</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        main,.content,.t-header{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lang-panel{
+	position: absolute;
+}
+button,textarea{
+	outline: none;
+}
+ul,li{
+	list-style: none;
+}
+.title,.result {
+	font-size: 20px;
+	line-height: 45px;
+	color: rgb(33, 32, 32,0.99);
+}
+body{
+	font: 16px "微软雅黑";
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background-color: #eee;
+}
+main{
+	width: calc(100% - 60px);
+	height: auto;
+	border: 8px solid rgba(255,255,255,.5);
+	box-shadow:  0 5px 10px rgba(255, 255, 255, 0.16);
+	background-color: rgba(16, 2, 2, 0.31);
+	margin-top: 50px;
+}
+main .t-header{
+	width: 100%;
+	height: 45px;
+	background-color: rgba(23, 26, 28, 0.82);
+	border-bottom: 1px solid #f2f2f2;
+}
+.t-header .title{
+	text-align: left;
+	color: #e544a7;
+}
+.t-header .result{
+	text-align: right;
+	color: #e33535;
+}
+.lang-panel {
+	width: calc(80% - 20px);
+	height: 42px;
+	top: 0;left: 200px;
+}
+.lang-panel li{
+	width: 15%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	margin-left: 16px;
+	color: #fff;
+	float: left;
+	cursor: pointer;
+}
+.lang-panel li:hover{
+	background-color: rgba(255, 255, 255, 0.21);
+}
+main .content{
+	width: 100%;
+	height: 400px;
+	background-color: transparent;
+}
+.content textarea{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 49.5%;height: 100%;
+	float: left;
+	font-size: 18px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.output{margin-left:1%;}
+.content textarea:focus{
+	border: 1px solid rgba(121, 178, 214, 0.82);
+	box-shadow: 0 0 10px rgba(121, 178, 214, 0.82);	
+}
+.t-footer {
+	width: 100%;
+	height: 45px;
+	border-top: 1px solid #f2f2f2;
+}
+.t-footer button{
+	width: 60px;
+	height: 45px;
+	background-color: rgba(49, 196, 240, 0.92);
+	color: #efebf2;
+	text-align: center;
+	line-height: 45px;
+	border: 1px solid rgba(238, 238, 238, 0.17);
+	margin-left: 25px;
+	margin-right: 15px;
+	margin-top: 5px;
+	float: right;
+	cursor: pointer;
+}
+.t-footer button:hover{
+	transform: scale(1.1);
+}
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>前端工具</h1>
+        <nav></nav>
+        <footer class="aside-footer">aaa</footer>
+    </aside>
+    <article class="pr">
+        <h2>获取键盘Code码</h2>
+        <main class="translate">
+			<header class="t-header">
+				<span class="title">当前翻译语言类型:</span>
+				<span class="result">英语</span>
+				<ul class="lang-panel">
+					<li data-type="en">英语</li>
+					<li data-type="zh">汉语</li>
+					<li data-type="jp">日语</li>
+					<li data-type="kor">韩语</li>
+					<li data-type="fra">法语</li>
+					<li data-type="ru">俄语</li>
+					<li data-type="de">德语</li>
+				</ul>
+			</header>
+			<section class="content">
+				<textarea class="input" placeholder="请输入你要翻译的单词或语句"></textarea>
+				<textarea class="output" placeholder="翻译结果"></textarea>
+			</section>
+			<footer class="t-footer">
+				<button type="button" class="transbtn">翻译</button>
+				<button type="button" class="clear">清除</button>
+			</footer>
+		</main>
+    </article>
+</body>
+<script src="../data/links.js"></script>
+<script src="../js/tool.js"></script>
+<script src="./fanyi/md5.js"></script>
+<script src="./fanyi/fanyi.js"></script>
+</html>

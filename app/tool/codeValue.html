@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端工具-初学|前端进阶</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        .empty {
+            word-break: break-all;
+            font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+            overflow: hidden;
+            overflow-y: auto;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .empty::before {
+            position: absolute;
+            padding:50px;
+            font-size: 40px;
+            content: attr(data-content-before);
+            white-space: pre;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: gray;
+            background-color: rgba(0,0,0,.02);
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>前端工具</h1>
+        <nav></nav>
+        <footer class="aside-footer">aaa</footer>
+    </aside>
+    <article class="pr">
+        <h2>获取键盘Code码</h2>
+        <section class="empty" data-content-before="请按下键盘上的任意键"></section>
+    </article>
+</body>
+<script src="../data/links.js"></script>
+<script src="../js/tool.js"></script>
+<script>
+    let empty = document.querySelector('.empty')
+    window.onkeydown=function(e){
+		e.preventDefault()
+		e=e||window.event
+        empty.attributes[1].value = e.keyCode
+	}
+</script>
+
+</html>
