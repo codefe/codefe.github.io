@@ -245,6 +245,13 @@ let links = {
             icon: './app/img/tool/qrcode.jpg',
             desc: '在线二维码生成器提供免费的在线二维码生成服务',
 			url: "/app/tool/qrcode.html"
+		},
+        {
+			id: 4,
+            title: "Canvas 实现三阶贝塞尔曲线",
+            icon: './app/img/tool/cubicBezier.jpg',
+            desc: '贝塞尔曲线通过控制曲线上的四个点（起始点、终止点以及两个相互分离的中间点）来创造、编辑图形，绘制出一条光滑曲线并以曲线的状态来反映动画过程中速度的变化。',
+			url: "/app/tool/cubicBezier.html"
 		}
     ]
 };

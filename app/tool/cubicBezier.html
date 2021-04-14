@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端工具-初学|前端进阶</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        .empty {
+            display: flex;
+            margin: 50px;
+        }
+
+        .empty-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .besier {
+            border: solid 1px #ddd;
+            width: 300px;
+            height: 300px;
+            margin: 100px;
+            position: relative;
+            box-shadow: 0 0 3px #ccc;
+            float: left;
+        }
+
+        .besier canvas {
+            background: #f0f0f0;
+            background: linear-gradient(-45deg, transparent 49%, rgba(0, 0, 0, .1) 49%, rgba(0, 0, 0, .1) 50%, transparent 50%) center center no-repeat;
+        }
+
+        .besier button {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            position: absolute;
+        }
+
+        .besier button:active {
+            box-shadow: 0 0 10px #ff0;
+        }
+
+        #p1 {
+            background: #f08;
+            cursor: pointer;
+            margin: -9px 0 0 -9px;
+            z-index: 1;
+        }
+
+        #p2 {
+            background: #0ab;
+            cursor: pointer;
+            margin: -9px 0 0 -9px;
+            z-index: 1;
+        }
+
+        #p3 {
+            left: -10px;
+            bottom: -10px;
+        }
+
+        #p4 {
+            right: -10px;
+            top: -10px;
+        }
+
+        #default span {
+            float: left;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            line-height: 80px;
+            text-align: center;
+            cursor: pointer;
+            background: #eee;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        #default span:hover {
+            background: #f08;
+            box-shadow: 3px 3px 0 #ccc;
+            color: #fff;
+        }
+
+        .btn {
+            width: 100px;
+            height: 30px;
+            margin-left: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #duration {
+            border-radius: 100px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) inset;
+            background: #eee;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        #animate {
+            width: 100px;
+            height: 100px;
+            background: #01c26f;
+            display: block;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .animate {
+            animation-name: myfirst;
+            animation-iteration-count: 2;
+            animation-duration: 2s;
+            animation-direction: alternate;
+        }
+
+        @keyframes myfirst {
+            0% {
+                left: 0
+            }
+
+            100% {
+                left: 400px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>前端工具</h1>
+        <nav></nav>
+        <footer class="aside-footer">aaa</footer>
+    </aside>
+    <article class="pr">
+        <h2>Canvas 实现三阶贝塞尔曲线</h2>
+        <section class="empty">
+            <section class="besier">
+                <p><button id="p1"></button></p>
+                <p><button id="p2"></button></p>
+                <p><button id="p3"></button></p>
+                <p><button id="p4"></button></p>
+                <p><canvas id="myCanvas"></canvas></p>
+            </section>
+            <section class="empty-box">
+                <p>cubic-bezier (<span id="value">.45,.27,.94,.31</span>)
+                    <input type="button" value="点击获取" id="sive" class="btn">
+                </p>
+                <p>动画运行时间:</p>
+                <p class="duration"><input type="range" value="2" min="1" max="10" id="duration"></p>
+                <p>
+                    <input id="time" type="text" disabled value="2" size="2" style="text-align:center">
+                    <input type="button" value="运行动画" id="goto" class="btn btn-primary">
+                </p>
+                <p>
+                    <canvas id="animate" width="300" height="300"></canvas>
+                </p>
+                <section id="default">
+                    <h4>默认曲线</h4>
+                    <span data=".25,.1,.25,1">ease</span>
+                    <span data="0,0,1,1">linear</span>
+                    <span data=".42,0,1,1">ease-in</span>
+                    <span data="0,0,.58,1">ease-out</span>
+                    <span data=".42,0,.58,1">ease-in-out</span>
+                </section>
+            </section>
+        </section>
+    </article>
+</body>
+<script src="../data/links.js"></script>
+<script src="../js/tool.js"></script>
+<script>
+    function CubicBezier(w, h) {
+        this.c = document.getElementById("myCanvas");
+        this.ctx = this.c.getContext("2d");
+        this.c2 = document.getElementById('animate');
+        this.ctx2 = this.c2.getContext('2d');
+        this.btn1 = document.getElementById('p1'),
+            this.btn2 = document.getElementById('p2'),
+            this.val = document.getElementById('value');
+        this.w = w;
+        this.h = h;
+    }
+    CubicBezier.prototype.init = function (x1, y1, x2, y2) {
+        this.c.width = this.w;
+        this.c.height = this.h;
+
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+
+        this.draw(x1, y1, x2, y2);
+
+        this.bind();
+        this._export()
+    }
+    CubicBezier.prototype.draw = function (x1, y1, x2, y2) {
+        var ctx = this.ctx;
+        //定位控制器
+        this.btn1.style.left = x1 + 'px';
+        this.btn1.style.top = y1 + 'px';
+        this.btn2.style.left = x2 + 'px';
+        this.btn2.style.top = y2 + 'px';
+        //擦除画布
+        ctx.clearRect(0, 0, this.w, this.h)
+        //绘制初始贝塞尔曲线
+        ctx.beginPath();
+        ctx.moveTo(0, this.h);
+        ctx.bezierCurveTo(x1, y1, x2, y2, this.w, 0);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#000'
+        ctx.stroke();
+        ctx.closePath();
+        //绘制控制器1
+        ctx.beginPath();
+        ctx.moveTo(0, this.h);
+        ctx.lineTo(x1, y1);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#999';
+        ctx.stroke();
+        ctx.closePath();
+        //绘制控制器2
+        ctx.beginPath();
+        ctx.moveTo(this.w, 0);
+        ctx.lineTo(x2, y2);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#999';
+        ctx.stroke();
+        ctx.closePath();
+        //绘制外号文字
+        ctx.font = "26px 微软雅黑";
+        var gradient = ctx.createLinearGradient(0, 0, this.w, 0);
+        gradient.addColorStop("0", "magenta");
+        gradient.addColorStop("0.5", "blue");
+        gradient.addColorStop("1.0", "red");
+        ctx.fillStyle = gradient;
+        //ctx.fillRect(10,100,280,280)
+        ctx.textAlign = 'center';
+        ctx.fillText("调节节点试试", 150, 150);
+        //同步动画元素图案
+        var imgData = ctx.getImageData(0, 0, this.w, this.h);
+        this.ctx2.putImageData(imgData, 0, 0);
+    }
+    CubicBezier.prototype._export = function () {
+        var cubic = (this.x1 / this.w).toFixed(2) + ' , ' + ((this.h - this.y1) / this.h).toFixed(2) + ' , ' + (this.x2 / this.w).toFixed(2) + ' , ' + ((this.h - this.y2) / this.h).toFixed(2);
+        this.val.innerHTML = "<font color='#f08'>" + cubic.split(',')[0] + "," + cubic.split(',')[1] + "</font>,<font color='#0ab'>" + cubic.split(',')[2] + "," + cubic.split(',')[3] + "</font>"
+        this.c2.style.animationTimingFunction = 'cubic-bezier(' + cubic + ')';
+        this.c2.style.animationDuration = this.R('time').value + 's';
+        return cubic;
+    }
+    CubicBezier.prototype.R = function (obj) {
+        return document.getElementById(obj)
+    }
+    CubicBezier.prototype.bind = function () {
+        var _this = this, p;
+        _this.btn1.onmousedown = function () {
+            p = _this.c.getBoundingClientRect();//这里就不能用 c.offsetleft/c.offsetTop了因为这两个方法是相对于父元素的
+            move.call(this);
+        }
+        _this.btn2.onmousedown = function () {
+            p = _this.c.getBoundingClientRect();
+            move.call(this)
+        }
+        //绑定控制器设置
+        function move() {
+            var moveObj = this;
+            document.onmousemove = function (e) {
+                var x = e.clientX - p.left,
+                    y = e.clientY - p.top;
+                if (x < 0) {
+                    x = 0
+                }
+                if (x > _this.w) {
+                    x = _this.w
+                }
+                if (moveObj.id == 'p1') {
+                    _this.x1 = x;
+                    _this.y1 = y;
+                    _this.draw(x, y, _this.x2, _this.y2);
+                } else if (moveObj.id == 'p2') {
+                    _this.x2 = x;
+                    _this.y2 = y;
+                    _this.draw(_this.x1, _this.y1, x, y);
+                }
+
+                _this._export();
+            }
+            document.onmouseup = function () {
+                this.onmousemove = null
+            }
+        }
+
+        //运行动画	
+        _this.R('goto').onclick = function () {
+            var obj = this;
+            obj.disabled = true;
+            _this.c2.className = 'animate';
+            setTimeout(function () {
+                obj.disabled = false;
+                _this.c2.className = '';
+            }, _this.R('time').value * 2000)
+        }
+
+        //点击获取值
+        _this.R('sive').onclick = function () {
+            window.prompt('三次贝塞尔曲线值', _this._export())
+        }
+
+        //调整动画持续时间
+        _this.R('duration').onchange = function () {
+            _this.R('time').value = this.value;
+            _this.c2.style.animationDuration = this.value + 's';
+        }
+
+        //默认曲线
+        var obj = _this.R('default').getElementsByTagName('span'),
+            len = obj.length;
+        for (var i = 0; i < len; i++) {
+            obj[i].onclick = function () {
+                var d = this.getAttribute('data').split(',');
+                //alert(d[0]+'\n'+d[1]+'\n'+d[2]+'\n'+d[3])
+                _this.init(_this.w * d[0], _this.h - _this.h * d[1], _this.w * d[2], _this.h - _this.h * d[3])
+            }
+        }
+    }
+    var bezier = new CubicBezier(300, 300);
+    bezier.init(300, 280, 140, 20)
+</script>
+</html>
