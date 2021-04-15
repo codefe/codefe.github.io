@@ -163,6 +163,7 @@
 						<a href="list.html?id=$id$">
 						  <p><img src="$icon$"></p>
 						  <p>$title$</p>
+						  <small>$count$节</small>
 						</a>
 					</li>`,
 			//列表模板标题加简介
@@ -475,7 +476,9 @@
 						html += '<dl class="flex-wrap flex-break home-item-list"><dt>' + item.title + '</dt>';
 						for (let ra of item.child) {
 							for (let rb of ra.child) {
+								
 								if (rb.flag && rb.flag.indexOf('recommend') === 0) {
+									rb.count = rb.child && rb.child.length || 0;
 									html += Gs.tpls.homeList.tpl(rb);
 								}
 							}

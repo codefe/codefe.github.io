@@ -1814,7 +1814,7 @@ let db = [
                     {
                         id: 331114,
                         title: 'Fetch',
-                        flag: 'recommend,hot',
+                        flag: 'recommend',
                         icon: './app/img/edu/fetch.jpg',
                         desc: 'XMLHttpRequest来完成ajax有些老而过时了。fetch()能让我们完成类似 XMLHttpRequest (XHR) 提供的ajax功能。它们之间的主要区别是，Fetch API 使用了 Promises，它让接口更简单、简洁，避免了回调的复杂性，省去了使用复杂的 XMLHttpRequest API。',
                         child: [
@@ -3565,7 +3565,7 @@ let db = [
                     {
                         id: 770000,
                         title: 'Webpack',
-                        flag: 'recommend',
+                        flag: 'recommend,hot',
                         icon: './app/img/edu/webpack.jpg',
                         desc: 'Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。',
                         child: [
