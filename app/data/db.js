@@ -3045,7 +3045,9 @@ let db = [
                             {id:6,title:"多个react组件性能优化，key的优化",url:"frames-react-6"},
                             {id:7,title:"带坑的写法",url:"frames-react-7"},
                             {id:8,title:"首屏加载优化",url:"frames-react-8"},
-                            {id:9,title:"在生产中部署ES2015+代码",url:"frames-react-9"}
+                            {id:9,title:"在生产中部署ES2015+代码",url:"frames-react-9"},
+                            {id:10,title:"组件简写优化",url:"frames-react-10"},
+                            {id:11,title:"组件static的使用",url:"frames-react-11"}
                         ]
                     },
                     {
