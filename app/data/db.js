@@ -3047,13 +3047,78 @@ let db = [
                             {id:8,title:"首屏加载优化",url:"frames-react-8"},
                             {id:9,title:"在生产中部署ES2015+代码",url:"frames-react-9"},
                             {id:10,title:"组件简写优化",url:"frames-react-10"},
-                            {id:11,title:"组件static的使用",url:"frames-react-11"}
+                            {id:11,title:"组件static的使用",url:"frames-react-11"},
+                            {id:12,title:"react设置代理服务器",url:"frames-react-12"}
                         ]
                     },
                     {
                         id: 441101,
+                        title: 'ReactRouter',
+                        desc: 'React Router 是导航组件的集合，可与你的应用程序进行声明式的组合。无论你是想为你的 Web 应用程序添加书签，还是在 React Native 中进行组件化导航，React Router 都可以在 React 的任何位置渲染使用 - 所以请考虑使用！',
+                        child: [
+                            {
+                                id:1,
+                                title: '路由安装',
+                                url: 'frames-reactRouter-1'
+                            },
+                            {
+                                id:2,
+                                title: '路由的基本使用',
+                                url: 'frames-reactRouter-2'
+                            },
+                            {
+                                id:3,
+                                title: '路由组件与一般组件有什么不同',
+                                url: 'frames-reactRouter-3'
+                            },
+                            {
+                                id:4,
+                                title: '路由的严格匹配与模糊匹配',
+                                url: 'frames-reactRouter-4'
+                            },
+                            {
+                                id:5,
+                                title: 'Redirect的使用',
+                                url: 'frames-reactRouter-5'
+                            },
+                            {
+                                id:6,
+                                title: '向路由组件传递params参数',
+                                url: 'frames-reactRouter-6'
+                            },
+                            {
+                                id:7,
+                                title: '向路由组件传递search参数',
+                                url: 'frames-reactRouter-7'
+                            },
+                            {
+                                id:8,
+                                title: '向路由组件传递state参数',
+                                url: 'frames-reactRouter-8'
+                            },
+                            {
+                                id:9,
+                                title: 'withRouter的使用',
+                                url: 'frames-reactRouter-9'
+                            }
+                        ]
+                    },
+                    {
+                        id: 441102,
+                        title: 'PubSubJS',
+                        desc: '一个利用JavaScript进行发布/订阅的库',
+                        child: [
+                            {
+                                id:1,
+                                title: '安装及使用',
+                                url: 'frames-pubsubjs-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 441103,
                         title: 'Redux'
-                    }
+                    },
                 ]
             },
             {

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"路由安装","content":"<p>安装</p><blockquote>npm i react-router-dom</blockquote><p>注：React Router&nbsp; 分为三个版本(web,native,anywhere)，我们一般使用web版(react-router-dom)</p>"}}

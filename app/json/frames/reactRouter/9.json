@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"withRouter的使用","content":"<p>withRouter 可以加工一般组件，使其具备路由组件中所特有的API或属性</p><p>import { withRouter } from 'react-router-dom'</p><p>class Xxx extands Component {}</p><p>export default withRouter(Xxx)</p>"}}
