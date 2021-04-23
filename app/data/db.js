@@ -3117,8 +3117,24 @@ let db = [
                     },
                     {
                         id: 441103,
-                        title: 'Redux'
+                        title: 'Redux',
+                        desc: 'redux是一个专门用于做状态管理的js库(不是react的插件库),作用是集中式管理react应用中多个组件共享的状态。',
+                        child: [
+
+                        ]
                     },
+                    {
+                        id: 441104,
+                        title: 'antd',
+                        desc: 'antd 是基于 Ant Design 设计体系的 React UI 组件库,主要用于研发企业级中后台产品。',
+                        child: [
+                            {
+                                id: 1,
+                                title: 'antd按需引入与自定义主题',
+                                url: 'frames-antd-1'
+                            }
+                        ]
+                    }
                 ]
             },
             {
