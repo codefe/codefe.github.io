@@ -3048,7 +3048,19 @@ let db = [
                             {id:9,title:"在生产中部署ES2015+代码",url:"frames-react-9"},
                             {id:10,title:"组件简写优化",url:"frames-react-10"},
                             {id:11,title:"组件static的使用",url:"frames-react-11"},
-                            {id:12,title:"react设置代理服务器",url:"frames-react-12"}
+                            {id:12,title:"react设置代理服务器",url:"frames-react-12"},
+                            {id:13,title:"setState更新状态的2种写法",url:"frames-react-13"},
+                            {id:14,title:"路由组件lazy",url:"frames-react-14"},
+                            {id:15,title:"stateHook",url:"frames-react-15"},
+                            {id:16,title:"effectHook",url:"frames-react-16"},
+                            {id:17,title:"refHook",url:"frames-react-17"},
+                            {id:18,title:"Fragment",url:"frames-react-18"},
+                            {id:19,title:"Context",url:"frames-react-19"},
+                            {id:20,title:"组件优化",url:"frames-react-20"},
+                            {id:21,title:"renderProps",url:"frames-react-21"},
+                            {id:22,title:"错误边界",url:"frames-react-22"},
+                            {id:23,title:"组件通信方式总结",url:"frames-react-23"},
+                            {id:24,title:"非受控组件与受控组件",url:"frames-react-24"}
                         ]
                     },
                     {
@@ -3120,11 +3132,27 @@ let db = [
                         title: 'Redux',
                         desc: 'redux是一个专门用于做状态管理的js库(不是react的插件库),作用是集中式管理react应用中多个组件共享的状态。',
                         child: [
-
+                            {
+                                id:1,
+                                title: 'react-redux开发者工具',
+                                url: 'frames-redux-1'
+                            }
                         ]
                     },
                     {
                         id: 441104,
+                        title: 'MobX',
+                        desc: 'MobX是一个经久考验的库,使得状态管理简单而且透明、可伸缩的应用功能反应性编程(TFRP)。MobX背后的哲学很简单:任何源自应用状态的东西都应该自动地获得。其中包括UI、数据序列化、服务器通讯，等等。',
+                        child: [
+                            {
+                                id: 1,
+                                title: '安装与使用',
+                                url: 'frames-mobx-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 441105,
                         title: 'antd',
                         desc: 'antd 是基于 Ant Design 设计体系的 React UI 组件库,主要用于研发企业级中后台产品。',
                         child: [
