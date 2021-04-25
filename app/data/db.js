@@ -2616,6 +2616,7 @@ let db = [
                         icon: './app/img/edu/react.jpg',
                         desc: 'React 是一个用于构建用户界面的 JAVASCRIPT 库。 React主要用于构建UI,很多人认为 React 是 MVC 中的 V(视图)。',
                         child: [
+                            { title: "React16.8+的⽣命周期", url: "frames-react-25" },
                             { title: "阻止多次点击", url: "frames-react-1" },
                             { title: "在create-react-app中使用装饰器", url: "frames-react-2" },
                             { title: "render里面尽量减少新建变量和bind函数", url: "frames-react-3" },
