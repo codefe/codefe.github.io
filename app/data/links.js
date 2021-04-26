@@ -29,92 +29,90 @@ let links = {
 	],
     web: [
         {
-            id: 1,
             title: 'Webpack',
             url: 'https://www.webpackjs.com/'
         },
         {
-            id: 2,
             title: 'Vite',
             url: 'https://vite.wiki/zh/'
         },
         {
-            id: 3,
             title: 'VueCLI',
             url: 'https://cli.vuejs.org/zh/'
         },
         {
-            id: 4,
+            title: 'Next',
+            url: 'https://www.nextjs.cn/'
+        },
+        {
+            title: 'Docusaurus',
+            url: 'https://www.docusaurus.cn/'
+        },
+        {
+            title: 'Gatsby',
+            url: 'https://www.gatsbyjs.cn/'
+        },
+        {
+            title: 'Fastify',
+            url: 'https://www.fastify.cn/'
+        },
+        {
             title: 'Babel',
             url: 'https://www.babeljs.cn/'
         },
         {
-            id: 5,
             title: 'Lodash',
             url: 'https://www.lodashjs.com/'
         },
         {
-            id: 6,
             title: 'ES6',
             url: 'https://es6.ruanyifeng.com/'
         },
         {
-            id: 7,
-            title: 'TypeScript',
-            url: 'https://www.javascriptc.com/docs/typescript-manual/ts-version/typescript-3-6'
+            title: 'TS',
+            url: 'https://www.typescriptlang.org/zh/'
         },
         {
-            id: 8,
             title: 'PM2',
             url: 'https://pm2.keymetrics.io/'
         },
         {
-            id: 9,
-            title: 'Canvas API',
+            title: 'Canvas',
             url: 'https://www.canvasapi.cn/'
         },
         {
-            id: 10,
             title: 'ESLint',
             url: 'http://eslint.cn/'
         },
         {
-            id: 11,
             title: 'Swiper',
             url: 'https://3.swiper.com.cn/api/index.html'
         },
         {
-            id: 12,
             title: 'AnimeJS',
             url: 'https://www.animejs.cn/'
         },
         {
-            id: 13,
             title: 'Mithril',
             url: 'https://www.mithriljs.net/'
         },
         {
-            id: 14,
             title: 'Vue Test Utils',
             url: 'https://vue-test-utils.vuejs.org/zh/'
         },
         {
-            id: 15,
             title: 'TransX',
             url: 'https://github.com/tnfe/transx'
         },
         {
-            id: 16,
             title: 'SnapSVG',
             url: 'http://snapsvg.io/'
         },
         {
-            id: 17,
             title: 'GPU',
             url: 'https://gpu.rocks/'
         },
         {
-            id: 18,
             title: 'VAPTCHA',
             url: 'https://www.vaptcha.com/'
         }
