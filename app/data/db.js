@@ -1020,6 +1020,25 @@ let db = [
                                 url: 'css3-perspective-2'
                             }
                         ]
+                    },
+                    {
+                        id: 221112,
+                        title: 'BFC',
+                        desc: 'BFC(Block formatting context)直译为"块级格式化上下文"。它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。',
+                        child: [
+                            {
+                                title: 'BFC的布局规则',
+                                url: 'css3-bfc-1'
+                            },
+                            {
+                                title: '如何创建BFC',
+                                url: 'css3-bfc-2'
+                            },
+                            {
+                                title: 'BFC的作用',
+                                url: 'css3-bfc-3'
+                            }
+                        ]
                     }
                 ]
             },
@@ -1742,7 +1761,13 @@ let db = [
                     {
                         id: 332203,
                         title: 'History',
-                        desc: ''
+                        desc: 'HTML5历史记录API使您可以通过JavaScript访问浏览器导航历史记录。HTML5历史记录API在单页Web应用程序中非常有用。',
+                        child: [
+                            {
+                                title: 'History API',
+                                url: 'js-history-1'
+                            }
+                        ]
                     },
                     {
                         id: 332204,
@@ -2229,6 +2254,14 @@ let db = [
                             {
                                 title: '获取日历的上一个月和下一个月',
                                 url: 'js-casefun-71'
+                            },
+                            {
+                                title: 'JS获取视频封面',
+                                url: 'js-casefun-72'
+                            },
+                            {
+                                title: 'JS解析页面table数据为JSON',
+                                url: 'js-casefun-73'
                             }
                         ]
                     },
@@ -2396,6 +2429,14 @@ let db = [
                             {
                                 title: 'Vue3 ref、reactive、toRef、toRefs、customRef的区别',
                                 url: 'frames-vue-29'
+                            },
+                            {
+                                title: 'vue中修改props传进来的值',
+                                url: 'frames-vue-30'
+                            },
+                            {
+                                title: 'Vue中provide/inject的应用',
+                                url: 'frames-vue-31'
                             }
                         ]
                     },
@@ -2922,8 +2963,17 @@ let db = [
                         title: '二维码',
                         flag: 'recommend',
                         icon: './app/img/edu/qrcode.jpg',
-                        desc: '',
-                        child: []
+                        desc: '使用 JavaScript 生成二维码,识别解析二维码',
+                        child: [
+                            {
+                                title: 'QRCode生成二维码',
+                                url: 'frames-qrcode-1'
+                            },
+                            {
+                                title: 'QRCode识别解析二维码',
+                                url: 'frames-qrcode-2'
+                            }
+                        ]
                     },
                     {
                         id: 443310,
@@ -3137,6 +3187,7 @@ let db = [
                         id: 554500,
                         title: 'MongoDB',
                         flag: 'recommend',
+                        desc: 'MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写，跨平台，面向文档的No SQL数据库。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。',
                         icon: './app/img/edu/MongoDB.jpg'
                     },
                     {
@@ -3195,7 +3246,14 @@ let db = [
                         id: 661100,
                         title: '微信小程序',
                         flag: 'recommend',
-                        icon: './app/img/edu/weixin.jpg'
+                        icon: './app/img/edu/weixin.jpg',
+                        desc: '微信小程序，小程序的一种，英文名Wechat Mini Program，是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户扫一扫或搜一下即可打开应用。',
+                        child: [
+                            {
+                                title: '微信小程序 Canvas 绘制圆形图像',
+                                url: 'applets-wx-1'
+                            }
+                        ]
                     },
                     {
                         id: 661101,
