@@ -171,17 +171,17 @@ pre:before,code:before{
     position: relative;
 }
 .search-box input{
-    width: 50px;
-    border:1px solid #eee;
-    border-radius: 20px;
+    width: 40px;
+    border:1px solid #e8e8e8;
+    border-radius: 25px;
     transition: all .3s ease-in-out;
-    padding: 0 35px;
-    background: url(../img/common/search.svg) no-repeat 15px center;
+    background: url(../img/common/search.svg) no-repeat 12px center;
 }
 .search-box input:focus{
     border-color:#13d478;
     color: #13d478;
     width: 200px;
+    padding: 0 35px;
 }
 .search-box dl{
     position: absolute;

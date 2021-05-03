@@ -2689,7 +2689,12 @@ let db = [
                             { title: "renderProps", url: "frames-react-21" },
                             { title: "错误边界", url: "frames-react-22" },
                             { title: "组件通信方式总结", url: "frames-react-23" },
-                            { title: "非受控组件与受控组件", url: "frames-react-24" }
+                            { title: "非受控组件与受控组件", url: "frames-react-24" },
+                            { title: "大量数据长列表使用虚拟滚动", url: "frames-react-26" },
+                            { title: "react优化,不使用内敛对象", url: "frames-react-27" },
+                            { title: "组件render优化", url: "frames-react-28" },
+                            { title: "jsx中直接引入svg", url: "frames-react-29" },
+                            { title: "从中断机制看React Fiber技术", url: "frames-react-30" }
                         ]
                     },
                     {
@@ -3743,6 +3748,14 @@ let db = [
                             {
                                 title: 'Git 如何优雅的版本回退',
                                 url: 'tools-git-23'
+                            },
+                            {
+                                title: '回退和回滚',
+                                url: 'tools-git-24'
+                            },
+                            {
+                                title: '常见问题解决技巧',
+                                url: 'tools-git-25'
                             }
                         ]
                     },
