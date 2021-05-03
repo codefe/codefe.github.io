@@ -1,13 +1,8 @@
 (function () {
-	//搜索
+	// search
 	(function () {
 		let el = document.querySelector('#searchKey');
-		let btn = document.querySelector('#searchBtn');
-		if(el && btn){
-			btn.addEventListener('click', function () {
-				find(el.value);
-			});
-	
+		if(el){
 			el.addEventListener('input', debounce(function(){
 				find(this.value);
 			},500));
@@ -108,6 +103,12 @@
 		});
 	};
 	var Gs = {
+		//搜索
+		search: function(ev=window.event){
+			if (ev.keyCode === 13) {
+				console.log('search',ev.target.value);
+			}
+		},
 		//右侧快速菜单
 		quickMenu: function () {
 			//var quickHTML = '<button class="btn quick-hb" onclick="Gs.hb(event)"></button><button class="btn quick-top" onclick="Gs.scrollToTop(event)"><i class="ic-up"></i></button>',
