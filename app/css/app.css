@@ -118,8 +118,8 @@ pre:before,code:before{
   to     {opacity: 1;transform: none;}
 }
 /* head */
-.top{height:5px;background-color:#eee;border-bottom:1px solid #ddd;}
-.head{background: #f8f8f8;height: 90px;border-bottom: 1px solid #ddd;/**/box-shadow: 0 1px 3px rgba(100,100,100,0.1);padding:0 20px;position: relative;}
+.top{height:5px;background-color:#eee;border-bottom:1px solid #ccc;}
+.head{background: #f8f8f8;height: 90px;border-bottom: 1px solid #ddd;/**/box-shadow: 0 1px 3px rgba(100,100,100,0.05);padding:0 20px;position: relative;}
 .head h1{padding:20px 0 0 0px;width:140px;border-right:1px solid #e8e8e8;}
 .head-right{border-left:1px solid #01c26f;}
 .head-right .popmenu{height:0px;position:absolute;top:90px;left:-1px;right:-1px;background:#fff;border-radius:0 0 4px 4px;border:0px solid #ddd;overflow:hidden;line-height:40px;transition:all 0.3s;z-index:999;}

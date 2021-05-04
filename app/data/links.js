@@ -93,10 +93,6 @@ let links = {
             url: 'https://www.animejs.cn/'
         },
         {
-            title: 'Mithril',
-            url: 'https://www.mithriljs.net/'
-        },
-        {
             title: 'Vue Test Utils',
             url: 'https://vue-test-utils.vuejs.org/zh/'
         },

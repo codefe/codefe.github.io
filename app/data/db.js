@@ -88,7 +88,7 @@ let db = [
                         id: 110003,
                         title: '本地存储',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/storage.jpg',
+                        icon: '/app/img/edu/storage.jpg',
                         desc: 'HTML 本地存储：优于 cookies。通过本地存储（Local Storage），web 应用程序能够在用户浏览器中对数据进行本地的存储。HTML 本地存储提供了两个在客户端存储数据的对象：<br>1. window.localStorage - 存储没有截止日期的数据;<br>2. window.sessionStorage - 针对一个 session 来存储数据（当关闭浏览器标签页时数据会丢失）',
                         child: [
                             {
@@ -105,7 +105,7 @@ let db = [
                         id: 110004,
                         title: 'Workers',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/worker.jpg',
+                        icon: '/app/img/edu/worker.jpg',
                         desc: 'Web Worker 的作用，就是为 JavaScript 创造多线程环境，允许主线程创建 Worker 线程，将一些任务分配给后者运行。在主线程运行的同时，Worker 线程在后台运行，两者互不干扰。等到 Worker 线程完成计算任务，再把结果返回给主线程。这样的好处是，一些计算密集型或高延迟的任务，被 Worker 线程负担了，主线程（通常负责 UI 交互）就会很流畅，不会被阻塞或拖慢。',
                         child: [
                             {
@@ -158,7 +158,7 @@ let db = [
                         id: 110005,
                         title: 'Sockets',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/websocket.jpg',
+                        icon: '/app/img/edu/websocket.jpg',
                         desc: 'WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。',
                         child: [
                             {
@@ -210,7 +210,7 @@ let db = [
                         id: 110008,
                         title: '剪贴板',
                         flag: 'recommend',
-                        icon: './app/img/edu/clipboard.jpg',
+                        icon: '/app/img/edu/clipboard.jpg',
                         desc: '在过去的几年里我们只能使用 document.execCommand 来操作剪贴板。不过，这种操作剪贴板的操作是同步的，并且只能读取和写入 DOM。现在 Chrome 66 已经支持了新的 Async Clipboard API，作为 execCommand 替代品。这个新的 Async Clipboard API 还可以使用 Promise 来简化剪贴板事件并将它们与 Drag-&-Drop API 一起使用。',
                         child: [
                             {
@@ -251,7 +251,7 @@ let db = [
                         id: 110009,
                         title: '地理定位',
                         flag: 'recommend',
-                        icon: './app/img/edu/Geolocation.jpg',
+                        icon: '/app/img/edu/Geolocation.jpg',
                         desc: 'HTML5 Geolocation API 用于获得用户的地理位置。鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。',
                         child: [
                             {
@@ -462,7 +462,7 @@ let db = [
                         id: 111100,
                         title: '视频',
                         flag: 'recommend',
-                        icon: './app/img/edu/video.jpg',
+                        icon: '/app/img/edu/video.jpg',
                         desc: 'HTML5 规定了一种通过 video 元素来包含视频的标准方法。',
                         child: [
                             {
@@ -491,7 +491,7 @@ let db = [
                         id: 111101,
                         title: '音频',
                         flag: 'recommend',
-                        icon: './app/img/edu/speak.jpg',
+                        icon: '/app/img/edu/speak.jpg',
                         desc: 'Web Audio API 提供了在Web上控制音频的一个非常有效通用的系统，允许开发者来自选音频源，对音频添加特效，使音频可视化，添加空间效果 （如平移），等等。',
                         child: [
                             {
@@ -512,7 +512,7 @@ let db = [
                         id: 111102,
                         title: 'Canvas',
                         flag: 'recommend',
-                        icon: './app/img/edu/canvas.jpg',
+                        icon: '/app/img/edu/canvas.jpg',
                         desc: '标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。你可以通过多种方法使用 canvas 绘制路径,盒、圆、字符以及添加图像。',
                         child: [
                             {
@@ -540,7 +540,7 @@ let db = [
                     {
                         id: 111103,
                         title: 'WebGL',
-                        icon: './app/img/edu/webgl.jpg',
+                        icon: '/app/img/edu/webgl.jpg',
                         desc: 'WebGL（Web图形库）是Web上的3D图形的新标准，它是专用于绘制2D图形和交互式3D图形的目的。它是从OpenGL ES 2.0库，用于手机和其他移动设备的低级3D的API衍生。 WebGL提供ES2.0（嵌入式系统）类似的功能并在现代3D图形硬件上表现优异。它可以与HTML5使用一个JavaScript的API。 HTML5有几个功能，支持3D图形，如2D画布，WebGL，SVG，CSS3D变换和SMIL。WebGL代码编写在HTML5的canvas标签内。它是一种规范，允许互联网浏览器使用的计算机访问图形处理单元（GPU）。',
                         child: [
                             { title: "WebGL是什么东西?", url: "html5-webgl-1" },
@@ -582,7 +582,7 @@ let db = [
                         id: 111106,
                         title: 'SVG',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/svg.jpg',
+                        icon: '/app/img/edu/svg.jpg',
                         desc: 'HTML5 支持内联 SVG,可伸缩矢量图形。',
                         child: [
                             { title: "模糊滤镜", url: "html5-svg-feGaussianBlur" },
@@ -636,7 +636,7 @@ let db = [
                     {
                         id: 112200,
                         title: 'SnapSVG',
-                        icon: './app/img/edu/snapsvg.jpg',
+                        icon: '/app/img/edu/snapsvg.jpg',
                         desc: 'Snap.svg是一个强大且直观的SVG动画内容操纵API，支持屏蔽、裁剪、全梯度和组别等使得内容更具吸引力和交互性的功能。'
                     }
                 ]
@@ -743,7 +743,7 @@ let db = [
                         id: 221100,
                         title: 'Flex',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/flex.jpg',
+                        icon: '/app/img/edu/flex.jpg',
                         desc: '网页布局(layout)是 CSS 的一个重点应用。Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。',
                         child: [
                             {
@@ -756,7 +756,7 @@ let db = [
                         id: 221101,
                         title: 'Grid',
                         flag: 'recommend',
-                        icon: './app/img/edu/grid.jpg',
+                        icon: '/app/img/edu/grid.jpg',
                         desc: '网格布局(Grid)是最强大的 CSS 布局方案。 它将网页划分成一个个网格,可以任意组合不同的网格,做出各种各样的布局。',
                         child: [
                             {
@@ -777,7 +777,7 @@ let db = [
                         id: 221102,
                         title: '多列',
                         flag: 'recommend',
-                        icon: './app/img/edu/colum.jpg',
+                        icon: '/app/img/edu/colum.jpg',
                         desc: 'CSS3中新出现的多列布局(multi-column)是传统HTML网页中块状布局模式的有力扩充。这种新语法能够让WEB开发人员轻松的让文本呈现多列显示。',
                         child: [
                             {
@@ -814,7 +814,7 @@ let db = [
                         id: 221103,
                         title: '用户界面',
                         flag: 'recommend',
-                        icon: './app/img/edu/boxsizing.jpg',
+                        icon: '/app/img/edu/boxsizing.jpg',
                         desc: 'CSS3 用户界面 在CSS3 中, 增加了一些新的用户界面特性来调整元素尺寸,框尺寸和外边框。 resize, box-sizing, outline-offset',
                         child: [
                             {
@@ -827,14 +827,14 @@ let db = [
                         id: 221104,
                         title: '过渡',
                         flag: 'recommend',
-                        icon: './app/img/edu/transform1.jpg',
+                        icon: '/app/img/edu/transform1.jpg',
                         desc: 'CSS3中新增的transform属性,可以实现元素在变换过程中的过渡效果,实现了基本的 动画。'
                     },
                     {
                         id: 221105,
                         title: '动画',
                         flag: 'recommend',
-                        icon: './app/img/edu/animation.jpg',
+                        icon: '/app/img/edu/animation.jpg',
                         desc: 'animation是CSS3中新增的属性,它可以制作出多种酷炫的动画效果,如果对flash有一定的了解,那这个属性就会很容易学习。 ',
                         child: [
                             {
@@ -851,7 +851,7 @@ let db = [
                         id: 221106,
                         title: '滤镜',
                         flag: 'recommend',
-                        icon: './app/img/edu/filter.jpg',
+                        icon: '/app/img/edu/filter.jpg',
                         desc: 'css3 的滤镜 filter 属性,可以对网页中的图片进行类似 Photoshop 图片处理的效果, h5 时代的来临,我们可以通过 css 对图像进行处理。',
                         child: [
                             {
@@ -909,7 +909,7 @@ let db = [
                         title: '裁剪样式',
                         desc: '通过clip-path把一个div（元素，可以是图片等）裁切成不同的形状',
                         flag: 'recommend',
-                        icon: './app/img/edu/css-clip-path.png',
+                        icon: '/app/img/edu/css-clip-path.png',
                         child: [
                             {
                                 title: '定义和用法',
@@ -1072,7 +1072,7 @@ let db = [
                         id: 223301,
                         title: '布局适配',
                         flag: 'recommend',
-                        icon: './app/img/edu/layout.jpg'
+                        icon: '/app/img/edu/layout.jpg'
                     },
                     {
                         id: 223302,
@@ -1104,7 +1104,7 @@ let db = [
                         id: 330001,
                         title: '面向对象',
                         flag: 'recommend',
-                        icon: './app/img/edu/oop.jpg',
+                        icon: '/app/img/edu/oop.jpg',
                         desc: '如果你想让你的javascript代码变得更加优美，性能更加卓越。或者，你想像jQuery的作者一样，写出属于自己优秀的类库（哪怕是基于jquery的插件）。那么，你请务必要学习javascript面向对象，否则你无法更灵活的使用javascript这门语言。面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。一般面向对象包含：继承，封装，多态，抽象'
                     },
 
@@ -1112,34 +1112,34 @@ let db = [
                         id: 330002,
                         title: '闭包',
                         flag: 'recommend',
-                        icon: './app/img/edu/closures.jpg',
+                        icon: '/app/img/edu/closures.jpg',
                         desc: '闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。'
                     },
                     {
                         id: 330003,
                         title: '原型',
                         flag: 'recommend',
-                        icon: './app/img/edu/proto.jpg',
+                        icon: '/app/img/edu/proto.jpg',
                         desc: 'js中没有类的概念，只是把一个对象实例化，这个对象一般会成为原型对象。js中所以的函数都有一个prototype属性，这个属性引用了一个对象， 即原型对象，也简称原型。这个函数包括构造函数和普通函数。'
                     },
                     {
                         id: 330004,
                         title: 'this',
                         flag: 'recommend',
-                        icon: './app/img/edu/this.jpg',
+                        icon: '/app/img/edu/this.jpg',
                         desc: 'this关键字是 JavaScript 中最复杂的机制之一。它是一个很特别的关键字，即使是非常有经验的 JavaScript 开发者也很难说清它。本书将详解讲解this的方方面面。'
                     },
                     {
                         id: 330005,
                         title: '模块',
                         flag: 'recommend',
-                        icon: './app/img/edu/module.jpg'
+                        icon: '/app/img/edu/module.jpg'
                     },
                     {
                         id: 330006,
                         title: 'TypeScript',
                         desc: '',
-                        icon: './app/img/edu/ts.jpg'
+                        icon: '/app/img/edu/ts.jpg'
                     }
                 ]
             },
@@ -1151,7 +1151,7 @@ let db = [
                         id: 331100,
                         title: 'Array',
                         flag: 'recommend',
-                        icon: './app/img/edu/array.jpg',
+                        icon: '/app/img/edu/array.jpg',
                         desc: 'JavaScript的 Array 对象是用于构造数组的全局对象，数组是类似于列表的高阶对象。',
                         child: [
                             {
@@ -1518,7 +1518,7 @@ let db = [
                         id: 331112,
                         title: 'Promise',
                         flag: 'recommend',
-                        icon: './app/img/edu/promise.jpg',
+                        icon: '/app/img/edu/promise.jpg',
                         desc: 'Promise 对象用于表示一个异步操作的最终完成 (或失败)及其结果值。',
                         child: [
                             {
@@ -1602,7 +1602,7 @@ let db = [
                         id: 331114,
                         title: 'Fetch',
                         flag: 'recommend',
-                        icon: './app/img/edu/fetch.jpg',
+                        icon: '/app/img/edu/fetch.jpg',
                         desc: 'XMLHttpRequest来完成ajax有些老而过时了。fetch()能让我们完成类似 XMLHttpRequest (XHR) 提供的ajax功能。它们之间的主要区别是，Fetch API 使用了 Promises，它让接口更简单、简洁，避免了回调的复杂性，省去了使用复杂的 XMLHttpRequest API。',
                         child: [
                             {
@@ -1675,7 +1675,7 @@ let db = [
                         id: 331115,
                         title: 'JSON',
                         flag: 'recommend',
-                        icon: './app/img/edu/json.jpg',
+                        icon: '/app/img/edu/json.jpg',
                         desc: 'JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。是JavaScript的一个子集。JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。',
                         child: [
                             {
@@ -1784,7 +1784,7 @@ let db = [
                         id: 333300,
                         title: 'DOM',
                         flag: 'recommend',
-                        icon: './app/img/edu/dom.jpg',
+                        icon: '/app/img/edu/dom.jpg',
                         desc: '通过HTML DOM,JavaScript 能够访问和改变 HTML 文档的所有元素。',
                         child: [
                             {
@@ -1831,7 +1831,7 @@ let db = [
                         id: 334400,
                         title: '设计模式',
                         flag: 'recommend',
-                        icon: './app/img/edu/module.jpg',
+                        icon: '/app/img/edu/module.jpg',
                         desc: '每个JS开发者都力求写出可维护、复用性和可读性高的代码。随着应用不断扩大，代码组织的合理性也越来越重要。设计模式为特定环境下的常见问题提供了一个组织结构，对于克服这些挑战起到至关重要的作用。'
                     }
                 ]
@@ -1923,7 +1923,7 @@ let db = [
                         id: 335507,
                         title: '算法',
                         flag: 'recommend',
-                        icon: './app/img/edu/suanfa.jpg',
+                        icon: '/app/img/edu/suanfa.jpg',
                         desc: '',
                         child: [
                             {
@@ -2311,7 +2311,7 @@ let db = [
                         id: 440000,
                         title: 'Vue',
                         flag: 'recommend',
-                        icon: './app/img/edu/vue3.jpg',
+                        icon: '/app/img/edu/vue3.jpg',
                         desc: 'Vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。',
                         child: [
                             {
@@ -2443,7 +2443,7 @@ let db = [
                     {
                         id: 440002,
                         title: 'Vue源码解析',
-                        icon: './app/img/edu/vue3.jpg',
+                        icon: '/app/img/edu/vue3.jpg',
                         child: [
                             {
                                 title: 'Vue实现数据双向绑定的原理',
@@ -2558,7 +2558,7 @@ let db = [
                     {
                         id: 440003,
                         title: 'VueX',
-                        icon: './app/img/edu/vuex.jpg',
+                        icon: '/app/img/edu/vuex.jpg',
                         desc: 'Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。',
                         child: [
                             {
@@ -2606,7 +2606,7 @@ let db = [
                         id: 440005,
                         title: 'VueCLI',
                         desc: 'Vue-cli是vue官方出品的快速构建单页应用的脚手架',
-                        icon: './app/img/edu/vuecli.jpg',
+                        icon: '/app/img/edu/vuecli.jpg',
                         child: [
                             {
                                 title: 'vue init命令来初始化项目',
@@ -2662,7 +2662,7 @@ let db = [
                         id: 441100,
                         title: 'React',
                         flag: 'recommend',
-                        icon: './app/img/edu/react.jpg',
+                        icon: '/app/img/edu/react.jpg',
                         desc: 'React 是一个用于构建用户界面的 JAVASCRIPT 库。 React主要用于构建UI,很多人认为 React 是 MVC 中的 V(视图)。',
                         child: [
                             { title: "React16.8+的⽣命周期", url: "frames-react-25" },
@@ -2792,22 +2792,18 @@ let db = [
                 child: [
                     {
                         id: 442200,
-                        title: 'Mithril'
-                    },
-                    {
-                        id: 442201,
                         title: 'Jquery'
                     },
                     {
-                        id: 442202,
+                        id: 442201,
                         title: 'Template',
-                        icon: './app/img/edu/template.jpg'
+                        icon: '/app/img/edu/template.jpg'
                     },
                     {
-                        id: 442203,
+                        id: 442202,
                         title: 'ECharts',
                         flag: 'recommend',
-                        icon: './app/img/edu/echarts.jpg',
+                        icon: '/app/img/edu/echarts.jpg',
                         desc: 'ECharts开源来自百度商业前端数据可视化团队,基于html5 Canvas，是一个纯Javascript图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。创新的拖拽重计算、数据视图、值域漫游等特性大大增强了用户体验，赋予了用户对数据进行挖掘、整合的能力。',
                         child: [
                             { title: "柱状图虚线显示", url: "frames-echarts-1" },
@@ -2818,10 +2814,10 @@ let db = [
                         ]
                     },
                     {
-                        id: 442204,
+                        id: 442203,
                         title: '百度地图',
                         flag: 'recommend',
-                        icon: './app/img/edu/baidu.jpg'
+                        icon: '/app/img/edu/baidu.jpg'
                     }
                 ]
             },
@@ -2833,7 +2829,7 @@ let db = [
                         id: 443300,
                         title: 'Axios',
                         flag: 'recommend',
-                        icon: './app/img/edu/axios.jpg',
+                        icon: '/app/img/edu/axios.jpg',
                         child: [
                             {
                                 title: 'ie9,10,11环境下发现axios存在兼容性',
@@ -2863,7 +2859,7 @@ let db = [
                     {
                         id: 443302,
                         title: 'wowjs',
-                        icon: './app/img/edu/wowjs.jpg',
+                        icon: '/app/img/edu/wowjs.jpg',
                         desc: '如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。',
                         child: [
                             { title: "WOW.js介绍及浏览器兼容", url: "frames-wowjs-1" },
@@ -2967,7 +2963,7 @@ let db = [
                         id: 443309,
                         title: '二维码',
                         flag: 'recommend',
-                        icon: './app/img/edu/qrcode.jpg',
+                        icon: '/app/img/edu/qrcode.jpg',
                         desc: '使用 JavaScript 生成二维码,识别解析二维码',
                         child: [
                             {
@@ -2984,19 +2980,10 @@ let db = [
                         id: 443310,
                         title: 'Alipay',
                         flag: 'recommend',
-                        icon: './app/img/edu/alipay.jpg',
-                        desc: '',
-                        child: []
-                    },
-                    {
-                        id: 443311,
-                        title: 'templateJS',
-                        flag: 'recommend',
-                        icon: './app/img/edu/template.jpg',
+                        icon: '/app/img/edu/alipay.jpg',
                         desc: '',
                         child: []
                     }
-
                 ]
             }
         ]
@@ -3013,7 +3000,7 @@ let db = [
                         id: 550000,
                         title: 'NodeJS',
                         flag: 'recommend',
-                        icon: './app/img/edu/node.jpg'
+                        icon: '/app/img/edu/node.jpg'
                     },
                     {
                         id: 550001,
@@ -3087,7 +3074,7 @@ let db = [
                         title: 'nvm',
                         flag: 'recommend',
                         desc: 'nvm全名node.js version management,顾名思义是一个nodejs的版本管理工具。通过它可以安装和切换不同版本的nodejs。',
-                        icon: './app/img/edu/nvm.jpg',
+                        icon: '/app/img/edu/nvm.jpg',
                         child: [
                             {
                                 title: 'nvm安装',
@@ -3104,7 +3091,7 @@ let db = [
                         title: 'nrm',
                         flag: 'recommend',
                         desc: 'nrm 是一个 npm 源管理器,允许你快速地在 npm源间切换。',
-                        icon: './app/img/edu/nrm.jpg',
+                        icon: '/app/img/edu/nrm.jpg',
                         child: [
                             {
                                 title: 'nrm安装',
@@ -3117,7 +3104,7 @@ let db = [
                         title: 'PM2',
                         flag: 'recommend',
                         desc: 'PM2（Process Manager 2 ）是具有内置负载均衡器的Node.js应用程序的生产运行时和进程管理器。 它允许您永久保持应用程序活跃，无需停机即可重新加载它们，并促进常见的Devops任务。',
-                        icon: './app/img/edu/pm2.jpg',
+                        icon: '/app/img/edu/pm2.jpg',
                         child: [
                             {
                                 title: 'PM2特性',
@@ -3151,7 +3138,7 @@ let db = [
                         id: 552200,
                         title: 'Express',
                         flag: 'recommend',
-                        icon: './app/img/edu/express.jpg'
+                        icon: '/app/img/edu/express.jpg'
                     }
                 ]
             },
@@ -3163,7 +3150,7 @@ let db = [
                         id: 553300,
                         title: 'Koa2',
                         flag: 'recommend',
-                        icon: './app/img/edu/koa.jpg'
+                        icon: '/app/img/edu/koa.jpg'
                     }
                 ]
             },
@@ -3193,7 +3180,7 @@ let db = [
                         title: 'MongoDB',
                         flag: 'recommend',
                         desc: 'MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写，跨平台，面向文档的No SQL数据库。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。',
-                        icon: './app/img/edu/MongoDB.jpg'
+                        icon: '/app/img/edu/MongoDB.jpg'
                     },
                     {
                         id: 554501,
@@ -3216,7 +3203,7 @@ let db = [
                         id: 660000,
                         title: 'Flutter',
                         flag: 'recommend',
-                        icon: './app/img/edu/flutter.jpg',
+                        icon: '/app/img/edu/flutter.jpg',
                         desc: 'Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。',
                         child: [
                             {
@@ -3233,13 +3220,13 @@ let db = [
                         id: 660001,
                         title: 'Weex',
                         flag: 'recommend',
-                        icon: './app/img/edu/weex.jpg'
+                        icon: '/app/img/edu/weex.jpg'
                     },
                     {
                         id: 660002,
                         title: 'uni-app',
                         flag: 'recommend',
-                        icon: './app/img/edu/uniapp.jpg'
+                        icon: '/app/img/edu/uniapp.jpg'
                     }
                 ]
             },
@@ -3251,7 +3238,7 @@ let db = [
                         id: 661100,
                         title: '微信小程序',
                         flag: 'recommend',
-                        icon: './app/img/edu/weixin.jpg',
+                        icon: '/app/img/edu/weixin.jpg',
                         desc: '微信小程序，小程序的一种，英文名Wechat Mini Program，是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户扫一扫或搜一下即可打开应用。',
                         child: [
                             {
@@ -3264,7 +3251,7 @@ let db = [
                         id: 661101,
                         title: 'mpvue',
                         flag: 'recommend',
-                        icon: './app/img/edu/mpvue.jpg'
+                        icon: '/app/img/edu/mpvue.jpg'
                     }
                 ]
             },
@@ -3293,7 +3280,7 @@ let db = [
                         id: 770000,
                         title: 'Webpack',
                         flag: 'recommend,hot',
-                        icon: './app/img/edu/webpack.jpg',
+                        icon: '/app/img/edu/webpack.jpg',
                         desc: 'Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。',
                         child: [
                             {
@@ -3503,7 +3490,7 @@ let db = [
                         id: 770004,
                         title: 'FIS',
                         flag: 'recommend',
-                        icon: './app/img/edu/fis.jpg',
+                        icon: '/app/img/edu/fis.jpg',
                         desc: 'FIS3 , 为你定制的前端工程构建工具,解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题',
                         child: []
                     }
@@ -3552,7 +3539,7 @@ let db = [
                         id: 771101,
                         title: 'ESLint',
                         flag: 'recommend',
-                        icon: './app/img/edu/eslint.jpg'
+                        icon: '/app/img/edu/eslint.jpg'
                     }
                 ]
             },
@@ -3564,7 +3551,7 @@ let db = [
                         id: 772200,
                         title: 'PostMan',
                         flag: 'recommend',
-                        icon: './app/img/edu/postman.jpg'
+                        icon: '/app/img/edu/postman.jpg'
                     },
                     {
                         id: 772201,
@@ -3625,7 +3612,7 @@ let db = [
                         id: 773300,
                         title: 'VSCode',
                         flag: 'recommend',
-                        icon: './app/img/edu/vscode.jpg',
+                        icon: '/app/img/edu/vscode.jpg',
                         child: [
                             {
                                 title: 'vscode自动编译ts',
@@ -3654,7 +3641,7 @@ let db = [
                         id: 774400,
                         title: 'Git',
                         flag: 'recommend',
-                        icon: './app/img/edu/git.jpg',
+                        icon: '/app/img/edu/git.jpg',
                         desc: 'Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。',
                         child: [
                             {
@@ -3764,7 +3751,7 @@ let db = [
                         title: 'Jenkins',
                         desc: 'Jenkins是一个开源的持续集成的服务器，Jenkins开源帮助我们自动构建各类项目。Jenkins强大的插件式，使得Jenkins可以集成很多软件，可能帮助我们持续集成我们的工程项目。',
                         flag: 'recommend',
-                        icon: './app/img/edu/Jenkins.jpg'
+                        icon: '/app/img/edu/Jenkins.jpg'
                     }
                 ]
             },
