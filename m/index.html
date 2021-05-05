@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,46 +23,50 @@
     <title>初学</title>
     <link rel="stylesheet" href="/app/css/m.css">
 </head>
-<body>
-    <!-- head -->
-    <header class="flex flex-col navhead">
-        <section class="flex flex-sb m10">
-            <span>初学</span>
-            <span>bb</span>
-            <span><a href="" class="icono-ellipsis"></a></span>
+
+<body class="flex flex-col flex-sb">
+    <section class="wrap">
+        <!-- head -->
+        <header class=" flex flex-col navhead">
+            <section class="flex flex-sb m10">
+                <span>初学</span>
+                <span>bb</span>
+                <span><a href="/m/catalog.html" class="icono-ellipsis"></a></span>
+            </section>
+            <section>aaa</section>
+            <!-- banner -->
+            <section class="banner"></section>
+        </header>
+        <!-- nav -->
+        <section class="flex flex-sb flex-fe navhome">
+            <a href="">Vue</a><a href="">React</a><a href="">HTML</a><a href="">ES6</a><a href="">CSS</a>
         </section>
-        <section>aaa</section>
-        <!-- banner -->
-        <section class="banner"></section>
-    </header>
-    <!-- nav -->
-    <section class="flex flex-sb flex-fe navhome">
-        <a href="">Vue</a><a href="">React</a><a href="">HTML</a><a href="">ES6</a><a href="">CSS</a>
-    </section>
-    <!-- hot -->
-    <section class="flex flex-sb navhot">
-        <a href=""><img src="/app/img/edu/transform1.jpg"/></a>
-        <a href=""><img src="/app/img/edu/colum.jpg"/></a>
-    </section>
-    <!-- hot -->
-    <section class="flex flex-sb vuehot">
-        <a class="flex flex-col" href="">
-            <p>Vue进阶实战</p>
-            <span>VueJS高级进阶核心知识精讲教程</span>
-            <em>学习！</em>
-        </a>
-    </section>
-    <!-- homelist -->
-    <section class="homelist"></section>
-    <!-- endline -->
-    <section class="endline">已经到底了</section>
-    <!-- quick-aside Gs.scrollToTop(event)"-->
-    <section class="quick-aside">
-        <button class="quick-top" onclick="mApi.goTop(event)"><i class="ic-up"></i></button>
+        <!-- hot -->
+        <section class="flex flex-sb navhot">
+            <a href=""><img src="/app/img/edu/transform1.jpg" /></a>
+            <a href=""><img src="/app/img/edu/colum.jpg" /></a>
+        </section>
+        <!-- hot -->
+        <section class="flex flex-sb vuehot">
+            <a class="flex flex-col" href="">
+                <p>Vue进阶实战</p>
+                <span>VueJS高级进阶核心知识精讲教程</span>
+                <em>学习！</em>
+            </a>
+        </section>
+        <!-- homelist -->
+        <section class="homelist"></section>
+        <!-- endline -->
+        <section class="endline">已经到底了</section>
+        <!-- quick-aside Gs.scrollToTop()"-->
+        <section class="quick-aside">
+            <button class="quick-top" onclick="mApi.goTop()"><i class="ic-up"></i></button>
+        </section>
     </section>
     <!-- foot -->
     <footer class="flex flex-sb flex-ac navfoot"></footer>
 </body>
 <script src="/app/data/db.js"></script>
 <script src="/app/js/m.js"></script>
+
 </html>

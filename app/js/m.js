@@ -66,14 +66,14 @@
             return new Promise(resolve => {
                 var html = '';
                 for (let item of db) {
-                    html += '<dl class="flex flex-break"><dt>' + item.title + '</dt>';
+                    html += '<dl class="flex flex-row"><dt>' + item.title + '</dt>';
                     for (let ra of item.child) {
                         for (let rb of ra.child) {
                             if (rb.flag && rb.flag.indexOf('recommend') === 0) {
                                 rb.count = rb.child && rb.child.length || 0;
                                 html += `<dd class="flex flex-col">
                                             <a href="list.html?id=${rb.id}">
-                                            <p><img src="${rb.icon}"></p>
+                                            <p><img data-src="${rb.icon}"></p>
                                             <p class="flex flex-sb m10">
                                                 <span>${rb.title}</span>
                                                 <small>${rb.count}节</small>
@@ -88,6 +88,81 @@
                 resolve(html);
             })
         }
+        query() {
+            return Array.from(document.querySelectorAll('[data-src]'));
+        }
+        observer(){
+            return new IntersectionObserver(
+                changes => {
+                    changes.forEach(change => {
+                        if(change.isIntersecting){
+                            change.target.src = change.target.dataset.src
+                            this.observer().unobserve(change.target);
+                        }
+                    })
+                }
+            )
+        }
+        getCatalog(){
+            let html = '';
+            db.map(item=>{
+                html += `<p data-id="${item.id}" onclick="mApi.getCatalogList(${item.id})">${item.title}</p>`;
+            })
+            document.querySelector('.navaside').innerHTML = html;
+            this.getCatalogList(db[0].id);
+        }
+        getCatalogList(id){
+            //设置当前样式
+            let obj = Array.from(document.querySelector('.navaside').children);
+            obj.map(item=>{
+                if(item.dataset.id === ''+id){
+                    item.classList.add('action')
+                }else{
+                    item.classList.remove('action')
+                }
+            })
+            //获取数据
+            this.getCatalogData(id);
+        }
+        getCatalogData(id){
+            let data = db.filter(item=>item.id === id)[0].child;
+            let html = '';
+            //导航
+            for (let ra of data) {
+                html += `<h3>${ra.title}</h3>`;
+                for (let rb of ra.child) {
+                    let ic = '';
+                    if(rb.icon){
+                        ic = `<img data-src="${rb.icon}"/>`;
+                    }else{
+                        ic = `无图`;
+                    }
+                    if (rb.child) {
+                        html += `<a class="flex" href="list.html?id=${rb.id}">
+                            <figure>${ic}</figure>
+                            <figcaption>${rb.title}</figcaption>
+                            </a>`;
+                    } else {
+                        html += `<a class="flex ano" href="javascript:;"">
+                            <figure>${ic}</figure>
+                            <figcaption>${rb.title}</figcaption>
+                            </a>`;
+                    }
+                }
+            }
+
+            document.querySelector('.catalogList').innerHTML = html;
+            //返回顶部
+            catalogList.scrollTo({
+                top:0,
+                left:0,
+                behavior: 'auto'
+            });
+            //懒加载图片
+            this.query().forEach(item => {
+                this.observer().observe(item);
+            });
+        }
         getPath(){
             let pathname = location.pathname.split('/')[2];
             switch(pathname){
@@ -97,27 +172,31 @@
                     this.banner();
                     this.homeList().then(html => {
                         document.querySelector('.homelist').innerHTML = html;
+                        //懒加载图片
+                        this.query().forEach(item => {
+                            this.observer().observe(item);
+                        });
                     });
+                    
                     break;
                 case 'my.html':
                     this.footNav();
                     break;
                 case 'catalog.html':
                     this.footNav();
+                    this.getCatalog();
                     break;
                 default:
                     console.log('default')
             }
         }
-        goTop(e){
-            e.stopPropagation();//停止冒泡;
-			(function scrollTo() {
-				let c = document.documentElement.scrollTop || document.body.scrollTop;
-				if (c > 0) {
-					window.requestAnimationFrame(scrollTo);
-					window.scrollTo(0, c - c / 10);
-				}
-			}());
+        goTop(){
+            let el = document.querySelector('.wrap');
+            el.scrollTo({
+                top:0,
+                left:0,
+                behavior: 'smooth'
+            });
         }
     }
     let api = new Mapi();
