@@ -49,9 +49,9 @@
 
         }
         footNav() {
-            let html = `<a href="/m/catalog.html" class="flex-item"><i class="ic-list"></i><em>分类</em></a>
-                        <a href="/m/index.html" class="navlogo"><i class="icono-home"></i></a>
-                        <a href="/m/my.html" class="flex-item"><i class="ic-my"></i><em>我</em></a>`;
+            let html = `<a href="/m/catalog.html" class="flex-item"><img src="/app/img/common/catalog.png" height="25"/><em>分类</em></a>
+                        <a href="/m/index.html" class="navlogo"></a>
+                        <a href="/m/my.html" class="flex-item"><img src="/app/img/common/my.png" height="25"/><em>我的</em></a>`;
             document.querySelector('footer').innerHTML = html;
         }
         banner() {
@@ -165,8 +165,37 @@
                 this.observer().observe(item);
             });
         }
+        getList(id){
+            if(id===0){
+                return this.dialog('非法操作');
+            }else{
+                id *= 1;
+            }
+        }
+        dialog(title){
+            let txt = `<div class="dialog-bg"></div>
+                       <div class="dialog-cont">
+                           <div class="dialog-tit">提示</div>
+                           <div class="dialog-msg">${title}</div>
+                           <div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>
+                       </div>`;
+            let obj = document.createElement('div');
+				obj.innerHTML = txt;
+				obj.className = 'dialog';
+            document.body.appendChild(obj);
+        }
+        dialogHide(){
+            let el = document.querySelector('.dialog-cont');
+            el.classList.add('dialog-hide');
+            setTimeout(()=>{
+                let obj = document.querySelector('.dialog');
+                document.body.removeChild(obj);
+                location.href="/m/catalog.html";
+            },500)
+        }
         getPath(){
             let pathname = location.pathname.split('/')[2];
+            let para = location.search.split('=')[1] || 0;
             switch(pathname){
                 case '':
                 case 'index.html':
@@ -187,6 +216,10 @@
                 case 'catalog.html':
                     this.footNav();
                     this.getCatalog();
+                    break;
+                case 'list.html':
+                    this.footNav();
+                    this.getList(para);
                     break;
                 default:
                     console.log('default')

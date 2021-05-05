@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- UC浏览器全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ浏览器全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <title>初学</title>
+    <link rel="stylesheet" href="/app/css/m.css">
+</head>
+<body class="flex flex-col flex-sb">
+    <section class="flex flex-col wrap-box">
+        <!-- head -->
+        <header class="flex flex-ac flex-sb navhead navcatalog">
+            <span class="m10"><img onclick="history.go(-1)" src="/app/img/common/menu.png" height="23"/></span>
+            <span class="m10">名称</span>
+            <span class="m10"><img onclick="history.go(-1)" src="/app/img/common/back.png" height="20"/></span>
+        </header>
+        <!-- catalog -->
+        <section class="flex flex-item ovauto">
+            <nav class="navaside"></nav>
+            <section class="flex-item ovauto" id="catalogList">
+                <section class="catalogList"></section>
+            </section>
+            
+        </section>
+    </section>
+    <!-- foot -->
+    <footer class="flex flex-sb flex-ac navfoot"></footer>
+</body>
+<script src="/app/data/db.js"></script>
+<script src="/app/js/m.js"></script>
+</html>

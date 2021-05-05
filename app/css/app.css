@@ -467,7 +467,7 @@ pre:before,code:before{
 .alert-ui-bg{position: fixed;top:0px;left:0px;z-index:2000;width: 100%;height: 100%;background: rgba(0,0,0,.2);}
 .alert-ui-cont{position: fixed;top:30%;left:40%;z-index:2000;width: 250px;overflow:hidden;background: rgba(255,255,255,1);border-radius:5px;box-shadow: 0 0 8px rgba(0,0,0,.1), 0 0 200px rgb(255,255,255);}
 .alert-ui-tit{padding: 15px;text-align: center;border-bottom:1px solid #f1f4f9;}
-.alert-ui-msg{padding:25px 15px;text-align: center;}
+.alert-ui-msg{padding:25px 15px;text-align: center;font-size:14px;}
 .alert-ui-msg img{display:inline-block;width:100px;}
 .alert-ui-btnc{height: 50px;overflow: hidden;}
 .alert-ui-btnc a{display:block;height:40px;line-height: 40px;cursor: pointer;font-size:16px;margin:0 10px 10px 10px;border-radius:3px;text-align:center;}
