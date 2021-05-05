@@ -100,6 +100,8 @@
                             this.observer().unobserve(change.target);
                         }
                     })
+                },{
+                    threshold: [0, 0.5, 1]
                 }
             )
         }
