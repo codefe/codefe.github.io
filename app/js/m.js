@@ -48,10 +48,12 @@
     class Mapi {
         constructor(){
             this.obj=null;
+            this.url = '';
         }
         /**
          * 公共函数
          * 
+         * getUrl     获取当前url及参数
          * footNav    底部切换菜单
          * goTop      返回顶部
          * dialog     显示弹窗
@@ -60,6 +62,13 @@
          * observer   懒加载数据监控
          * getFetch   fetch网络请求
          */
+         getUrl() {
+            var url = location;
+            return {
+                name: url.pathname,
+                args: url.search.substr(1).split('=')[1] || ''
+            }
+        }
         footNav() {
             let html = `<a href="/m/catalog.html" class="flex-item"><i class="mic ic-catalog"></i><em>分类</em></a>
                         <a href="/m/index.html" class="mic navlogo"></a>
@@ -258,6 +267,7 @@
         /**
          * list 页面
          * 
+         * moveScrollTop     设置当前标题在章节目录居中
          * toggleListHide    隐藏章节目录
          * toggleList        显示隐藏章节目录
          * getListHome       获取首页及章节目录
@@ -265,6 +275,23 @@
          * setPrenext        设置上一页，下一页 1
          * getPrenextUrl     计算上一页，下一页 2
          */
+         moveScrollTop() {
+            let elid;
+            if(this.obj.child && this.obj.child.length>0){
+                this.obj.child.forEach((it,index)=>{
+                    if(it.url===this.url){
+                        elid = index
+                    }
+                })
+                //获取外框信息
+                let outEl = document.querySelector('.listaside');
+                let outElInfo = outEl.getBoundingClientRect();
+                //获取当前标题元素信息
+                let el = document.querySelectorAll('.listaside p')[elid];
+                //向上滚动距离
+                outEl.scrollTop = el.offsetTop - outElInfo.height / 2;
+            }
+        }
         toggleListHide(){
             document.body.addEventListener('click',()=>{
                 let el = document.querySelector('.listaside');
@@ -342,6 +369,8 @@
         }
         getArticle(url,id){
             this.getPrenextUrl(url);
+            this.url = url;
+            this.moveScrollTop();
             //获取数据
             let str = url.split('-').join('/');
             this.getFetch(str).then(rs => {
