@@ -302,13 +302,14 @@
             let str = url.split('-').join('/');
             this.getFetch(str).then(rs => {
                 let html = `<section class="listTitle">${rs.data.subTitle}</section>`;
-                html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'');
+                html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'').replace(/.\/app/g,'/app');
                 document.querySelector('.listArticle').innerHTML = html;
+                listArticle.scrollTo(0)
             }).catch(err => {
                 console.log(err)
             });
             //设置章节目录样式
-            let menu = Array.from(document.querySelector('.listaside').children);
+            let menu = Array.from(document.querySelectorAll('.listaside p'));
             menu.map((item,index)=>{
                 if(index === id){
                     item.classList.add('cur');
