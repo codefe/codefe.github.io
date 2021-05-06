@@ -46,6 +46,9 @@
     }(window, document));
 
     class Mapi {
+        constructor(){
+            this.obj=null;
+        }
         /**
          * 公共函数
          * 
@@ -259,6 +262,8 @@
          * toggleList        显示隐藏章节目录
          * getListHome       获取首页及章节目录
          * getArticle        显示文章内容
+         * setPrenext        设置上一页，下一页 1
+         * getPrenextUrl     计算上一页，下一页 2
          */
         toggleListHide(){
             document.body.addEventListener('click',()=>{
@@ -282,6 +287,7 @@
             id *= 1;
             const obj = db.filter(item=>item.id===pid)[0].child.filter(ra=>ra.id===sid)[0].child.filter(rb=>rb.id===id)[0];
             document.querySelector('.catalogTitle').innerHTML = obj.title;
+            this.obj = obj;
             let desc = '';
             if(obj.icon){
                 desc += `<p><img src="${obj.icon}"/></p><section>${obj.desc}</section>`
@@ -295,16 +301,54 @@
                     html += `<p onclick="mApi.getArticle('${item.url}',${index})">${index+1}. ${item.title}</p>`;
                 })
                 document.querySelector('.listaside').innerHTML = html;
+                this.setPrenext({next:obj.child[0].url,nextIndex:0});
             }
         }
+        setPrenext(url){
+            let el = document.querySelector('.prenext');
+            let html = '';
+            if(url.pre){
+                html += `<p onclick="mApi.getArticle('${url.pre}',${url.preIndex})"><i class="mic ic-pre"></i></p>`;
+            }else{
+                html += `<p class="hide"><i class="mic ic-pre"></i></p>`;
+            }
+            if(url.next){
+                html += `<p onclick="mApi.getArticle('${url.next}',${url.nextIndex})"><i class="mic ic-pre"></i></p>`;
+            }else{
+                html += `<p class="hide"><i class="mic ic-pre"></i></p>`;
+            }
+            el.innerHTML = html;
+        }
+        getPrenextUrl(url){
+            let id = '';
+            let pre = '';
+            let next = '';
+            let para = {};
+            let len = this.obj.child.length;
+            this.obj.child.map((rs,index)=>{
+                if(rs.url===url){
+                    id = index;
+                }
+            })
+            if(id>0&&id<len){
+                para.pre = this.obj.child[id-1].url;
+                para.preIndex = id-1;
+            }
+            if(id>=0&&id<len-1){
+                para.next = this.obj.child[id+1].url;
+                para.nextIndex = id+1;
+            }
+            this.setPrenext(para);
+        }
         getArticle(url,id){
+            this.getPrenextUrl(url);
             //获取数据
             let str = url.split('-').join('/');
             this.getFetch(str).then(rs => {
                 let html = `<section class="listTitle">${rs.data.subTitle}</section>`;
                 html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'').replace(/.\/app/g,'/app');
                 document.querySelector('.listArticle').innerHTML = html;
-                listArticle.scrollTo(0)
+                document.querySelector('#listArticle').scrollTo({top:0,left:0})
             }).catch(err => {
                 console.log(err)
             });
