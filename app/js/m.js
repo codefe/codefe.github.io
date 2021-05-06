@@ -1,4 +1,5 @@
 (function () {
+    //lib-flexible响应式
     (function flexible (window, document) {
         var docEl = document.documentElement
         var dpr = window.devicePixelRatio || 1
@@ -45,15 +46,74 @@
     }(window, document));
 
     class Mapi {
-        constructor() {
-
-        }
+        /**
+         * 公共函数
+         * 
+         * footNav    底部切换菜单
+         * goTop      返回顶部
+         * dialog     显示弹窗
+         * dialogHide 隐藏弹窗
+         * query      获取懒加载img图片列表
+         * observer   懒加载数据监控
+         */
         footNav() {
-            let html = `<a href="/m/catalog.html" class="flex-item"><img src="/app/img/common/catalog.png" height="25"/><em>分类</em></a>
-                        <a href="/m/index.html" class="navlogo"></a>
-                        <a href="/m/my.html" class="flex-item"><img src="/app/img/common/my.png" height="25"/><em>我的</em></a>`;
+            let html = `<a href="/m/catalog.html" class="flex-item"><i class="mic ic-catalog"></i><em>分类</em></a>
+                        <a href="/m/index.html" class="mic navlogo"></a>
+                        <a href="/m/my.html" class="flex-item"><i class="mic ic-my"></i><em>我的</em></a>`;
             document.querySelector('footer').innerHTML = html;
         }
+        goTop(){
+            let el = document.querySelector('.wrap');
+            el.scrollTo({
+                top:0,
+                left:0,
+                behavior: 'smooth'
+            });
+        }
+        dialog(title){
+            let txt = `<div class="dialog-bg"></div>
+                       <div class="dialog-cont">
+                           <div class="dialog-tit">提示</div>
+                           <div class="dialog-msg">${title}</div>
+                           <div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>
+                       </div>`;
+            let obj = document.createElement('div');
+				obj.innerHTML = txt;
+				obj.className = 'dialog';
+            document.body.appendChild(obj);
+        }
+        dialogHide(){
+            let el = document.querySelector('.dialog-cont');
+            el.classList.add('dialog-hide');
+            setTimeout(()=>{
+                let obj = document.querySelector('.dialog');
+                document.body.removeChild(obj);
+                location.href="/m/catalog.html";
+            },500)
+        }
+        query() {
+            return Array.from(document.querySelectorAll('[data-src]'));
+        }
+        observer(){
+            return new IntersectionObserver(
+                changes => {
+                    changes.forEach(change => {
+                        if(change.isIntersecting){
+                            change.target.src = change.target.dataset.src
+                            this.observer().unobserve(change.target);
+                        }
+                    })
+                },{
+                    threshold: [0, 0.5, 1]
+                }
+            )
+        }
+        /**
+         * index 页面
+         * 
+         * banner
+         * homeList 首页数据处理
+         */
         banner() {
             let html = `<section class="banner_list"><a href="#1"><img src="/app/img/banner/ad1.jpg"/></a>
                         <a href="#2"><img src="/app/img/banner/ad2.jpg"/></a>
@@ -88,23 +148,13 @@
                 resolve(html);
             })
         }
-        query() {
-            return Array.from(document.querySelectorAll('[data-src]'));
-        }
-        observer(){
-            return new IntersectionObserver(
-                changes => {
-                    changes.forEach(change => {
-                        if(change.isIntersecting){
-                            change.target.src = change.target.dataset.src
-                            this.observer().unobserve(change.target);
-                        }
-                    })
-                },{
-                    threshold: [0, 0.5, 1]
-                }
-            )
-        }
+        /**
+         * catalog 页面
+         * 
+         * getCatalog        左侧菜单
+         * getCatalogList    根据左侧菜单点击设置当前样式
+         * getCatalogData    根据左侧菜单点击获取数据
+         */
         getCatalog(){
             let html = '';
             db.map(item=>{
@@ -114,7 +164,6 @@
             this.getCatalogList(db[0].id);
         }
         getCatalogList(id){
-            //设置当前样式
             let obj = Array.from(document.querySelector('.navaside').children);
             obj.map(item=>{
                 if(item.dataset.id === ''+id){
@@ -165,35 +214,58 @@
                 this.observer().observe(item);
             });
         }
-        getList(id){
+        /**
+         * list 页面
+         * 
+         * toggleListHide    隐藏章节目录
+         * toggleList        显示隐藏章节目录
+         * getListHome       获取首页及章节目录
+         * getArticle        显示文章内容
+         */
+        toggleListHide(){
+            document.body.addEventListener('click',()=>{
+                let el = document.querySelector('.listaside');
+                if(el.classList.contains('show')){
+                    el.classList.remove('show');
+                }
+            })
+        }
+        toggleList(ev){
+            ev.stopPropagation();
+            let el = document.querySelector('.listaside');
+            el.classList.toggle('show');
+        }
+        getListHome(id){
             if(id===0){
                 return this.dialog('非法操作');
+            }
+            let pid = id.slice(0,2)*1;
+            let sid = id.slice(0,4)*1;
+            id *= 1;
+            const obj = db.filter(item=>item.id===pid)[0].child.filter(ra=>ra.id===sid)[0].child.filter(rb=>rb.id===id)[0];
+            document.querySelector('.catalogTitle').innerHTML = obj.title;
+            let desc = '';
+            if(obj.icon){
+                desc += `<p><img src="${obj.icon}"/></p><section>${obj.desc}</section>`
             }else{
-                id *= 1;
+                desc += `<section>${obj.desc}</section>`
+            }
+            document.querySelector('.listArticle').innerHTML = desc;
+            if(obj.child&&obj.child.length>0){
+                let html = `<h2>章节目录 (${obj.child.length}节)</h2>`;
+                obj.child.map((item,index)=>{
+                    html += `<p onclick="mApi.getArticle('${item.url}',${id})">${index+1}. ${item.title}</p>`;
+                })
+                document.querySelector('.listaside').innerHTML = html;
             }
         }
-        dialog(title){
-            let txt = `<div class="dialog-bg"></div>
-                       <div class="dialog-cont">
-                           <div class="dialog-tit">提示</div>
-                           <div class="dialog-msg">${title}</div>
-                           <div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>
-                       </div>`;
-            let obj = document.createElement('div');
-				obj.innerHTML = txt;
-				obj.className = 'dialog';
-            document.body.appendChild(obj);
+        getArticle(url,id){
+            console.log(url,id);
         }
-        dialogHide(){
-            let el = document.querySelector('.dialog-cont');
-            el.classList.add('dialog-hide');
-            setTimeout(()=>{
-                let obj = document.querySelector('.dialog');
-                document.body.removeChild(obj);
-                location.href="/m/catalog.html";
-            },500)
-        }
-        getPath(){
+        /**
+         * 根据当前路径显示要加载的内容
+         */
+        init(){
             let pathname = location.pathname.split('/')[2];
             let para = location.search.split('=')[1] || 0;
             switch(pathname){
@@ -219,22 +291,15 @@
                     break;
                 case 'list.html':
                     this.footNav();
-                    this.getList(para);
+                    this.toggleListHide();
+                    this.getListHome(para);
                     break;
                 default:
                     console.log('default')
             }
         }
-        goTop(){
-            let el = document.querySelector('.wrap');
-            el.scrollTo({
-                top:0,
-                left:0,
-                behavior: 'smooth'
-            });
-        }
     }
     let api = new Mapi();
-    api.getPath();
+    api.init();
     window.mApi = api;
 }());

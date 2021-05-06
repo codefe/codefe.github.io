@@ -201,7 +201,6 @@ pre:before,code:before{
 	border-radius:60px;
     margin:0 30px;
 	/* background-image:linear-gradient(#00baa2, #00da98); */
-	background: url('/app/img/common/iclogo.png') no-repeat center center/cover;
 	position:relative;
 	bottom: 10px;
 	border:2px solid #fefefe;
@@ -471,4 +470,80 @@ pre:before,code:before{
 @keyframes show {
     from{opacity:0;transform: scale(1.3);}
     to{opacity:1;transform: scale(0.9);}
+}
+/* mic */
+.mic{
+	background: url(/app/img/common/mic.png) no-repeat;
+	display: block;
+	height: 25px;
+}
+.navlogo{
+	background-position: 0 0;
+	height: 60px;
+}
+.ic-my{
+	background-position: center -68px;
+}
+.ic-catalog{
+	background-position: center -101px;
+}
+.ic-scan{
+	background-position: center -268px;
+	width: 20px;
+	height: 20px;
+}
+.ic-back{
+	background-position: center -206px;
+	width: 20px;
+	height: 20px;
+}
+.ic-menu{
+	background-position: center -233px;
+	width: 25px;
+	height: 25px;
+}
+/* list */
+.listaside{
+	background-color: #fff;
+	transition: width 200ms;
+	width:0px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.listaside.show{
+	width:200px;
+	padding-bottom: 50px;
+	border-left:1px solid #eee;
+	box-shadow: 0 0 3px rgb(100 100 100 / 10%);
+}
+.listaside h2{
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	padding:10px;
+	background-color: #f5f5f5;
+}
+.listaside p{
+	font-size: 13px;
+	border-bottom: 1px solid #f5f5f5;
+	padding:10px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.listaside p:nth-child(odd){
+	background-color: #fafafa;
+}
+.listArticle{
+	margin:10px;
+	padding:10px;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	overflow-y: auto;
+	font-size: 14px;
+}
+.listArticle img{
+	max-width: 90%;
+	margin:0 auto 20px;
+	border-radius: 5px;
 }
