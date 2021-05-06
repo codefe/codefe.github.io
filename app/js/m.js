@@ -55,6 +55,7 @@
          * dialogHide 隐藏弹窗
          * query      获取懒加载img图片列表
          * observer   懒加载数据监控
+         * getFetch   fetch网络请求
          */
         footNav() {
             let html = `<a href="/m/catalog.html" class="flex-item"><i class="mic ic-catalog"></i><em>分类</em></a>
@@ -70,25 +71,37 @@
                 behavior: 'smooth'
             });
         }
-        dialog(title){
+        dialog(title,ic="no"){
+            let ichtml = '';
+            let btnhtml = '';
+            switch(ic){
+                case 'loading':
+                    ichtml += `<div><img src="/app/img/common/loading.gif" height="80"></div>`;
+                    break;
+                default:
+                    btnhtml += `<div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>`;
+            }
             let txt = `<div class="dialog-bg"></div>
                        <div class="dialog-cont">
                            <div class="dialog-tit">提示</div>
+                           ${ichtml}
                            <div class="dialog-msg">${title}</div>
-                           <div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>
+                           ${btnhtml}
                        </div>`;
             let obj = document.createElement('div');
 				obj.innerHTML = txt;
 				obj.className = 'dialog';
             document.body.appendChild(obj);
         }
-        dialogHide(){
+        dialogHide(flag=true){
             let el = document.querySelector('.dialog-cont');
             el.classList.add('dialog-hide');
             setTimeout(()=>{
                 let obj = document.querySelector('.dialog');
                 document.body.removeChild(obj);
-                location.href="/m/catalog.html";
+                if(flag){
+                    location.href="/m/catalog.html";
+                }
             },500)
         }
         query() {
@@ -108,6 +121,31 @@
                 }
             )
         }
+		getFetch(url) {
+			this.dialog('数据加载中...','loading');
+			return new Promise(function (resolve, reject) {
+				fetch("/app/json/" + url + ".json?t=" + Date.now(), { method: 'GET' })
+					.then((response) => {
+						if (response.ok) {
+							return response.json();
+						} else {
+							reject({ status: response.status })
+						}
+					})
+					.then((response) => {
+						resolve(response);
+					})
+					.catch(() => {
+						setTimeout(() => {
+                            this.dialog('请求失败');
+						}, 500);
+						reject({ status: -1 });
+					})
+					.finally(() => {
+						mApi.dialogHide(false);
+					})
+			});
+		}
         /**
          * index 页面
          * 
@@ -254,13 +292,30 @@
             if(obj.child&&obj.child.length>0){
                 let html = `<h2>章节目录 (${obj.child.length}节)</h2>`;
                 obj.child.map((item,index)=>{
-                    html += `<p onclick="mApi.getArticle('${item.url}',${id})">${index+1}. ${item.title}</p>`;
+                    html += `<p onclick="mApi.getArticle('${item.url}',${index})">${index+1}. ${item.title}</p>`;
                 })
                 document.querySelector('.listaside').innerHTML = html;
             }
         }
         getArticle(url,id){
-            console.log(url,id);
+            //获取数据
+            let str = url.split('-').join('/');
+            this.getFetch(str).then(rs => {
+                let html = `<section class="listTitle">${rs.data.subTitle}</section>`;
+                html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'');
+                document.querySelector('.listArticle').innerHTML = html;
+            }).catch(err => {
+                console.log(err)
+            });
+            //设置章节目录样式
+            let menu = Array.from(document.querySelector('.listaside').children);
+            menu.map((item,index)=>{
+                if(index === id){
+                    item.classList.add('cur');
+                }else{
+                    item.classList.remove('cur');
+                }
+            })
         }
         /**
          * 根据当前路径显示要加载的内容

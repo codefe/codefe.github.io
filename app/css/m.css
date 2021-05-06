@@ -1,6 +1,6 @@
 @charset "utf-8";
 html,body {height:100%;background-color:#eef7f2;font:14px/1.8 "PingFang SC",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;color: #999;-webkit-tap-highlight-color:rgba(0,0,0,0);}
-html,body,div,p,ul,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,i,figure{margin:0;padding:0;box-sizing: border-box;}
+html,body,div,p,ul,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,i,figure,blockquote{margin:0;padding:0;box-sizing: border-box;}
 header,footer,article,aside,details,figcaption,figure,hgroup,main,menu,nav,section,summary {display: block;box-sizing: border-box;}
 dl,ul{list-style:none;}
 img{border:0;display: inline-block;vertical-align: middle;}
@@ -509,6 +509,10 @@ pre:before,code:before{
 	width:0px;
 	overflow: hidden;
 	overflow-y: auto;
+	position: fixed;
+	right:0;
+	top:1.3rem;
+	bottom:60px;
 }
 .listaside.show{
 	width:200px;
@@ -530,8 +534,16 @@ pre:before,code:before{
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.listaside p.cur{
+	color: #01c26f;
+}
 .listaside p:nth-child(odd){
 	background-color: #fafafa;
+}
+.listTitle{
+	margin:10px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #eee;
 }
 .listArticle{
 	margin:10px;
@@ -546,4 +558,17 @@ pre:before,code:before{
 	max-width: 90%;
 	margin:0 auto 20px;
 	border-radius: 5px;
+}
+.listArticle h3,.listArticle h4{
+	color:#01c26f;
+	font-size: 14px;
+}
+.listArticle pre, .listArticle code,.listArticle blockquote{
+	color: #a3a44a;
+	background-color: #fbfbfb;
+    border-left: 2px solid #eaebb2;
+	padding:10px;
+}
+.listArticle pre, .listArticle code{
+	padding-left: 40px;
 }
