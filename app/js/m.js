@@ -274,7 +274,25 @@
          * getArticle        显示文章内容
          * setPrenext        设置上一页，下一页 1
          * getPrenextUrl     计算上一页，下一页 2
+         * touchEvent        触屏
          */
+         touchEvent(){
+            listArticle.addEventListener('touchstart',(event)=>{
+                if (event.targetTouches.length == 1) {
+                    var touch = event.targetTouches[0];
+                    // 判断是否在中间宽度100px处
+                    let w = document.body.clientWidth/2;
+                    if(w-50 < touch.clientX && touch.clientX < w+50 ){
+                        event.preventDefault();// 阻止浏览器默认事件，重要 
+                        this.touchToggle();
+                    }
+                }
+             },{ passive: false })
+         }
+         touchToggle(){
+             let el = document.querySelector('.prenext');
+             el.classList.toggle('hide');
+         }
          moveScrollTop() {
             let elid;
             if(this.obj.child && this.obj.child.length>0){
@@ -422,6 +440,7 @@
                     this.footNav();
                     this.toggleListHide();
                     this.getListHome(para);
+                    this.touchEvent();
                     break;
                 default:
                     console.log('default')

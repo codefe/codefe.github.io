@@ -512,7 +512,7 @@ pre:before,code:before{
 }
 .ic-pre{
 	background-position: center -297px;
-	width: 30px;
+	width: 40px;
 	height: 14px;
 }
 /* list */
@@ -526,9 +526,10 @@ pre:before,code:before{
 	right:0;
 	top:60px;
 	bottom:60px;
+	z-index: 88;
 }
 .listaside.show{
-	width:200px;
+	width:6rem;
 	padding-bottom: 50px;
 	border-left:1px solid #eee;
 	box-shadow: 0 0 3px rgb(100 100 100 / 10%);
@@ -585,21 +586,26 @@ pre:before,code:before{
 	font-size: .2rem;
 }
 .listArticle pre, .listArticle code{
-	padding-left: 40px;
+	padding-left: 30px;
 }
+/* pre page / next page*/
 .prenext{
 	position: fixed;
 	left:0;
 	right:0;
 	bottom:15%;
+	z-index: 888;
+}
+.prenext.hide{
+	visibility: hidden;
 }
 .prenext p{
-	width:30px;
-	height: 30px;
-	background-color: #fff;
+	width:40px;
+	height: 40px;
+	background-color: rgba(255,255,255,.5);
 	border:1px solid #e5e5e5;
 	box-shadow: 0 0 3px rgba(255,255,255,.2);
-	padding-top: 8px;
+	padding-top: 12px;
 	text-align: center;
 }
 .prenext p.hide{
