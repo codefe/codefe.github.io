@@ -91,7 +91,7 @@
                     ichtml += `<div><img src="/app/img/common/loading.gif" height="80"></div>`;
                     break;
                 default:
-                    btnhtml += `<div class="dialog-btnc"><a onclick="mApi.dialogHide()"class="dialog-btn-ok">确定</a></div>`;
+                    btnhtml += `<div class="dialog-btnc"><a onclick="mApi.dialogHide(500,true)"class="dialog-btn-ok">确定</a></div>`;
             }
             let txt = `<div class="dialog-bg"></div>
                        <div class="dialog-cont">
@@ -105,16 +105,16 @@
 				obj.className = 'dialog';
             document.body.appendChild(obj);
         }
-        dialogHide(flag=true){
+        dialogHide(time=500,flag=true){
             let el = document.querySelector('.dialog-cont');
-            el.classList.add('dialog-hide');
             setTimeout(()=>{
                 let obj = document.querySelector('.dialog');
+                el.classList.add('dialog-hide');
                 document.body.removeChild(obj);
                 if(flag){
                     location.href="/m/catalog.html";
                 }
-            },500)
+            },time)
         }
         query() {
             return Array.from(document.querySelectorAll('[data-src]'));
@@ -154,7 +154,7 @@
 						reject({ status: -1 });
 					})
 					.finally(() => {
-						mApi.dialogHide(false);
+						mApi.dialogHide(500,false);
 					})
 			});
 		}
@@ -280,9 +280,9 @@
             listArticle.addEventListener('touchstart',(event)=>{
                 if (event.targetTouches.length == 1) {
                     var touch = event.targetTouches[0];
-                    // 判断是否在中间宽度100px处
+                    // 判断是否在中间宽度80px处
                     let w = document.body.clientWidth/2;
-                    if(w-50 < touch.clientX && touch.clientX < w+50 ){
+                    if(w-40 < touch.clientX && touch.clientX < w+40 ){
                         event.preventDefault();// 阻止浏览器默认事件，重要 
                         this.touchToggle();
                     }
