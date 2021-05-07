@@ -393,7 +393,7 @@
             let str = url.split('-').join('/');
             this.getFetch(str).then(rs => {
                 let html = `<section class="listTitle">${rs.data.subTitle}</section>`;
-                html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'').replace(/.\/app/g,'/app');
+                html += rs.data.content.replace(/<code>/g,'').replace(/<\/code>/g,'').replace(/.\/app/g,'/app').replace(/.png"/g,'.png').replace(/.jpg"/g,'.jpg');
                 document.querySelector('.listArticle').innerHTML = html;
                 document.querySelector('#listArticle').scrollTo({top:0,left:0})
             }).catch(err => {

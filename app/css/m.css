@@ -1,5 +1,12 @@
 @charset "utf-8";
-html,body {height:100%;background-color:#eef7f2;font:14px/1.8 "PingFang SC",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;color: #999;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+html,body {height:100%;
+	background-color:#eef7f2;
+	font:14px/1.8 "PingFang SC",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+	color: #999;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
 html,body,div,p,ul,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,i,figure,blockquote{margin:0;padding:0;box-sizing: border-box;}
 header,footer,article,aside,details,figcaption,figure,hgroup,main,menu,nav,section,summary {display: block;box-sizing: border-box;}
 dl,ul{list-style:none;}
@@ -36,7 +43,9 @@ pre:before,code:before{
     clip: rect(-100px 3.5ch 9999px 0);
     overflow: hidden;
 }
-
+.ano{
+	color: #ddd;
+}
 /* flex */
 .flex{display:flex;}
 .flex-item{flex:1;}
@@ -598,7 +607,7 @@ pre:before,code:before{
 	left:0;
 	right:0;
 	bottom:15%;
-	z-index: 888;
+	z-index: 87;
 }
 .prenext.hide{
 	visibility: hidden;

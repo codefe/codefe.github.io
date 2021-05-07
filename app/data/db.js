@@ -534,6 +534,10 @@ let db = [
                             {
                                 title: '让Canvas全屏',
                                 url: 'html5-canvas-5'
+                            },
+                            {
+                                title: 'canvas画图--流畅没有齿痕的线，图像画线',
+                                url: 'html5-canvas-6'
                             }
                         ]
                     },
@@ -746,10 +750,29 @@ let db = [
                         icon: '/app/img/edu/flex.jpg',
                         desc: '网页布局(layout)是 CSS 的一个重点应用。Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。',
                         child: [
-                            {
-                                title: 'flex',
-                                url: 'css3-flex-1'
-                            }
+                            {"title":"Flex布局是什么","url":"css3-flex-s11"},
+				            {"title":"Flex基本概念","url":"css3-flex-s12"},
+                            {"title":"flex-direction属性","url":"css3-flex-s21"},
+                            {"title":"flex-wrap属性","url":"css3-flex-s22"},
+                            {"title":"flex-flow属性","url":"css3-flex-s23"},
+                            {"title":"justify-content属性","url":"css3-flex-s24"},
+                            {"title":"align-items属性","url":"css3-flex-s25"},
+                            {"title":"align-content属性","url":"css3-flex-s26"},
+                            {"title":"order属性","url":"css3-flex-s31"},
+                            {"title":"flex-grow属性","url":"css3-flex-s32"},
+                            {"title":"flex-shrink属性","url":"css3-flex-s33"},
+                            {"title":"flex-basis属性","url":"css3-flex-s34"},
+                            {"title":"flex属性","url":"css3-flex-s35"},
+                            {"title":"flex","url": 'css3-flex-1'},
+                            {"title":"align-self属性","url":"css3-flex-s36"},
+                            {"title":"基本网格布局","url":"css3-flex-s42"},
+                            {"title":"百分比布局","url":"css3-flex-s43"},
+                            {"title":"圣杯布局","url":"css3-flex-s44"},
+                            {"title":"输入框的布局","url":"css3-flex-s45"},
+                            {"title":"悬挂式布局","url":"css3-flex-s46"},
+                            {"title":"固定的底栏","url":"css3-flex-s47"},
+                            {"title":"流式布局","url":"css3-flex-s48"},
+                            {"title":"骰子的布局","url":"css3-flex-s51"}
                         ]
                     },
                     {
@@ -1047,7 +1070,43 @@ let db = [
                 title: '框架',
                 child: [
                     {
-                        id: 222200,
+                        id: 222201,
+                        title: 'Stylus',
+                        icon: '',
+                        desc: 'Stylus 是一个CSS的预处理框架, 功能上更为强壮，和js联系更加紧密。依赖与Node, 可以创建健壮的、动态的、富有表现力的CSS。比较年轻，其本质上做的事情与 SASS/LESS 等类似，应该是有很多借鉴，所以近似脚本的方式去写CSS代码。',
+                        child: [
+                            {"title":"安装与特征","url":"css3-stylus-1"},
+				            {"title":"生成CSS","url":"css3-stylus-2"},
+                            {"title":"选择器(Selectors)","url":"css3-stylus-3"},
+                            {"title":"变量(Variables)","url":"css3-stylus-4"},
+                            {"title":"插值(Interpolation)","url":"css3-stylus-5"},
+                            {"title":"运算符(Operators)","url":"css3-stylus-6"},
+                            {"title":"混合书写(Mixins)","url":"css3-stylus-7"},
+                            {"title":"方法(Functions)","url":"css3-stylus-8"},
+                            {"title":"关键字参数(Keyword Arguments)","url":"css3-stylus-9"},
+                            {"title":"内置方法(Built-in Functions)","url":"css3-stylus-10"},
+                            {"title":"其余参数(Rest Params)","url":"css3-stylus-11"},
+                            {"title":"注释(Comments)","url":"css3-stylus-12"},
+                            {"title":"条件(Conditionals)","url":"css3-stylus-13"},
+                            {"title":"迭代(Iteration)","url":"css3-stylus-14"},
+                            {"title":"导入(@import)","url":"css3-stylus-15"},
+                            {"title":"媒体(@media)","url":"css3-stylus-16"},
+                            {"title":"自定义字体(@font-face)","url":"css3-stylus-17"},
+                            {"title":"关键帧(@keyframes)","url":"css3-stylus-18"},
+                            {"title":"继承(@extend)","url":"css3-stylus-19"},
+                            {"title":"函数之url()","url":"css3-stylus-20"},
+                            {"title":"CSS字面量(CSS Literal)","url":"css3-stylus-21"},
+                            {"title":"CSS样式解析(CSS Style Syntax)","url":"css3-stylus-22"},
+                            {"title":"字符转码(Char Escaping)","url":"css3-stylus-23"},
+                            {"title":"可执行性(Executable)","url":"css3-stylus-24"},
+                            {"title":"错误报告(Error Reporting)","url":"css3-stylus-25"},
+                            {"title":"连接中间件(Connect Middleware)","url":"css3-stylus-26"},
+                            {"title":"自检API(Introspection API)","url":"css3-stylus-27"},
+                            {"title":"JavaScript API","url":"css3-stylus-28"}
+                        ]
+                    },
+                    {
+                        id: 222202,
                         title: 'less',
                         icon: ''
                     }
@@ -1065,7 +1124,8 @@ let db = [
                             { title: "移动端1px问题的解决办法", url: "css3-mt-2" },
                             { title: "CSS3 动画卡顿性能优化解决方案", url: "css3-mt-3" },
                             { title: "解决UC浏览器默认把wap页面字体放大问题", url: "css3-mt-4" },
-                            { title: "解决苹果浏览器iframe不能滚动问题", url: "css3-mt-5" }
+                            { title: "解决苹果浏览器iframe不能滚动问题", url: "css3-mt-5" },
+                            { title: "常见的移动端H5页面开发遇到的坑和解决办法", url: "css3-mt-6" }
                         ]
                     },
                     {
@@ -1102,38 +1162,93 @@ let db = [
                 child: [
                     {
                         id: 330001,
-                        title: '面向对象',
+                        title: '原型',
                         flag: 'recommend',
                         icon: '/app/img/edu/oop.jpg',
-                        desc: '如果你想让你的javascript代码变得更加优美，性能更加卓越。或者，你想像jQuery的作者一样，写出属于自己优秀的类库（哪怕是基于jquery的插件）。那么，你请务必要学习javascript面向对象，否则你无法更灵活的使用javascript这门语言。面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。一般面向对象包含：继承，封装，多态，抽象'
+                        desc: '如果你想让你的javascript代码变得更加优美，性能更加卓越。或者，你想像jQuery的作者一样，写出属于自己优秀的类库（哪怕是基于jquery的插件）。那么，你请务必要学习javascript面向对象，否则你无法更灵活的使用javascript这门语言。面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。一般面向对象包含：继承，封装，多态，抽象。',
+                        child: [
+                            {"title":"浅拷贝","url":"js-oop-1"},
+                            {"title":"深拷贝","url":"js-oop-2"},
+                            {"title":"ES6最简单的深复制方法","url":"js-oop-3"},
+                            {"title":"类的继承","url":"js-oop-4"},
+                            {"title":"调用父类方法","url":"js-oop-5"},
+                            {"title":"命名空间","url":"js-oop-6"},
+                            {"title":"静态成员","url":"js-oop-7"},
+                            {"title":"私有与公有","url":"js-oop-8"},
+                            {"title":"模块化","url":"js-oop-9"},
+                            {"title":"模拟方法重载","url":"js-oop-10"},
+				            {"title":"方法重写","url":"js-oop-11"},
+                            {"title":"抽象","url":"js-oop-12"},
+                            {"title":"工厂模式(不推荐)","url":"js-oop-13"},
+                            {"title":"构造函数(不推荐)","url":"js-oop-14"},
+                            {"title":"构造函数 + 原型方法（混合方式）(推荐)","url":"js-oop-15"}
+                        ]
                     },
-
                     {
                         id: 330002,
                         title: '闭包',
                         flag: 'recommend',
                         icon: '/app/img/edu/closures.jpg',
-                        desc: '闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。'
+                        desc: '闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。',
+                        child: [
+                            {"title":"简述什么是闭包","url":"js-closures-1"},
+                            {"title":"闭包的作用是什么","url":"js-closures-2"},
+                            {"title":"js闭包测试","url":"js-closures-3"},
+                            {"title":"一切都是对象","url":"js-closures-4"},
+                            {"title":"函数和对象的关系","url":"js-closures-5"},
+                            {"title":"prototype原型","url":"js-closures-6"},
+                            {"title":"隐式原型","url":"js-closures-7"},
+                            {"title":"instanceof","url":"js-closures-8"},
+                            {"title":"继承","url":"js-closures-9"},
+                            {"title":"原型的灵活性","url":"js-closures-10"},
+                            {"title":"简述【执行上下文】上","url":"js-closures-11"},
+                            {"title":"简述【执行上下文】下","url":"js-closures-12"},
+                            {"title":"this","url":"js-closures-13"},
+                            {"title":"执行上下文栈","url":"js-closures-14"},
+                            {"title":"简介【作用域】","url":"js-closures-15"},
+                            {"title":"【作用域】和【上下文环境】","url":"js-closures-16"},
+                            {"title":"从【自由变量】到【作用域链】","url":"js-closures-17"},
+                            {"title":"闭包","url":"js-closures-18"},
+                            {"title":"补this","url":"js-closures-19"},
+                            {"title":"补充：上下文环境和作用域的关系","url":"js-closures-20"}
+                        ]
                     },
                     {
                         id: 330003,
-                        title: '原型',
-                        flag: 'recommend',
-                        icon: '/app/img/edu/proto.jpg',
-                        desc: 'js中没有类的概念，只是把一个对象实例化，这个对象一般会成为原型对象。js中所以的函数都有一个prototype属性，这个属性引用了一个对象， 即原型对象，也简称原型。这个函数包括构造函数和普通函数。'
-                    },
-                    {
-                        id: 330004,
                         title: 'this',
                         flag: 'recommend',
                         icon: '/app/img/edu/this.jpg',
-                        desc: 'this关键字是 JavaScript 中最复杂的机制之一。它是一个很特别的关键字，即使是非常有经验的 JavaScript 开发者也很难说清它。本书将详解讲解this的方方面面。'
+                        desc: 'this关键字是 JavaScript 中最复杂的机制之一。它是一个很特别的关键字，即使是非常有经验的 JavaScript 开发者也很难说清它。',
+                        child: [
+                            {"title":"this初步","url":"js-this-1"},
+                            {"title":"this全面解析一","url":"js-this-2"},
+                            {"title":"this全面解析二","url":"js-this-3"},
+                            {"title":"this全面解析三","url":"js-this-4"},
+                            {"title":"使用bind对this的影响","url":"js-this-5"}
+                        ]
                     },
                     {
-                        id: 330005,
+                        id: 330004,
                         title: '模块',
                         flag: 'recommend',
                         icon: '/app/img/edu/module.jpg'
+                    },
+                    {
+                        id: 330005,
+                        title: 'apply/call/bind',
+                        flag: 'recommend',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: 'apply/call/bind三者的联系就在于，都可以用来改变函数中 this 指向的值，且第一个参数为要指向的 this 的值，apply的第二个参数（或 bind 与 call 的不定参数）为要传入的参数。',
+                        child: [
+                            {"title":"apply","url":"js-applyCallBind-1"},
+                            {"title":"call","url":"js-applyCallBind-2"},
+                            {"title":"bind","url":"js-applyCallBind-3"},
+                            {"title":"基本用法","url":"js-applyCallBind-4"},
+                            {"title":"实现继承","url":"js-applyCallBind-5"},
+                            {"title":"多重继承","url":"js-applyCallBind-6"},
+                            {"title":"apply的一些其他巧妙用法","url":"js-applyCallBind-7"},
+                            {"title":"实例讲解call,apply,bind方法","url":"js-applyCallBind-8"}
+                        ]
                     },
                     {
                         id: 330006,
@@ -1828,11 +1943,130 @@ let db = [
                 title: '设计模式',
                 child: [
                     {
-                        id: 334400,
-                        title: '设计模式',
-                        flag: 'recommend',
+                        id: 334401,
+                        title: '接口',
                         icon: '/app/img/edu/module.jpg',
-                        desc: '每个JS开发者都力求写出可维护、复用性和可读性高的代码。随着应用不断扩大，代码组织的合理性也越来越重要。设计模式为特定环境下的常见问题提供了一个组织结构，对于克服这些挑战起到至关重要的作用。'
+                        desc: '',
+                        child: [
+                            {"title":"接口及其利弊","url":"js-model-m10"},
+				            {"title":"接口实现方法","url":"js-model-m11"}
+                        ]
+                    },
+                    {
+                        id: 334402,
+                        title: '封装',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"封装及其利弊","url":"js-model-m20"},
+				            {"title":"闭包实现封装类","url":"js-model-m21"}
+                        ]
+                    },
+                    {
+                        id: 334403,
+                        title: '继承',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"什么是继承","url":"js-model-m30"},
+                            {"title":"类继承","url":"js-model-m31"},
+                            {"title":"原型继承","url":"js-model-m32"},
+                            {"title":"掺元类","url":"js-model-m33"}
+                        ]
+                    },
+                    {
+                        id: 334404,
+                        title: '单例',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"单例及其实现","url":"js-model-m40"},
+				            {"title":"单例模式基本用法","url":"js-model-m41"}
+                        ]
+                    },
+                    {
+                        id: 334405,
+                        title: '链式调用',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"链式调用的实现","url":"js-model-m50"}
+                        ]
+                    },
+                    {
+                        id: 334406,
+                        title: '工厂',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"工厂模式","url":"js-model-m60"},
+                            {"title":"抽象工厂模式","url":"js-model-m61"}
+                        ]
+                    },
+                    {
+                        id: 334407,
+                        title: '建造者',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"建造者模式","url":"js-model-m70"}
+                        ]
+                    },
+                    {
+                        id: 334408,
+                        title: '模板',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"模板模式","url":"js-model-m80"}
+                        ]
+                    },
+                    {
+                        id: 334409,
+                        title: '适配器',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"适配器模式","url":"js-model-m90"}
+                        ]
+                    },
+                    {
+                        id: 334410,
+                        title: '外观',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"外观模式","url":"js-model-m100"}
+                        ]
+                    },
+                    {
+                        id: 334411,
+                        title: '装饰器',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"装饰器模式","url":"js-model-m110"}
+                        ]
+                    },
+                    {
+                        id: 334412,
+                        title: '观察者',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"观察者模式","url":"js-model-m120"},
+                            {"title":"浅谈Nodejs观察者模式","url":"js-model-m121"},
+                            {"title":"观察者模式（发布者-订阅者模式）","url":"js-model-m122"}
+                        ]
+                    },
+                    {
+                        id: 334413,
+                        title: '策略',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '',
+                        child: [
+                            {"title":"策略模式","url":"js-model-m130"}
+                        ]
                     }
                 ]
             },
