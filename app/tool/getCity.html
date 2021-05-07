@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端工具-初学|前端进阶</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        .empty {
+            margin:50px auto;
+            width:400px;
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>前端工具</h1>
+        <nav></nav>
+        <footer class="aside-footer"></footer>
+    </aside>
+    <article class="pr">
+        <h2>获取城市</h2>
+        <section class="empty">
+            <p id="city"></p>
+            <pre id="code"></pre>
+        </section>
+        
+    </article>
+</body>
+<script src="../data/links.js"></script>
+<script src="../js/tool.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://api.map.baidu.com/location/ip?ak=ia6HfFL660Bvh43exmH9LrI6',
+            type: 'POST',
+            dataType: 'jsonp',
+            success: function (data) {
+                //console.log(JSON.stringify(data))
+                //console.log(JSON.stringify(data.content.address_detail.province + "," + data.content.address_detail.city));
+                $('#city').html(JSON.stringify(data.content.address_detail.province + "," + data.content.address_detail.city))
+                $('#code').html(JSON.stringify(data,null,2))
+            }
+        });
+    })
+</script>
+
+</html>

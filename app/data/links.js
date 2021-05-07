@@ -246,6 +246,13 @@ let links = {
             icon: './app/img/tool/cubicBezier.jpg',
             desc: '贝塞尔曲线通过控制曲线上的四个点（起始点、终止点以及两个相互分离的中间点）来创造、编辑图形，绘制出一条光滑曲线并以曲线的状态来反映动画过程中速度的变化。',
 			url: "/app/tool/cubicBezier.html"
+		},
+        {
+			id: 5,
+            title: "获取城市",
+            icon: './app/img/tool/city.jpg',
+            desc: '利用百度地图接口获取当前城市',
+			url: "/app/tool/getCity.html"
 		}
     ]
 };
