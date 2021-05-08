@@ -3460,7 +3460,18 @@ let db = [
                         id: 660002,
                         title: 'uni-app',
                         flag: 'recommend',
-                        icon: '/app/img/edu/uniapp.jpg'
+                        icon: '/app/img/edu/uniapp.jpg',
+                        desc: '',
+                        child: [
+                            {
+                                title: 'uni-app顶部标题栏定制按钮',
+                                url: 'applets-uniapp-1'
+                            },
+                            {
+                                title: 'uni-app仿微信顶部导航条',
+                                url: 'applets-uniapp-2'
+                            }
+                        ]
                     }
                 ]
             },
