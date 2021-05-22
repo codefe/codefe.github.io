@@ -360,7 +360,7 @@ pre:before,code:before{
 .item-list li:hover img{transform:scale(2);}
 .home-item-list li{width:20%;position: relative;}
 .home-item-list li:nth-child(5n+1){border-right:0;}
-.home-item-list li small,#aside-hot li small{position: absolute;top:10px;right:10px;height:19px;background-color: rgba(0,0,0,.2);color:white;font-style: normal;padding:0 5px;border-radius: 3px;}
+.home-item-list li small,#aside-hot li small{position: absolute;top:10px;right:10px;height:19px;background-color: rgba(0,0,0,.1);color:white;font-style: normal;padding:0 5px;border-radius: 3px;}
 #aside-hot li{width:50%;position: relative;}
 #aside-hot li:nth-child(2n){border-right:0;}
 /* study */
