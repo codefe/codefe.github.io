@@ -240,12 +240,12 @@
                     }
                     if (rb.child) {
                         html += `<a class="flex" href="list.html?id=${rb.id}">
-                            <figure>${ic}</figure>
+                            <figure>${ic}<small>${rb.child.length||0}</small></figure>
                             <figcaption>${rb.title}</figcaption>
                             </a>`;
                     } else {
                         html += `<a class="flex ano" href="javascript:;"">
-                            <figure>${ic}</figure>
+                            <figure>${ic}<small>0</small></figure>
                             <figcaption>${rb.title}</figcaption>
                             </a>`;
                     }

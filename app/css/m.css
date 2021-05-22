@@ -46,6 +46,10 @@ pre:before,code:before{
 .ano{
 	color: #ddd;
 }
+.mlr10{
+	margin-left:10px;
+	margin-right:10px;
+}
 /* flex */
 .flex{display:flex;}
 .flex-item{flex:1;}
@@ -400,7 +404,7 @@ pre:before,code:before{
 	flex: 0 0 25%;
 	margin-bottom: -1px;
 	padding:10px;
-	border:1px solid #eee;
+	border:1px solid #f5f5f5;
 	border-left:0;
 	border-top:0;
 	display: flex;
@@ -465,9 +469,23 @@ pre:before,code:before{
 	color: #d5d5d5;
 	text-align: center;
 	line-height: 65px;
+	position: relative;
 }
 .catalogList figure img{
 	width: 100%;
+}
+.catalogList figure small{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	height: 19px;
+	line-height: 19px;
+    background-color: rgba(0,0,0,.1);
+    color: white;
+    font-style: normal;
+	font-size: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
 }
 /* pop */
 .dialog-bg{position: fixed;top:0px;left:0px;z-index:2000;width: 100%;height: 100%;background: rgba(0,0,0,.2);}
