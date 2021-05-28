@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"父组件向子组件传递数据","content":"<p>parent.wxml</p><p>parent.js<br></p><pre>data: {\n  name: 'Peggy',\n  age: 25\n}</pre><p>child.js</p><pre>properties: {\n  name: {\n    type: String,\n    value: '小明'\n  },\n  age: Number\n}</pre><p>父组件向子组件传值以属性的形式，子组件以properties接收，并可指定数据类型type以及默认值value。\n<br>\n<br>在wxml里可直接以{{name}}的形式使用，而在js中以this.properties.name获取。</p>"}}

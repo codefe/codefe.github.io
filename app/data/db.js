@@ -3507,6 +3507,22 @@ let db = [
                             {
                                 title: '微信小程序 Canvas 绘制圆形图像',
                                 url: 'applets-wx-1'
+                            },
+                            {
+                                title: '父组件向子组件传递数据',
+                                url: 'applets-wx-2'
+                            },
+                            {
+                                title: '子组件向父组件传值',
+                                url: 'applets-wx-3'
+                            },
+                            {
+                                title: 'URL 传参',
+                                url: 'applets-wx-4'
+                            },
+                            {
+                                title: '组件嵌套传值',
+                                url: 'applets-wx-5'
                             }
                         ]
                     },
