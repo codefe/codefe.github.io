@@ -2546,6 +2546,18 @@ let db = [
                             {
                                 title: 'JavaScript操作文件和二进制数据',
                                 url: 'js-bigdata-3'
+                            },
+                            {
+                                title: '如何渲染几万条数据并不卡住界面',
+                                url: 'js-bigdata-4'
+                            },
+                            {
+                                title: '实例：如何渲染十万条数据并不卡住界面',
+                                url: 'js-bigdata-5'
+                            },
+                            {
+                                title: '导出大量数据为CSV格式',
+                                url: 'js-bigdata-6'
                             }
                         ]
                     }
@@ -3064,7 +3076,15 @@ let db = [
                             { title: "折线图虚线显示", url: "frames-echarts-2" },
                             { title: "渐变的折线", url: "frames-echarts-3" },
                             { title: "用阴影加背色添加虚构数据", url: "frames-echarts-4" },
-                            { title: "折线分段颜色", url: "frames-echarts-5" }
+                            { title: "折线分段颜色", url: "frames-echarts-5" },
+                            { title: "Vue Echarts数据量大，导致浏览器卡顿", url: "frames-echarts-6" },
+                            { title: "appendData异步加载大数据量分片加载数据和增量渲染的解决方案", url: "frames-echarts-7" },
+                            { title: "echarts出现数据列表出现异常解决方式", url: "frames-echarts-8" },
+                            { title: "Echarts常见问题及解决方法", url: "frames-echarts-9" },
+                            { title: "点击重复触发的问题及其解决方法", url: "frames-echarts-10" },
+                            { title: "彻底解决Echarts图表加载的缓存问题", url: "frames-echarts-11" },
+                            { title: "vue-echarts数据更新，图表不更新的解决方法", url: "frames-echarts-12" },
+                            { title: "echarts大数据量展示的解决方案", url: "frames-echarts-13" }
                         ]
                     },
                     {
