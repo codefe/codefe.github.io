@@ -861,6 +861,14 @@ let db = [
                         desc: 'animation是CSS3中新增的属性,它可以制作出多种酷炫的动画效果,如果对flash有一定的了解,那这个属性就会很容易学习。 ',
                         child: [
                             {
+                                title: 'animation调用动画',
+                                url: 'css3-animation-3'
+                            },
+                            {
+                                title: 'CSS3动画进阶steps',
+                                url: 'css3-animation-4'
+                            },
+                            {
                                 title: 'CSS3动画之逐帧动画',
                                 url: 'css3-animation-1'
                             },
@@ -1942,6 +1950,16 @@ let db = [
                 id: 3344,
                 title: '设计模式',
                 child: [
+                    {
+                        id: 334400,
+                        title: '多态',
+                        icon: '/app/img/edu/module.jpg',
+                        desc: '多态的思想实际上是把“做什么”和“谁去做”分离开来，要实现这一点，归根结底先要消除类型之间的耦合关系。<br>多态最根本的作用就是通过把过程化的条件分支语句转化为对象的多态性，从而消除这些条件分支语句。<br>多态的最根本好处在于，你不必再向对象询问“你是什么类型”而后根据得到的答案调用对象的某个行为——你只管调用该行为就是了，其他的一切多态机制都会为你安排妥当。',
+                        child: [
+                            {"title":"什么是多态","url":"js-polymorphism-1"},
+				            {"title":"多态的应用","url":"js-polymorphism-2"}
+                        ]
+                    },
                     {
                         id: 334401,
                         title: '接口',
