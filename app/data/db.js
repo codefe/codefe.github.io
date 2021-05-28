@@ -605,7 +605,9 @@ let db = [
                             { title: "自由组合", url: "html5-svg-6" },
                             { title: "暂停与播放", url: "html5-svg-7" },
                             { title: "animation参数详解", url: "html5-svg-8" },
-                            { title: "SVG 实现动态模糊动画效果", url: "html5-svg-17" }
+                            { title: "SVG 实现动态模糊动画效果", url: "html5-svg-17" },
+                            { title: "svg foreignObject的作用（文本换行，生成图片）", url: "html5-svg-foreignObject" },
+                            { title: "借助SVG forginObject实现DOM转图片实例页面", url: "html5-svg-foreignObjectDomToImg" }
                         ]
                     },
                     {
