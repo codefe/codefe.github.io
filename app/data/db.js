@@ -1072,6 +1072,17 @@ let db = [
                                 url: 'css3-bfc-3'
                             }
                         ]
+                    },
+                    {
+                        id: 221113,
+                        title: 'root/var',
+                        desc: '在声明全局 css 变量时 :root 会很有用,var()函数可以代替元素中任何属性中的值的任何部分。var()函数不能作为属性名、选择器或者其他除了属性值之外的值。',
+                        child: [
+                            {
+                                title: 'CSS中的var()和:root',
+                                url: 'css3-rootvar-1'
+                            }
+                        ]
                     }
                 ]
             },
