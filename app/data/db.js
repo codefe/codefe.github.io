@@ -2009,10 +2009,11 @@ let db = [
                         id: 334404,
                         title: '单例',
                         icon: '/app/img/edu/module.jpg',
-                        desc: '',
+                        desc: '单例模式的定义是，保证一个类仅有一个实例，并提供一个访问它的全局访问点。 有一些对象，比如线程池/全局缓存/浏览器中的 window 对象等等，我们只需要一个实例。',
                         child: [
                             {"title":"单例及其实现","url":"js-model-m40"},
-				            {"title":"单例模式基本用法","url":"js-model-m41"}
+				            {"title":"单例模式基本用法","url":"js-model-m41"},
+                            {"title":"单例模式实际场景-登录浮窗","url":"js-model-m42"}
                         ]
                     },
                     {
@@ -2094,9 +2095,10 @@ let db = [
                         id: 334413,
                         title: '策略',
                         icon: '/app/img/edu/module.jpg',
-                        desc: '',
+                        desc: '策略模式的定义是，定义一系列算法，把它们一个个封装起来，并且使它们可以相互替换。',
                         child: [
-                            {"title":"策略模式","url":"js-model-m130"}
+                            {"title":"策略模式","url":"js-model-m130"},
+                            {"title":"策略模式实际场景","url":"js-model-m131"}
                         ]
                     }
                 ]
@@ -2527,6 +2529,10 @@ let db = [
                             {
                                 title: 'JS解析页面table数据为JSON',
                                 url: 'js-casefun-73'
+                            },
+                            {
+                                title: '巧用二分查找实现多行文本溢出显示省略号',
+                                url: 'js-casefun-74'
                             }
                         ]
                     },
@@ -2971,7 +2977,16 @@ let db = [
                             { title: "react优化,不使用内敛对象", url: "frames-react-27" },
                             { title: "组件render优化", url: "frames-react-28" },
                             { title: "jsx中直接引入svg", url: "frames-react-29" },
-                            { title: "从中断机制看React Fiber技术", url: "frames-react-30" }
+                            { title: "从中断机制看React Fiber技术", url: "frames-react-30" },
+                            { title: "如何监听 object 或者 array 类型中 useState 的改变", url: "frames-react-31" },
+                            { title: "usestate 函数式更新", url: "frames-react-32" },
+                            { title: "首次执行时 useEffect 的时机", url: "frames-react-33" },
+                            { title: "组件中 useEffect 的执行顺序", url: "frames-react-34" },
+                            { title: "useCallback、useMemo 和 React.memo 的区别联系", url: "frames-react-35" },
+                            { title: "如何获取上一时刻的 props 和 state", url: "frames-react-36" },
+                            { title: "如何使用 引用传递 Forwarding Refs", url: "frames-react-37" },
+                            { title: "list渲染使用唯一key", url: "frames-react-38" },
+                            { title: "React地图找房探索与实践", url: "frames-react-39" }
                         ]
                     },
                     {
@@ -3333,6 +3348,28 @@ let db = [
                             }
                         ]
                     },
+                    {
+                        id: 550003,
+                        title: 'xlsx',
+                        desc: '这是一个读写Excel,xlsx的功能，主要是帮助我们去打印或者读写一些数据的。',
+                        child: [
+                            {
+                                title: 'xlsx使用',
+                                url: 'nodejs-xlsx-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 550004,
+                        title: 'Puppeteer',
+                        desc: '开发工作中，需要实现网页生成 PDF 的功能，生成的 PDF 需上传至服务端，将 PDF 地址作为参数请求外部接口，这个转换过程及转换后的 PDF 不需要在前端展示给用户。Puppeteer 可以实现在Node 端生成页面的 PDF 功能。',
+                        child: [
+                            {
+                                title: 'Puppeteer实践指南之网页转PDF',
+                                url: 'nodejs-Puppeteer-1'
+                            }
+                        ]
+                    }
                 ]
             },
             {
@@ -3381,6 +3418,10 @@ let db = [
                             {
                                 title: 'nrm安装',
                                 url: 'nodejs-nrm-1'
+                            },
+                            {
+                                title: 'nrm ls报错',
+                                url: 'nodejs-nrm-2'
                             }
                         ]
                     },
