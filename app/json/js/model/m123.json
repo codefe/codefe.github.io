@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"实际场景-DOM 事件","content":"<p>开发过程中，最常见的观察者模式场景就是 DOM 事件函数，先看看代码：</p><pre>document.body.addEventListener('click', () =&gt; {\n    alert(2)\n}, false)</pre><p>当 body 节点被点击时，触发 alert(2)，从观察者模式来解释，就是我们订阅了 body 节点的点击事件，当点击事件触发，我们就会收到通知。</p>"}}

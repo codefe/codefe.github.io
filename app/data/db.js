@@ -2075,20 +2075,26 @@ let db = [
                         id: 334411,
                         title: '装饰器',
                         icon: '/app/img/edu/module.jpg',
-                        desc: '',
+                        desc: '简单来说，装饰器模式就是给对象动态增加功能。',
                         child: [
-                            {"title":"装饰器模式","url":"js-model-m110"}
+                            {"title":"装饰器模式","url":"js-model-m110"},
+                            {"title":"实际场景-动态的为鸭子添加功能","url":"js-model-m111"},
+                            {"title":"实际场景-数据上报","url":"js-model-m112"},
+                            {"title":"实际场景-动态增加参数","url":"js-model-m113"}
                         ]
                     },
                     {
                         id: 334412,
                         title: '观察者',
                         icon: '/app/img/edu/module.jpg',
-                        desc: '',
+                        desc: '当对象之间存在一对多的依赖关系时，其中一个对象的状态发生改变，所有依赖它的对象都会收到通知，这就是观察者模式。',
                         child: [
                             {"title":"观察者模式","url":"js-model-m120"},
                             {"title":"浅谈Nodejs观察者模式","url":"js-model-m121"},
-                            {"title":"观察者模式（发布者-订阅者模式）","url":"js-model-m122"}
+                            {"title":"观察者模式（发布者-订阅者模式）","url":"js-model-m122"},
+                            {"title":"实际场景-DOM 事件","url":"js-model-m123"},
+                            {"title":"实际场景-网站登录","url":"js-model-m124"},
+                            {"title":"实际场景-双向数据绑定","url":"js-model-m125"}
                         ]
                     },
                     {
@@ -2099,6 +2105,18 @@ let db = [
                         child: [
                             {"title":"策略模式","url":"js-model-m130"},
                             {"title":"策略模式实际场景","url":"js-model-m131"}
+                        ]
+                    },
+                    {
+                        id: 334414,
+                        title: '代理',
+                        icon: '',
+                        desc: '代理模式是为一个对象提供一个代用品或占位符，以便控制对它的访问。代理模式的关键是，当客户不方便直接访问一个对象或者不满足需要的时候，提供一个替身对象来控制对这个对象的访问，客户实际上访问的是替身对象。',
+                        child: [
+                            {"title":"模拟场景-小明送花给小白","url":"js-model-proxy1"},
+                            {"title":"模拟场景-图片预加载","url":"js-model-proxy2"},
+                            {"title":"模拟场景-合并HTTP请求","url":"js-model-proxy3"},
+                            {"title":"模拟场景-ajax异步请求数据","url":"js-model-proxy4"}
                         ]
                     }
                 ]
