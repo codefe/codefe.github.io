@@ -2595,6 +2595,21 @@ let db = [
                                 url: 'js-bigdata-6'
                             }
                         ]
+                    },
+                    {
+                        id: 336604,
+                        title: '实例',
+                        desc: 'JS实例演示',
+                        child: [
+                            {
+                                title: '原生js模拟抖音滑动效果',
+                                url: 'js-case-1'
+                            },
+                            {
+                                title: 'js鼠标滚轮控制图片缩放',
+                                url: 'js-case-2'
+                            }
+                        ]
                     }
                 ]
             }
@@ -3619,6 +3634,10 @@ let db = [
                             {
                                 title: '组件嵌套传值',
                                 url: 'applets-wx-5'
+                            },
+                            {
+                                title: '微信扫码登录的实现方式',
+                                url: 'applets-wx-6'
                             }
                         ]
                     },
