@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"回车提交","content":"<pre>$(\"id\").onkeypress = function (event) {    \n    event = (event) ? event : ((window.event) ? window.event : \"\")\n    keyCode = event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode);    \n    if (keyCode == 13) {\n        $(\"SubmitLogin\").onclick();\n    }\n}</pre><p><br></p>"}}

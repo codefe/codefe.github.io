@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"构造函数和原型中的return","content":"<pre>function Fun(){\n    this.a = 10;\n    this.b = 5;\n    return ...    //默认为隐式return {a:10,b:5},\n                  //如果为显式return且值为基本类型值(number,string,boolean,undefined,null)将无视这个return\n                  //如果为显式return且值为引用类型值(object,array,function,regexp)将return这个值\n}</pre><p><br></p>"}}

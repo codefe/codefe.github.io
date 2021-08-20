@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"分离DOM查找","content":"<p>分离DOM会造成内存泄露，下面介绍一下如何查找</p><pre>1. 利用 开发者工具 -&gt; Mmory(内存)  -&gt; 堆快照(Heap Snapshot)\n2. Take snapshot 拍下一个快照 \n3. 在Class filter 中输入 deta 查看下面是否有分离DOM记录\n4. 有分离DOM清除就行了</pre><p><br></p>"}}

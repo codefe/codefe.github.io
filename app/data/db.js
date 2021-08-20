@@ -1202,7 +1202,8 @@ let db = [
                             {"title":"抽象","url":"js-oop-12"},
                             {"title":"工厂模式(不推荐)","url":"js-oop-13"},
                             {"title":"构造函数(不推荐)","url":"js-oop-14"},
-                            {"title":"构造函数 + 原型方法（混合方式）(推荐)","url":"js-oop-15"}
+                            {"title":"构造函数 + 原型方法（混合方式）(推荐)","url":"js-oop-15"},
+                            {"title":"构造函数和原型中的return","url":"js-oop-16"}
                         ]
                     },
                     {
@@ -2551,6 +2552,10 @@ let db = [
                             {
                                 title: '巧用二分查找实现多行文本溢出显示省略号',
                                 url: 'js-casefun-74'
+                            },
+                            {
+                                title: '回车提交',
+                                url: 'js-casefun-75'
                             }
                         ]
                     },
@@ -2598,6 +2603,17 @@ let db = [
                     },
                     {
                         id: 336604,
+                        title: '优化',
+                        desc: '高效JS优化实例',
+                        child: [
+                            {
+                                title: '高效js注意事项',
+                                url: 'js-optimization-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 336605,
                         title: '实例',
                         desc: 'JS实例演示',
                         child: [
@@ -2753,6 +2769,10 @@ let db = [
                             {
                                 title: 'Vue中provide/inject的应用',
                                 url: 'frames-vue-31'
+                            },
+                            {
+                                title: 'vue2、vue3区别',
+                                url: 'frames-vue-32'
                             }
                         ]
                     },
@@ -3967,6 +3987,10 @@ let db = [
                             {
                                 title: '动画分析',
                                 url: 'tools-Performance-4'
+                            },
+                            {
+                                title: '分离DOM查找',
+                                url: 'tools-Performance-5'
                             }
                         ]
                     },
