@@ -1083,6 +1083,54 @@ let db = [
                                 url: 'css3-rootvar-1'
                             }
                         ]
+                    },
+                    {
+                        id: 221114,
+                        title: 'clamp',
+                        desc: 'clamp() 函数的作用是把一个值限制在一个上限和下限之间，当这个值超过最小值和最大值的范围时，在最小值和最大值之间选择一个值使用。',
+                        child: [
+                            {
+                                title: 'css中好用的clamp()函数',
+                                url: 'css3-clamp-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221115,
+                        title: 'min/max',
+                        desc: '根据CSS规范，比较函数是关于比较多个值并取其一。这些CSS函数最大的作用就是可以为我们提供动态布局和更灵活设计组件方法。',
+                        child: [
+                            {
+                                title: 'min函数',
+                                url: 'css3-minmax-1'
+                            },
+                            {
+                                title: 'max函数',
+                                url: 'css3-minmax-2'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221116,
+                        title: 'attr',
+                        desc: 'CSS函数attr()是用来获取被选中元素的属性值，并且在样式文件中使用。',
+                        child: [
+                            {
+                                title: 'attr函数',
+                                url: 'css3-attr-1'
+                            }
+                        ]
+                    },
+                    {
+                        id: 221117,
+                        title: 'toggle',
+                        desc: '允许子孙元素使用取值序列中的值循环替换继承而来的值',
+                        child: [
+                            {
+                                title: 'toggle函数',
+                                url: 'css3-toggle-1'
+                            }
+                        ]
                     }
                 ]
             },

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"attr函数","content":"<p>CSS函数attr()是用来获取被选中元素的属性值，并且在样式文件中使用。它也可以用在伪类元素里，在伪类元素里使用，它得到的是伪元素的原始元素的值。</p><p></p><p>attr()函数可以和任何CSS属性一起使用，但是除了content外，其余都还是试验性的（简单说就是不稳定，浏览器不一定支持）。</p><blockquote>attr(attribute-name)</blockquote><blockquote>attribute-name\t必须。HTML 元素的属性名。</blockquote><pre>a:after {\n    content: attr(href);\n}</pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"toggle函数","content":"<p>允许子孙元素使用取值序列中的值循环替换继承而来的值。<br></p><p>在更老的版本中使用的是：cycle()\n<br>\n<br><h3>示例代码：\n</h3><blockquote>ul{list-style-type:disk;}<br>\nli &gt; ul{list-style-type:toggle(disk,circle,square,box);}\n</blockquote>\n<br>在上述代码中，定义一个多级的ul，第一级使用disk markers，子孙级依次使用circle,square,box。</p>"}}
