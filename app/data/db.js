@@ -1930,6 +1930,10 @@ let db = [
                             {
                                 title: 'History',
                                 url: 'js-window-5'
+                            },
+                            {
+                                title: 'orientationchange纵横方向改变',
+                                url: 'js-window-6'
                             }
                         ]
                     },
@@ -3569,7 +3573,13 @@ let db = [
                         id: 552200,
                         title: 'Express',
                         flag: 'recommend',
-                        icon: '/app/img/edu/express.jpg'
+                        icon: '/app/img/edu/express.jpg',
+                        child: [
+                            {
+                                title: "允许跨域请求返回数据",
+                                url: "nodejs-express-1"
+                            }
+                        ]
                     }
                 ]
             },
