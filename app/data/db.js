@@ -1230,6 +1230,22 @@ let db = [
                 title: '基础',
                 child: [
                     {
+                        id: 330000,
+                        title: '思维导图',
+                        desc: '思维导图又叫心智图，是表达发射性思维的有效的图形思维工具，它简单却又极其有效，是一种革命性的思维工具。<br/>思维导图运用图文并重的技巧，把各级主题的关系用相互隶属与相关的层级图表现出来，把主题关键词与图像、颜色等建立<br>记忆链接，思维导图充分运用左右脑的机能，利用记忆、阅读、思维的规律，协助人们在科学与艺术、逻辑与想象之间平衡发展，从而开启人类大脑的无限潜能。思维导图因此具有人类思维的强大功能。',
+                        child: [
+                            {"title":"javascript变量","url":"js-mindmap-1"},
+                            {"title":"javascript运算符","url":"js-mindmap-2"},
+                            {"title":"javascript数组","url":"js-mindmap-3"},
+                            {"title":"javascript流程语句","url":"js-mindmap-4"},
+                            {"title":"javascript字符串函数","url":"js-mindmap-5"},
+                            {"title":"javascript函数基础","url":"js-mindmap-6"},
+                            {"title":"javascript基础DOM操作","url":"js-mindmap-7"},
+                            {"title":"文档对象模型DOM","url":"js-mindmap-8"},
+                            {"title":"javascript正则表达式","url":"js-mindmap-9"}
+                        ]
+                    },
+                    {
                         id: 330001,
                         title: '原型',
                         flag: 'recommend',
