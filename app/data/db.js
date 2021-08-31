@@ -3607,7 +3607,38 @@ let db = [
                         id: 553300,
                         title: 'Koa2',
                         flag: 'recommend',
-                        icon: '/app/img/edu/koa.jpg'
+                        icon: '/app/img/edu/koa.jpg',
+                        desc: 'koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。',
+                        child: [
+                            {
+                                title: '从hello world开始',
+                                url: 'nodejs-Koa-1'
+                            },
+                            {
+                                title: 'Koa路由',
+                                url: 'nodejs-Koa-2'
+                            },
+                            {
+                                title: '获取get传值',
+                                url: 'nodejs-Koa-3'
+                            },
+                            {
+                                title: '获取get动态路由传值',
+                                url: 'nodejs-Koa-4'
+                            },
+                            {
+                                title: 'Koa中间件',
+                                url: 'nodejs-Koa-5'
+                            },
+                            {
+                                title: 'post提交数据,koa-bodyparser中间件的使用',
+                                url: 'nodejs-Koa-6'
+                            },
+                            {
+                                title: 'ejs模板引擎',
+                                url: 'nodejs-Koa-7'
+                            }
+                        ]
                     }
                 ]
             },

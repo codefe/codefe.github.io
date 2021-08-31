@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取get动态路由传值","content":"<p>koa2中的get传值通过request接收，接收的方法有2种：query 和 querystring。</p><p>例：http://localhost:2000/article/123/zhangsan</p><pre>router.get('/article/:id/:name',async (ctx)=&gt;{\n    //获取动态路由传值\n    ctx.params\n})</pre><p><br></p><p><br></p>"}}

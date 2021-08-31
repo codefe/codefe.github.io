@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"从hello world开始","content":"<pre>//引入Koa\nconst Koa = require('koa');\nconst app = new Koa();\n\n//配置中间件(可以当路由)\napp.use(async ctx =&gt; {\n  ctx.body = 'Hello World';\n});\n\n//监听端口\napp.listen(3000);</pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"获取get传值","content":"<p>koa2中的get传值通过request接收，接收的方法有2种：query 和 querystring。</p><p>例：http://localhost:2000/article?id=123&amp;name=zhangsan</p><pre>ctx.query || ctx.request.query : 返回的是格式化好的参数对象, {id:value}\nctx.querystring || ctx.request.querystring : 返回的是请求字符串, id=value&amp;name=value\n\nctx.url || ctx.request.url 获取url地址</pre><p><br></p>"}}
