@@ -115,6 +115,10 @@ let links = {
         {
             title: 'MockJS',
             url: 'http://mockjs.com/'
+        },
+        {
+            title: 'GraphQL',
+            url: 'https://graphql.cn/'
         }
     ],
     study: [

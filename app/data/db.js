@@ -3637,6 +3637,78 @@ let db = [
                             {
                                 title: 'ejs模板引擎',
                                 url: 'nodejs-Koa-7'
+                            },
+                            {
+                                title: 'koa-static静态资源中间件',
+                                url: 'nodejs-Koa-8'
+                            },
+                            {
+                                title: 'koa-art-template模板引擎',
+                                url: 'nodejs-Koa-9'
+                            },
+                            {
+                                title: 'koa中cookie使用',
+                                url: 'nodejs-Koa-10'
+                            },
+                            {
+                                title: 'koa中session的使用',
+                                url: 'nodejs-Koa-11'
+                            },
+                            {
+                                title: 'Koa上传图片模块koa-multer的使用',
+                                url: 'nodejs-Koa-12'
+                            },
+                            {
+                                title: 'koa-jsonp中间件',
+                                url: 'nodejs-Koa-13'
+                            },
+                            {
+                                title: 'Koa 中使用koa2-ueditor富文本编辑器',
+                                url: 'nodejs-Koa-14'
+                            },
+                            {
+                                title: 'koa2-cors跨域模块',
+                                url: 'nodejs-Koa-15'
+                            },
+                            {
+                                title: 'Koa设置全局变量',
+                                url: 'nodejs-Koa-16'
+                            },
+                            {
+                                title: 'Koa2 RESTful Api接口',
+                                url: 'nodejs-Koa-17'
+                            },
+                            {
+                                title: 'koa2 支付宝支付插件alipay-mobile',
+                                url: 'nodejs-Koa-18'
+                            },
+                            {
+                                title: 'koa-compress实现网页gizp压缩',
+                                url: 'nodejs-Koa-19'
+                            },
+                            {
+                                title: 'koa2重定向',
+                                url: 'nodejs-Koa-20'
+                            },
+                            {
+                                title: 'Koa2中使用socket.io',
+                                url: 'nodejs-Koa-21'
+                            },
+                            {
+                                title: 'Koa2 分页插件 jqPaginator',
+                                url: 'nodejs-Koa-22'
+                            },
+                            {
+                                title: 'Koa2操作MongoDB数据库',
+                                url: 'nodejs-Koa-23'
+                            },
+                            {
+                                title: 'Koa2操作mysql数据库',
+                                url: 'nodejs-Koa-24'
+                            },
+                            {
+                                title: 'Koa2中集成GraphQl实现 Server API 接口',
+                                url: 'nodejs-Koa-25'
                             }
                         ]
                     }
@@ -3668,7 +3740,13 @@ let db = [
                         title: 'MongoDB',
                         flag: 'recommend',
                         desc: 'MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写，跨平台，面向文档的No SQL数据库。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。',
-                        icon: '/app/img/edu/MongoDB.jpg'
+                        icon: '/app/img/edu/MongoDB.jpg',
+                        child:[
+                            {
+                                title:'',
+                                url: 'nodejs-mongodb-1'
+                            }
+                        ]
                     },
                     {
                         id: 554501,
