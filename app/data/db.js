@@ -3743,8 +3743,12 @@ let db = [
                         icon: '/app/img/edu/MongoDB.jpg',
                         child:[
                             {
-                                title:'',
+                                title:'mongoDB和关系型数据库对比',
                                 url: 'nodejs-mongodb-1'
+                            },
+                            {
+                                title:'终端执行mongo出错提示无法连接',
+                                url: 'nodejs-mongodb-2'
                             }
                         ]
                     },
