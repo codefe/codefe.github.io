@@ -1915,6 +1915,21 @@ let db = [
                                 url: 'js-weakset-1'
                             }
                         ]
+                    },
+                    {
+                        id: 331117,
+                        title: 'Class',
+                        desc: '基本上,ES6 的class可以看作只是一个语法糖,它的绝大部分功能,ES5 都可以做到,新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。',
+                        child: [
+                            {
+                                title: 'es6中的静态方法',
+                                url: 'js-class-1'
+                            },
+                            {
+                                title: 'es6中的单例应用',
+                                url: 'js-class-2'
+                            }
+                        ]
                     }
                 ]
             },
@@ -2071,7 +2086,8 @@ let db = [
                             {"title":"什么是继承","url":"js-model-m30"},
                             {"title":"类继承","url":"js-model-m31"},
                             {"title":"原型继承","url":"js-model-m32"},
-                            {"title":"掺元类","url":"js-model-m33"}
+                            {"title":"掺元类","url":"js-model-m33"},
+                            {"title":"es5原型链继承加冒充继承","url":"js-model-m34"}
                         ]
                     },
                     {
@@ -3709,6 +3725,10 @@ let db = [
                             {
                                 title: 'Koa2中集成GraphQl实现 Server API 接口',
                                 url: 'nodejs-Koa-25'
+                            },
+                            {
+                                title: 'koa应用生成器',
+                                url: 'nodejs-Koa-26'
                             }
                         ]
                     }
@@ -3858,10 +3878,69 @@ let db = [
             },
             {
                 id: 6622,
-                title: '钉钉',
+                title: '插件',
                 child: [
                     {
                         id: 662200,
+                        title: 'Chrome插件',
+                        flag: 'recommend',
+                        icon: '/app/img/edu/chrome.jpg',
+                        desc: 'Chrome插件就是一个网站类的应用，它是用html、javascript、css组成的一个webapp; 相比于通常的webapp, Chrome插件还可以调用更多浏览器层面的api,包括书签、历史记录、网络请求拦截、截获用户输入等等。',
+                        child: [
+                            {
+                                title: 'mainfest.json',
+                                url: 'applets-chrome-1'
+                            },
+                            {
+                                title: 'manifest.json参数详解',
+                                url: 'applets-chrome-8'
+                            },
+                            {
+                                title: 'Chrome扩展API',
+                                url: 'applets-chrome-2'
+                            },
+                            {
+                                title: '请求可选权限',
+                                url: 'applets-chrome-3'
+                            },
+                            {
+                                title: '检查扩展程序的当前权限',
+                                url: 'applets-chrome-4'
+                            },
+                            {
+                                title: '移除权限',
+                                url: 'applets-chrome-5'
+                            },
+                            {
+                                title: 'chrome.permissions 参考',
+                                url: 'applets-chrome-6'
+                            },
+                            {
+                                title: 'chrome浏览器声明权限列表以及权限描述',
+                                url: 'applets-chrome-7'
+                            },
+                            {
+                                title: '消息传递',
+                                url: 'applets-chrome-9'
+                            },
+                            {
+                                title: 'chrome.extension常用方法',
+                                url: 'applets-chrome-10'
+                            },
+                            {
+                                title: 'chrome百度插件自动搜索',
+                                url: 'applets-chrome-11'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 6623,
+                title: '钉钉',
+                child: [
+                    {
+                        id: 662300,
                         title: '钉钉小程序',
                         icon: ''
                     }
