@@ -2857,7 +2857,15 @@ let db = [
                             {
                                 title: 'vue2、vue3区别',
                                 url: 'frames-vue-32'
-                            }
+                            },
+                            {
+                                title: 'Vue2.0 全局自定义组件',
+                                url: 'frames-vue-33'
+                            },
+                            {
+                                title: 'Vue2.0 子组件修改父组件的数据',
+                                url: 'frames-vue-34'
+                            },
                         ]
                     },
                     {
@@ -2996,6 +3004,18 @@ let db = [
                             {
                                 title: 'assets和static的区别',
                                 url: 'frames-vuex-4'
+                            },
+                            {
+                                title: 'Vuex在组件中使用或者重命名状态',
+                                url: 'frames-vuex-5'
+                            },
+                            {
+                                title: 'vuex 基础使用Store、State、Getter',
+                                url: 'frames-vuex-6'
+                            },
+                            {
+                                title: 'vuex 基础使用Mutations、Actions',
+                                url: 'frames-vuex-7'
                             }
                         ]
                     },
@@ -3039,6 +3059,10 @@ let db = [
                             {
                                 title: 'VueCLI原理分析',
                                 url: 'frames-vuecli-3'
+                            },
+                            {
+                                title: 'ElementUI 使用Vue-CLI css 字体文件引入错误',
+                                url: 'frames-vuecli-4'
                             }
                         ]
                     },
@@ -3071,6 +3095,17 @@ let db = [
                         id: 440011,
                         title: 'NutUI',
                         desc: 'NutUI 是一套来自京东用户体验设计部(JDC)前端开发部的移动端 Vue 组件库'
+                    },
+                    {
+                        id: 440012,
+                        title: 'vue-loader',
+                        desc: 'vue-loader 会解析文件，提取每个语言块，如有必要会通过其它 loader 处理，最后将他们组装成一个 CommonJS 模块，module.exports 出一个 Vue.js 组件对象。',
+                        child: [
+                            {
+                                title: 'vue-loader 的编译规则',
+                                url:'frames-vueloader-1'
+                            }
+                        ]
                     }
                 ]
             },
@@ -3420,6 +3455,17 @@ let db = [
                         icon: '/app/img/edu/alipay.jpg',
                         desc: '',
                         child: []
+                    },
+                    {
+                        id: 443311,
+                        title: 'vue-lazyload',
+                        desc: '对某个大列表的图片需要进行懒加载，直接使用了 vue 的第三方插件 vue-lazyload，（这好像是用的最多的插件，也的确很好用）',
+                        child: [
+                            {
+                                title:'使用 vue-lazyload 进行图片懒加载',
+                                url: 'frames-vuelazyload-1'
+                            }
+                        ]
                     }
                 ]
             }
@@ -3803,6 +3849,46 @@ let db = [
                             {
                                 title: 'StatelessWidget与StatefulWidget的选择',
                                 url: 'applets-flutter-2'
+                            },
+                            {
+                                title: '使用 camera 拍摄照片及预览',
+                                url: 'applets-flutter-3'
+                            },
+                            {
+                                title: 'io 文件读写及实现持久化数据计数',
+                                url: 'applets-flutter-4'
+                            },
+                            {
+                                title: '基于 shared_preferences 进行持久化键值存储',
+                                url: 'applets-flutter-5'
+                            },
+                            {
+                                title: 'Flutter 中使用 websocket',
+                                url: 'applets-flutter-6'
+                            },
+                            {
+                                title: '基于 Isolate 在后台处理网络请求数据',
+                                url: 'applets-flutter-7'
+                            },
+                            {
+                                title: '基本页面结构布局 及 自定义 Widget 文件 分离',
+                                url: 'applets-flutter-8'
+                            },
+                            {
+                                title: 'Container Widget 和 Text Widget',
+                                url: 'applets-flutter-9'
+                            },
+                            {
+                                title: 'Drawer 实现左侧横滑菜单',
+                                url: 'applets-flutter-10'
+                            },
+                            {
+                                title: 'AppBar Widget 及自定义导航栏',
+                                url: 'applets-flutter-11'
+                            },
+                            {
+                                title: '命名路由、路由组、路由替换、路由销毁',
+                                url: 'applets-flutter-12'
                             }
                         ]
                     },
