@@ -3892,10 +3892,6 @@ let db = [
                                 url: 'applets-chrome-1'
                             },
                             {
-                                title: 'manifest.json参数详解',
-                                url: 'applets-chrome-8'
-                            },
-                            {
                                 title: 'Chrome扩展API',
                                 url: 'applets-chrome-2'
                             },
@@ -3920,7 +3916,11 @@ let db = [
                                 url: 'applets-chrome-7'
                             },
                             {
-                                title: '消息传递',
+                                title: '消息传递1',
+                                url: 'applets-chrome-23'
+                            },
+                            {
+                                title: '消息传递2',
                                 url: 'applets-chrome-9'
                             },
                             {
@@ -3930,6 +3930,70 @@ let db = [
                             {
                                 title: 'chrome百度插件自动搜索',
                                 url: 'applets-chrome-11'
+                            },
+                            {
+                                title: 'contextMenus增加页面右键选项菜单',
+                                url: 'applets-chrome-12'
+                            },
+                            {
+                                title: '通过快捷键唤醒扩展程序',
+                                url: 'applets-chrome-13'
+                            },
+                            {
+                                title: 'chrome扩展开发基本指南',
+                                url: 'applets-chrome-14'
+                            },
+                            {
+                                title: 'chrome扩展开发基本概念和基本组成',
+                                url: 'applets-chrome-15'
+                            },
+                            {
+                                title: '通过 background scripts 管理事件',
+                                url: 'applets-chrome-8'
+                            },
+                            {
+                                title: '用户界面与用户交互',
+                                url: 'applets-chrome-16'
+                            },
+                            {
+                                title: '运行时脚本 content scripts',
+                                url: 'applets-chrome-17'
+                            },
+                            {
+                                title: '声明权限并告知用户',
+                                url: 'applets-chrome-18'
+                            },
+                            {
+                                title: '构建用户选项页面',
+                                url: 'applets-chrome-19'
+                            },
+                            {
+                                title: 'browserAction API 使用示例',
+                                url: 'applets-chrome-20'
+                            },
+                            {
+                                title: '运行时申请用户权限',
+                                url: 'applets-chrome-21'
+                            },
+                            {
+                                title: 'pageAction 的 API 使用实例',
+                                url: 'applets-chrome-22'
+                            },
+                            {
+                                title: 'chrome.storage 本地存储',
+                                url: 'applets-chrome-24'
+                            },
+                            {
+                                title: 'chrome.bookmarks 书签管理',
+                                url: 'applets-chrome-25'
+                            },
+                            {
+                                title: 'chrome.downloads 通过程序控制下载',
+                                url: 'applets-chrome-26'
+                            },
+                            {
+                                title: 'chrome.history 控制浏览器历史',
+                                url: 'applets-chrome-27'
                             }
                         ]
                     }
