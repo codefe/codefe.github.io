@@ -119,6 +119,10 @@ let links = {
         {
             title: 'GraphQL',
             url: 'https://graphql.cn/'
+        },
+        {
+            title: 'axios',
+            url: 'http://www.axios-js.com/zh-cn/docs/'
         }
     ],
     study: [
