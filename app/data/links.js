@@ -185,6 +185,12 @@ let links = {
             title: '蓝桥云课',
             url: 'https://www.lanqiao.cn/',
             icon: ''
+        },
+        {
+            id: 11,
+            title: '黑马程序员',
+            url: 'https://www.itheima.com/',
+            icon: ''
         }
     ],
     expert: [
