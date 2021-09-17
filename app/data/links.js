@@ -191,6 +191,12 @@ let links = {
             title: '黑马程序员',
             url: 'https://www.itheima.com/',
             icon: ''
+        },
+        {
+            id: 12,
+            title: '谷粒学苑',
+            url: 'https://www.gulixueyuan.com/',
+            icon: ''
         }
     ],
     expert: [
