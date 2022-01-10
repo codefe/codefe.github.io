@@ -4435,6 +4435,17 @@ let db = [
                                 url: 'tools-charles-1'
                             }
                         ]
+                    },
+                    {
+                        id: 7722034,
+                        title: 'Jest测试',
+                        desc: 'Jest是 Facebook 的一套开源的 JavaScript 测试框架, 它自动集成了断言、JSDom、覆盖率报告等开发者所需要的所有测试工具,是一款几乎零配置的测试框架。',
+                        child: [
+                            {
+                                title: 'Jest前端自动化测试',
+                                url: 'tools-jest-1'
+                            }
+                        ]
                     }
                 ]
             },
