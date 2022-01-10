@@ -2747,7 +2747,7 @@ let db = [
                                 url: 'frames-vue-4'
                             },
                             {
-                                title: 'setup',
+                                title: 'setup语法糖',
                                 url: 'frames-vue-5'
                             },
                             {
