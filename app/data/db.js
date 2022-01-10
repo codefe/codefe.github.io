@@ -1201,7 +1201,13 @@ let db = [
                         id: 223301,
                         title: '布局适配',
                         flag: 'recommend',
-                        icon: '/app/img/edu/layout.jpg'
+                        icon: '/app/img/edu/layout.jpg',
+                        child: [
+                            {
+                                title: '移动端布局自适配',
+                                url: 'css3-layout-1'
+                            }
+                        ]
                     },
                     {
                         id: 223302,
@@ -2640,6 +2646,10 @@ let db = [
                             {
                                 title: '回车提交',
                                 url: 'js-casefun-75'
+                            },
+                            {
+                                title: 'js浅拷贝与深拷贝',
+                                url: 'js-casefun-76'
                             }
                         ]
                     },
