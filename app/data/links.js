@@ -123,6 +123,10 @@ let links = {
         {
             title: 'axios',
             url: 'http://www.axios-js.com/zh-cn/docs/'
+        },
+        {
+            title: 'FabricJS',
+            url: 'http://fabricjs.com/'
         }
     ],
     study: [
