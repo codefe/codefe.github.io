@@ -3310,6 +3310,10 @@ let db = [
                             {
                                 title: 'axios 库封装',
                                 url: 'frames-axios-2'
+                            },
+                            {
+                                title: 'axios 取消请求',
+                                url: 'frames-axios-3'
                             }
                         ]
                     },
