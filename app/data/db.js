@@ -2876,6 +2876,22 @@ let db = [
                                 title: 'Vue2.0 子组件修改父组件的数据',
                                 url: 'frames-vue-34'
                             },
+                            {
+                                title: 'setup语法糖加name',
+                                url: 'frames-vue-35'
+                            },
+                            {
+                                title: 'vue3.x API 自动导入',
+                                url: 'frames-vue-36'
+                            },
+                            {
+                                title: 'vue3.x 告别.value',
+                                url: 'frames-vue-37'
+                            },
+                            {
+                                title: 'vue3.x 自动导入图片',
+                                url: 'frames-vue-38'
+                            }
                         ]
                     },
                     {
