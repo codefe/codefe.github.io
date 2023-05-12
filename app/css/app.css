@@ -534,7 +534,7 @@ code:before {
     color: #ccc;
     padding-left: 40px;
 }
-.search-box:hover dl {
+.search-box input:focus + dl {
     border-width: 1px;
     height: 300px;
     overflow-y: auto;
@@ -888,7 +888,6 @@ code:before {
 }
 .con-lists li {
     width: 25%;
-    padding: 0 15px 15px 15px;
     border: 1px solid #eee;
     text-align: center;
     border-top: 0;
@@ -896,6 +895,10 @@ code:before {
 }
 .con-lists li:nth-child(4n) {
     border-right: 0;
+}
+.con-lists li a {
+    display: block;
+    padding: 0 15px 15px 15px;
 }
 .con-lists li p {
     margin-top: 15px;
@@ -1296,4 +1299,49 @@ code:before {
     to {
         transform: none;
     }
+}
+/* mouse */
+.mouse-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translateZ(0);
+    visibility: hidden;
+}
+.cursor-inner {
+    margin-left: -3px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    z-index: 10000001;
+    background: #ffa9a4;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+        margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-inner.cursor-hover {
+    margin-left: -18px;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    background: #e74138;
+    opacity: 0.3;
+}
+
+.cursor-outer {
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #e74138;
+    box-sizing: border-box;
+    z-index: 10000000;
+    opacity: 0.5;
+    transition: all 0.08s ease-out;
+}
+
+.cursor-outer.cursor-hover {
+    opacity: 0;
 }

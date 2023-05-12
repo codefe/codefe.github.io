@@ -1,112 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<link rel="stylesheet" href="./app/css/app.css">
-	<title>初学|前端进阶</title>
-	<script src="./app/js/isMob.js"></script>
-</head>
-<body>
-<!-- header -->
-<section class="top"></section>
-<header class="flex-wrap head">
-	<h1><a href="./index.html"><img src="./app/img/common/logo.png" width="120" alt="初学,前端"></a></h1>
-	<section class="flex-wrap">
-		<section class="flex-wrap search-box">
-			<input type="search" id="searchKey" maxlength="15">
-			<dl id="searchData"><p>请输入搜索条件</p></dl>
-		</section>
-		<section class="head-right">
-			<div class="head-nav">
-				<span>教程</span>
-				<section class="popmenu flex-wrap">
-					<section class="flex-item flex-wrap flex-col" id="menuHeadList"></section>
-					<ul id="menuHead" class="flex-wrap flex-col flex-jc flex-nav-tab"></ul>
-				</section>
-			</div>
-		</section>
-		
-		<section class="head-right head-login">
-			<em>8</em>
-			<span class="head-img"><i class="ic-ren"></i></span>
-			<ul class="popmenu">
-				<li><a href="./edit.html">添加文章</a></li>
-				<li><a href="#">我的收藏</a></li>
-				<li><a href="#">我的简历</a></li>
-				<li><a href="#">修改资料</a></li>
-				<li class="exit"><a href="./index.html">退出登录</a></li>
-			</ul>
-		</section>
-	</section>
-</header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta
+            name="viewport"
+            content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" href="./app/css/app.css" />
+        <title>初学|前端进阶</title>
+        <script src="./app/js/isMob.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <section class="top"></section>
+        <header class="flex-wrap head">
+            <h1>
+                <a href="./index.html"
+                    ><img
+                        src="./app/img/common/logo.png"
+                        width="120"
+                        alt="初学,前端"
+                /></a>
+            </h1>
+            <section class="flex-wrap">
+                <section class="flex-wrap search-box">
+                    <input type="search" id="searchKey" maxlength="15" />
+                    <dl id="searchData"><p>请输入搜索条件</p></dl>
+                </section>
+                <section class="head-right">
+                    <div class="head-nav">
+                        <span>教程</span>
+                        <section class="popmenu flex-wrap">
+                            <section
+                                class="flex-item flex-wrap flex-col"
+                                id="menuHeadList"
+                            ></section>
+                            <ul
+                                id="menuHead"
+                                class="flex-wrap flex-col flex-jc flex-nav-tab"
+                            ></ul>
+                        </section>
+                    </div>
+                </section>
 
-<!-- main -->
-<section class="flex-wrap flex-bor">
-	<!-- 左侧菜单 -->
-	<section class="flex-sideLeft" id="asideMenu"></section>
-	<!-- 中间 -->
-	<section class="flex-item fadeInUp">
-		<h3 class="navigation" id="navigation">学习平台</h3>
-		<section class="flex-wrap flex-break study-list" id="pageList"></section>
-	</section>
-	<!-- 右侧 -->
-	<section class="flex-sideRight">
-		<section class="flex-wrap side-count">
-			<p class="flex-wrap flex-col"><span>主题</span><span id="count">0</span></p>
-			<p class="flex-wrap flex-col"><span>文章</span><span id="total">0</span></p>
-		</section>
-		<section class="side-ag">
-			<img src="./app/img/ag/alidns.jpg">
-		</section>
-		<h3 class="side-title">推荐</h3>
-		<section id="aside-hot"></section>
-	</section>
-</section>
-<!-- footer -->
-<footer class="foot">
-	<h5>风起于青萍之末， 浪成于微澜之间</h5>
-	<section class="footop flex-wrap">
-		<section class="foot-boxa">
-			<a href="">H5</a>
-			<a href="">C3</a>
-			<a href="">JS</a>
-		</section>
-		<section class="foot-a">
-			<a href="1">首页</a>
-			<a href="2">关于</a>
-			<a href="3">服务</a>
-			<a href="4">案例</a>
-			<a href="5">动态</a>
-			<a href="6">联系</a>
-		</section>
-		<section class="foot-boxa">
-			<a href="">Vue</a>
-			<a href="">React</a>
-			<a href="javascript:Gs.scrollTo()">TOP</a>
-		</section>
-	</section>
-	<!-- 分类 -->
-	<section class="flex-wrap foot-nav" id="menuFoot"></section>
-	<!-- links -->
-	<section class="flex-wrap links">
-		<span>友情链接：</span>
-		<p id="links"></p>
-	</section>
-	<!-- copyright -->
-	<section class="flex-wrap copy">
-		<span>Copyright © 2021. All Rights Reserved.</span>
-		<span>沪ICP备021888888号</span>
-	</section>
-</footer>
-</body>
-<script src="./app/data/db.js"></script>
-<script src="./app/data/links.js"></script>
-<script src="./app/js/api.js"></script>
-<!-- <script src="./app/js/mouse.js"></script> -->
-<script>
-	Gs.obj.initStudy();
-</script>
+                <section class="head-right head-login">
+                    <em>8</em>
+                    <span class="head-img"><i class="ic-ren"></i></span>
+                    <ul class="popmenu">
+                        <li><a href="./edit.html">添加文章</a></li>
+                        <li>
+                            <a
+                                href="javascript:Gs.ShowNoti({
+                            title: '这是一个桌面通知撒',
+                            body: '欢迎来访,鄙人万分感激,这是一个测试,解决windows中声音无效问题~'
+                        })"
+                                >桌面通知</a
+                            >
+                        </li>
+                        <li><a href="#">我的简历</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li class="exit">
+                            <a href="./index.html">退出登录</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+
+        <!-- main -->
+        <section class="flex-wrap flex-bor">
+            <!-- 左侧菜单 -->
+            <section class="flex-sideLeft" id="asideMenu"></section>
+            <!-- 中间 -->
+            <section class="flex-item fadeInUp">
+                <h3 class="navigation" id="navigation">学习平台</h3>
+                <section
+                    class="flex-wrap flex-break study-list"
+                    id="pageList"
+                ></section>
+            </section>
+            <!-- 右侧 -->
+            <section class="flex-sideRight">
+                <section class="flex-wrap side-count">
+                    <p class="flex-wrap flex-col">
+                        <span>主题</span><span id="count">0</span>
+                    </p>
+                    <p class="flex-wrap flex-col">
+                        <span>文章</span><span id="total">0</span>
+                    </p>
+                </section>
+                <section class="side-ag">
+                    <img src="./app/img/ag/alidns.jpg" />
+                </section>
+                <h3 class="side-title">推荐</h3>
+                <section id="aside-hot"></section>
+            </section>
+        </section>
+        <!-- footer -->
+        <footer class="foot">
+            <h5>风起于青萍之末， 浪成于微澜之间</h5>
+            <section class="footop flex-wrap">
+                <section class="foot-boxa">
+                    <a href="">H5</a>
+                    <a href="">C3</a>
+                    <a href="">JS</a>
+                </section>
+                <section class="foot-a">
+                    <a href="1">首页</a>
+                    <a href="2">关于</a>
+                    <a href="3">服务</a>
+                    <a href="4">案例</a>
+                    <a href="5">动态</a>
+                    <a href="6">联系</a>
+                </section>
+                <section class="foot-boxa">
+                    <a href="">Vue</a>
+                    <a href="">React</a>
+                    <a href="javascript:Gs.scrollTo()">TOP</a>
+                </section>
+            </section>
+            <!-- 分类 -->
+            <section class="flex-wrap foot-nav" id="menuFoot"></section>
+            <!-- links -->
+            <section class="flex-wrap links">
+                <span>友情链接：</span>
+                <p id="links"></p>
+            </section>
+            <!-- copyright -->
+            <section class="flex-wrap copy">
+                <span>Copyright © 2021. All Rights Reserved.</span>
+                <span>沪ICP备021888888号</span>
+            </section>
+        </footer>
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+    </body>
+    <script src="./app/data/db.js"></script>
+    <script src="./app/data/links.js"></script>
+    <script src="./app/js/api.js"></script>
+    <!-- <script src="./app/js/mouse.js"></script> -->
+    <script>
+        Gs.obj.initStudy()
+    </script>
 </html>
